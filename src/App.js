@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { geoMercator, geoPath } from "d3-geo";
+import worlddata from "./world";
+import "./App.css";
 
 class App extends Component {
   render() {
+    const projection = geoMercator();
+    const pathGenerator = geoPath().projection(projection);
+    const countries = worlddata.features.map((d, i) => (
+      <path key={"path" + i} d={pathGenerator(d)} className="countries" />
+    ));
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <svg width={1001} height={500}>
+        {countries}
+      </svg>
     );
   }
 }
