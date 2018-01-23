@@ -23,13 +23,13 @@ class App extends Component {
   }
 
   render() {
-    const projection = geoMercator();
+    const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
       <path key={"path" + i} d={pathGenerator(d)} className="countries" />
     ));
     return (
-      <svg width={800} height={450}>
+      <svg width={800} height={450} viewBox="0 0 800 450">
         {countries}
       </svg>
     );
