@@ -21,11 +21,15 @@ class Map extends Component {
       .catch(err => console.error(err));
   }
 
+  onClick(d) {
+    console.log(d);
+  }
+
   render() {
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
-      <path key={"path" + i} d={pathGenerator(d)} className="countries" />
+      <path key={"path" + i} d={pathGenerator(d)} className="countries" onClick={d => this.onClick(d)}/>
     ));
     return (
       <svg width={800} height={450} viewBox="0 0 800 450">
