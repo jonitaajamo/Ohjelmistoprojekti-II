@@ -6,8 +6,13 @@ class Map extends Component {
   constructor() {
     super();
     this.state = {
-      worldData: []
+      worldData: [],
+      countryHover: false
     };
+  }
+
+  toggleHover() {
+    this.setState({countryHover: !this.state.countryHover});
   }
 
   componentDidMount() {
@@ -26,10 +31,24 @@ class Map extends Component {
   }
 
   render() {
+    let countryStyle = {
+      fill: '#CCCCCC',
+      stroke: '#000000',
+      strokeWidth: '0.5px'
+    }
+
+    if (this.state.countryHover) {
+      countryStyle = {
+        fill: 'pink',
+        stroke: '#000000',
+        strokeWidth: '0.5px'
+      }
+    }
+
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
-      <path key={"path" + i} d={pathGenerator(d)} className="countries" onClick={d => this.onClick(d)}/>
+      <path style={countryStyle} key={"path" + i} d={pathGenerator(d)} className="countries" onClick={d => this.onClick(d)} onMouseOver={() => this.toggleHover()} onMouseLeave={() => this.toggleHover()} />
     ));
     return (
       <svg width={800} height={450} viewBox="0 0 800 450">
