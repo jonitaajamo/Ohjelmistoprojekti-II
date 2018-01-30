@@ -37,7 +37,7 @@ class Map extends Component {
   }
 
   renderTooltip() {
-    return this.state.clicked ? <Tooltip /> : null;
+    return this.state.clicked ? <Tooltip country={this.state.activeCountry}/> : null;
   }
 
   render() {
