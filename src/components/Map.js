@@ -8,9 +8,11 @@ class Map extends Component {
     super();
     this.state = {
       worldData: [],
+      countryNames: [],
       countryHover: false,
       activeCountry: "",
-      clicked: false
+      clicked: false,
+      clickedCountry: ""
     };
   }
 
@@ -30,14 +32,22 @@ class Map extends Component {
         })
       )
       .catch(err => console.error(err));
+
+      fetch("https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json")
+      .then(response => response.json())
+      .then(names => this.setState({
+        countryNames: names
+      }))
+      .catch(err => console.error(err));
+      
   }
 
-  onClick() {
-    this.setState({ clicked: true });
+  onClick(i) {
+    this.setState({ clicked: true,  clickedCountry: this.state.countryNames[i-1].name});
   }
 
   renderTooltip() {
-    return this.state.clicked ? <Tooltip country={this.state.activeCountry}/> : null;
+    return this.state.clicked ? <Tooltip country={this.state.clickedCountry}/> : null;
   }
 
   render() {
@@ -76,14 +86,14 @@ class Map extends Component {
         key={"path" + i}
         d={pathGenerator(d)}
         className="countries"
-        onClick={() => this.onClick()}
+        onClick={() => this.onClick(i)}
         onMouseOver={() => this.toggleHover(i)}
         onMouseLeave={() => this.toggleHover(i)}
       />
     ));
     return (
       <div style={containerStyle}>
-        <svg style={svgStyle} preserveAspectRatio="xMidYMin" viewBox="165 20 800 450">
+        <svg style={svgStyle} preserveAspectRatio="xMidYMin" viewBox="82.5 20 800 450">
           {countries}
         </svg>
         <div>{this.renderTooltip()}</div>
