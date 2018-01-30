@@ -1,18 +1,24 @@
 import React, { Component } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
+import Tooltip from "./Tooltip";
 
 class Map extends Component {
   constructor() {
     super();
     this.state = {
       worldData: [],
-      countryHover: false
+      countryHover: false,
+      activeCountry: "",
+      clicked: false
     };
   }
 
-  toggleHover() {
-    this.setState({countryHover: !this.state.countryHover});
+  toggleHover(i) {
+    this.setState({
+      countryHover: !this.state.countryHover,
+      activeCountry: this.state.worldData[i].id
+    });
   }
 
   componentDidMount() {
@@ -26,37 +32,53 @@ class Map extends Component {
       .catch(err => console.error(err));
   }
 
-  onClick(d) {
-    console.log(d);
+  onClick() {
+    this.setState({ clicked: true });
+  }
+
+  renderTooltip() {
+    return this.state.clicked ? <Tooltip /> : null;
   }
 
   render() {
     let countryStyle = {
-      fill: '#CCCCCC',
-      stroke: '#000000',
-      strokeWidth: '0.5px'
-    }
+      fill: "#CCCCCC",
+      stroke: "#000000",
+      strokeWidth: "0.5px"
+    };
 
-    if (this.state.countryHover) {
-      countryStyle = {
-        fill: 'pink',
-        stroke: '#000000',
-        strokeWidth: '0.5px'
-      }
-    }
+    let activeStyle = {
+      fill: "pink",
+      stroke: "#000000",
+      strokeWidth: "0.5px"
+    };
 
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
-      <path style={countryStyle} key={"path" + i} d={pathGenerator(d)} className="countries" onClick={d => this.onClick(d)} onMouseOver={() => this.toggleHover()} onMouseLeave={() => this.toggleHover()} />
+      <path
+        style={
+          this.state.countryHover &&
+          this.state.activeCountry === this.state.worldData[i].id
+            ? activeStyle
+            : countryStyle
+        }
+        key={"path" + i}
+        d={pathGenerator(d)}
+        className="countries"
+        onClick={() => this.onClick()}
+        onMouseOver={() => this.toggleHover(i)}
+        onMouseLeave={() => this.toggleHover(i)}
+      />
     ));
     return (
-      <svg width={800} height={450} viewBox="0 0 800 450">
-        {countries}
-      </svg>
+      <div>
+        <svg width={800} height={450} viewBox="0 0 800 450">
+          {countries}
+        </svg>
+        <div>{this.renderTooltip()}</div>
+      </div>
     );
-
-    
   }
 }
 
