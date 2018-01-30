@@ -28,7 +28,9 @@ class Map extends Component {
       .then(response => response.json())
       .then(worldData =>
         this.setState({
-          worldData: feature(worldData, worldData.objects.countries).features
+          worldData: feature(worldData, worldData.objects.countries).features.sort((a, b) => {
+            return a.id - b.id;
+          })
         })
       )
       .catch(err => console.error(err));
@@ -36,14 +38,19 @@ class Map extends Component {
       fetch("https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json")
       .then(response => response.json())
       .then(names => this.setState({
-        countryNames: names
+        countryNames: names.sort((a, b) => {
+          return a.id - b.id
+        })
       }))
       .catch(err => console.error(err));
-      
   }
 
   onClick(i) {
-    this.setState({ clicked: true,  clickedCountry: this.state.countryNames[i-1].name});
+    console.log(this.state.worldData, this.state.countryNames)
+    this.setState({
+      clicked: true,
+      clickedCountry: this.state.countryNames[i-3].name
+    })
   }
 
   renderTooltip() {
