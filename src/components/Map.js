@@ -53,6 +53,16 @@ class Map extends Component {
       strokeWidth: "0.5px"
     };
 
+    let svgStyle = {
+    }
+
+    let containerStyle = {
+      width: "100%",
+      display: "block",
+      margin: "auto",
+      textAlign: "center"
+    }
+
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
@@ -72,8 +82,8 @@ class Map extends Component {
       />
     ));
     return (
-      <div>
-        <svg width={800} height={450} viewBox="0 0 800 450">
+      <div style={containerStyle}>
+        <svg style={svgStyle} preserveAspectRatio="xMidYMin" viewBox="165 20 800 450">
           {countries}
         </svg>
         <div>{this.renderTooltip()}</div>
