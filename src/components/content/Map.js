@@ -28,28 +28,35 @@ class Map extends Component {
       .then(response => response.json())
       .then(worldData =>
         this.setState({
-          worldData: feature(worldData, worldData.objects.countries).features.sort((a, b) => {
+          worldData: feature(
+            worldData,
+            worldData.objects.countries
+          ).features.sort((a, b) => {
             return a.id - b.id;
           })
         })
       )
       .catch(err => console.error(err));
 
-      fetch("https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json")
+    fetch(
+      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json"
+    )
       .then(response => response.json())
-      .then(names => this.setState({
-        countryNames: names.sort((a, b) => {
-          return a.id - b.id
+      .then(names =>
+        this.setState({
+          countryNames: names.sort((a, b) => {
+            return a.id - b.id;
+          })
         })
-      }))
+      )
       .catch(err => console.error(err));
   }
 
   onClick(i) {
     this.setState({
       clicked: true,
-      clickedCountry: this.state.countryNames[i-3].name
-    })
+      clickedCountry: this.state.countryNames[i - 3].name
+    });
   }
 
   render() {
@@ -67,7 +74,7 @@ class Map extends Component {
 
     let svgStyle = {
       marginBottom: "-82px"
-    }
+    };
 
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
@@ -92,7 +99,7 @@ class Map extends Component {
         <svg style={svgStyle} viewBox="82.5 20 800 450">
           {countries}
         </svg>
-        <Country country={this.state.clickedCountry}/>
+        <Country country={this.state.clickedCountry} />
       </article>
     );
   }

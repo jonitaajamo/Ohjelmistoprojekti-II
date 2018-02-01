@@ -1,9 +1,9 @@
 import React from "react";
 
 const Currency = () => (
-  <article class="tile is-child notification is-primary">
-    <p class="title">Currency</p>
-    <p class="subtitle">Billions and billions</p>
+  <article className="tile is-child notification is-primary">
+    <p className="title">Currency</p>
+    <p className="subtitle">Billions and billions</p>
   </article>
 );
 

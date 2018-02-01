@@ -1,9 +1,9 @@
 import React from "react";
 
 const StockMarket = () => (
-  <article class="tile is-child notification is-warning">
-    <p class="title">Stock Market</p>
-    <p class="subtitle">100%</p>
+  <article className="tile is-child notification is-warning">
+    <p className="title">Stock Market</p>
+    <p className="subtitle">100%</p>
   </article>
 );
 

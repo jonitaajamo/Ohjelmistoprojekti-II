@@ -7,11 +7,10 @@ import News from "./content/News";
 
 class Content extends Component {
   render() {
-
     let contentStyle = {
       width: "99%",
       margin: "auto"
-    }
+    };
 
     return (
       <div style={contentStyle} className="tile is-ancestor">
@@ -25,14 +24,13 @@ class Content extends Component {
             </article>
           </div>
           <div className="tile is-parent">
-              <Portfolio />
-            </div>
+            <Portfolio />
+          </div>
           <div className="tile">
             <div className="tile is-parent is-vertical">
               <Currency />
               <StockMarket />
             </div>
-            
           </div>
         </div>
         <div className="tile is-parent">

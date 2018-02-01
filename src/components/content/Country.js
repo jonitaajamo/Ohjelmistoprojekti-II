@@ -5,8 +5,8 @@ let style = {
 };
 
 const Country = ({ country }) => (
-  <article class="tile is-child notification is-dark" style={style}>
-    <div class="content">
+  <article className="tile is-child notification is-dark" style={style}>
+    <div className="content">
       <p className="title">{country ? country : "Select a country"}</p>
     </div>
   </article>
