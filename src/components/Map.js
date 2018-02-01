@@ -65,7 +65,7 @@ class Map extends Component {
     };
 
     let activeStyle = {
-      fill: "pink",
+      fill: "green",
       stroke: "#000000",
       strokeWidth: "0.5px"
     };
