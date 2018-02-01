@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
-import Tooltip from "./Tooltip";
-console.log ("testi");
 
 class Map extends Component {
   constructor() {
@@ -53,10 +51,6 @@ class Map extends Component {
     })
   }
 
-  renderTooltip() {
-    return this.state.clicked ? <Tooltip country={this.state.clickedCountry}/> : null;
-  }
-
   render() {
     let countryStyle = {
       fill: "#CCCCCC",
@@ -69,6 +63,10 @@ class Map extends Component {
       stroke: "#000000",
       strokeWidth: "0.5px"
     };
+
+    let svgStyle = {
+      marginBottom: "-6px"
+    }
 
     console.log("branch testi");
     const projection = geoMercator().scale(100);
@@ -90,12 +88,11 @@ class Map extends Component {
       />
     ));
     return (
-      <div>
-        <svg preserveAspectRatio="xMidYMin" viewBox="82.5 20 800 450">
+      <article className="tile is-child notification box is-paddingless">
+        <svg style={svgStyle} viewBox="82.5 20 800 450">
           {countries}
         </svg>
-        <div>{this.renderTooltip()}</div>
-      </div>
+      </article>
     );
   }
 }
