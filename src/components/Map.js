@@ -46,7 +46,6 @@ class Map extends Component {
   }
 
   onClick(i) {
-    console.log(this.state.worldData, this.state.countryNames)
     this.setState({
       clicked: true,
       clickedCountry: this.state.countryNames[i-3].name
