@@ -68,7 +68,6 @@ class Map extends Component {
       marginBottom: "-6px"
     }
 
-    console.log("branch testi");
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
