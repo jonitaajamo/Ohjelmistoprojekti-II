@@ -6,11 +6,11 @@ const Tooltip = ({ country }) => (
       <div className="content has-text-centered" >
       <span><strong>{country}</strong></span>
       <br />
-        <span>Pörssi:</span>
+        <span>Stock Market:</span>
         <br />
         <span>Portfolio:</span>
         <br />
-        <span>Valuutta:</span>
+        <span>Currency:</span>
       </div>
     </div>
   </div>
