@@ -3,12 +3,14 @@ import React from "react";
 const Tooltip = ({ country }) => (
   <div className="box">
     <div className="media-content">
-      <div className="content">
-        <span>Portfolio </span>
-        <span>Pörssi </span>
-        <span>Valuutta </span>
+      <div className="content has-text-centered" >
+      <span><strong>{country}</strong></span>
+      <br />
+        <span>Pörssi:</span>
         <br />
-        <span>You clicked {country}</span>
+        <span>Portfolio:</span>
+        <br />
+        <span>Valuutta:</span>
       </div>
     </div>
   </div>
