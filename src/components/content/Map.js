@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
+import Country from "./Country";
 
 class Map extends Component {
   constructor() {
@@ -65,7 +66,7 @@ class Map extends Component {
     };
 
     let svgStyle = {
-      marginBottom: "-6px"
+      marginBottom: "-82px"
     }
 
     const projection = geoMercator().scale(100);
@@ -91,6 +92,7 @@ class Map extends Component {
         <svg style={svgStyle} viewBox="82.5 20 800 450">
           {countries}
         </svg>
+        <Country country={this.state.clickedCountry}/>
       </article>
     );
   }

@@ -3,7 +3,6 @@ import Map from "./content/Map";
 import Currency from "./content/Currency";
 import StockMarket from "./content/StockMarket";
 import Portfolio from "./content/Portfolio";
-import Country from "./content/Country";
 import News from "./content/News";
 
 class Content extends Component {
@@ -25,14 +24,15 @@ class Content extends Component {
               <p className="subtitle">Timeline placeholder</p>
             </article>
           </div>
+          <div className="tile is-parent">
+              <Portfolio />
+            </div>
           <div className="tile">
             <div className="tile is-parent is-vertical">
               <Currency />
               <StockMarket />
             </div>
-            <div className="tile is-parent">
-              <Portfolio />
-            </div>
+            
           </div>
         </div>
         <div className="tile is-parent">
