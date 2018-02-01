@@ -70,7 +70,7 @@ class Map extends Component {
     };
 
     let tooltipStyle = {
-      width: "15%",
+      width: "20%",
       margin: "auto"
     };
 
