@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import Tooltip from "./Tooltip";
+console.log ("testi");
 
 class Map extends Component {
   constructor() {
@@ -64,21 +65,12 @@ class Map extends Component {
     };
 
     let activeStyle = {
-      fill: "pink",
+      fill: "#f0f",
       stroke: "#000000",
       strokeWidth: "0.5px"
     };
 
-    let svgStyle = {
-    }
-
-    let containerStyle = {
-      width: "100%",
-      display: "block",
-      margin: "auto",
-      textAlign: "center"
-    }
-
+    console.log("branch testi");
     const projection = geoMercator().scale(100);
     const pathGenerator = geoPath().projection(projection);
     const countries = this.state.worldData.map((d, i) => (
@@ -98,8 +90,8 @@ class Map extends Component {
       />
     ));
     return (
-      <div style={containerStyle}>
-        <svg style={svgStyle} preserveAspectRatio="xMidYMin" viewBox="82.5 20 800 450">
+      <div>
+        <svg preserveAspectRatio="xMidYMin" viewBox="82.5 20 800 450">
           {countries}
         </svg>
         <div>{this.renderTooltip()}</div>
