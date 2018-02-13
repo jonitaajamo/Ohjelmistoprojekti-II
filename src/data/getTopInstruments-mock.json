@@ -1,0 +1,85 @@
+{
+  "currency": "EUR",
+  "instruments": [
+    {
+      "secId": 1236452364,
+      "secName": "Nokia Oyj",
+      "weightInClass": 0.4,
+      "marketValueInClass": 8000000,
+      "classWeightInPortfolio": 0.08,
+      "totalMarketValue": 8000000
+    },
+    {
+      "secId": 9867243534,
+      "secName": "Woahtek",
+      "weightInClass": 0.2,
+      "marketValueInClass": 4000000,
+      "classWeightInPortfolio": 0.04,
+      "totalMarketValue": 8000000
+    },
+    {
+      "secId": 7347523,
+      "secName": "Evli High Yield Yrityslaina B",
+      "weightInClass": 0.1,
+      "marketValueInClass": 2000000,
+      "classWeightInPortfolio": 0.02,
+      "totalMarketValue": 4000000
+    },
+    {
+      "secId": 25678578,
+      "secName": "Evli Kehittyvät Markkinat Yrityslaina A",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 2000000
+    },
+    {
+      "secId": 354768798,
+      "secName": "Nordea 1-Alpha 15 MA Fund",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 4000000
+    },
+    {
+      "secId": 6543223,
+      "secName": "T. Rowe Price Japanese Equity Fund - EUR",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 5000000
+    },
+    {
+      "secId": 9238238764,
+      "secName": "Nordea Venäjä",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 2000000
+    },
+    {
+      "secId": 19234987634,
+      "secName": "Nordea Yhteisö Maltti",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 3000000
+    },
+    {
+      "secId": 9823863433,
+      "secName": "Nordea Säästö 25",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 4000000
+    },
+    {
+      "secId": 193986345,
+      "secName": "Nordea Premium Tasapaino",
+      "weightInClass": 0.05,
+      "marketValueInClass": 1000000,
+      "classWeightInPortfolio": 0.01,
+      "totalMarketValue": 5000000
+    }
+  ]
+}
