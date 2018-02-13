@@ -63,6 +63,7 @@ class Map extends Component {
 
   render() {
     let countryStyle = {
+      fill: "#d3d3d3",
       stroke: "#000000",
       strokeWidth: "0.5px"
     };
@@ -90,7 +91,6 @@ class Map extends Component {
         key={"path" + i}
         d={pathGenerator(d)}
         className="countries"
-        fill={ `rgba(38,50,56,${1 / this.state.heatData.length * i})` }
         onClick={() => this.onClick(i)}
         onMouseOver={() => this.toggleHover(i)}
         onMouseLeave={() => this.toggleHover(i)}
