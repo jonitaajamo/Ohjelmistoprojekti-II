@@ -47,9 +47,6 @@ class Map extends Component {
         this.setState({
           countryNames: names.sort((a, b) => {
             return a.id - b.id;
-          }),
-          heatData: names.sort((a, b) => {
-            return a.data - b.data
           })
         })
       )
