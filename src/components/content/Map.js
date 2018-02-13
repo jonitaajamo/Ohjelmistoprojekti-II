@@ -12,7 +12,8 @@ class Map extends Component {
       countryHover: false,
       activeCountry: "",
       clicked: false,
-      clickedCountry: ""
+      clickedCountry: "",
+      heatData: []
     };
   }
 
@@ -50,6 +51,7 @@ class Map extends Component {
         })
       )
       .catch(err => console.error(err));
+      
   }
 
   onClick(i) {
@@ -61,13 +63,12 @@ class Map extends Component {
 
   render() {
     let countryStyle = {
-      fill: "#CCCCCC",
       stroke: "#000000",
       strokeWidth: "0.5px"
     };
 
     let activeStyle = {
-      fill: "#f0f",
+      fill: "tomato",
       stroke: "#000000",
       strokeWidth: "0.5px"
     };
@@ -89,6 +90,7 @@ class Map extends Component {
         key={"path" + i}
         d={pathGenerator(d)}
         className="countries"
+        fill={ `rgba(38,50,56,${1 / this.state.heatData.length * i})` }
         onClick={() => this.onClick(i)}
         onMouseOver={() => this.toggleHover(i)}
         onMouseLeave={() => this.toggleHover(i)}

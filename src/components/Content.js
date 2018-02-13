@@ -3,7 +3,7 @@ import Map from "./content/Map";
 import Currency from "./content/Currency";
 import StockMarket from "./content/StockMarket";
 import Portfolio from "./content/Portfolio";
-import News from "./content/News";
+import Timeline from "./content/Timeline";
 
 class Content extends Component {
   render() {
@@ -19,22 +19,17 @@ class Content extends Component {
             <Map />
           </div>
           <div className="tile is-parent">
-            <article className="tile is-child notification is-danger">
-              <p className="subtitle">Timeline placeholder</p>
-            </article>
+            <Timeline />
           </div>
           <div className="tile is-parent">
             <Portfolio />
           </div>
-          <div className="tile">
-            <div className="tile is-parent is-vertical">
-              <Currency />
-              <StockMarket />
-            </div>
-          </div>
         </div>
-        <div className="tile is-parent">
-          <News />
+        <div className="tile">
+          <div className="tile is-parent is-vertical">
+            <Currency />
+            <StockMarket />
+          </div>
         </div>
       </div>
     );
