@@ -94,6 +94,9 @@ class Map extends Component {
         onMouseLeave={() => this.toggleHover(i)}
       />
     ));
+
+
+
     return (
       <article className="tile is-child notification is-paddingless">
         <svg style={svgStyle} viewBox="82.5 20 800 450">
