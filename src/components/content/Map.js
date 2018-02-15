@@ -13,28 +13,8 @@ class Map extends Component {
       countryHover: false,
       activeCountry: "",
       clicked: false,
-      clickedCountry: "",
-      heatData: []
+      clickedCountry: ""
     };
-  }
-
-  fetchHeatData() {
-    fetch(
-      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json"
-    )
-      .then(response => response.json())
-      .then(names =>
-        this.setState({
-          heatData: names.countries.sort((a, b) => {
-            return a.data - b.data;
-          })
-        })
-      )
-      .catch(err => console.error(err));
-  }
-
-  componentWillMount() {
-    this.fetchHeatData();
   }
 
   componentDidMount() {
@@ -76,7 +56,7 @@ class Map extends Component {
   onClick(i) {
     this.setState({
       clicked: true,
-      clickedCountry: this.state.countryNames[i - 3].name
+      clickedCountry: this.state.countryNames[i].name
     });
   }
 
@@ -108,7 +88,7 @@ class Map extends Component {
         }
         key={"path" + i}
         d={pathGenerator(d)}
-        fill={`rgba(38,50,56,${1 / this.state.heatData[i] * 0.1})`}
+        fill={`rgba(38,50,56, ${1 * this.state.countryNames[i].data / 10000})`}
         className="countries"
         onClick={() => this.onClick(i)}
         onMouseOver={() => this.toggleHover(i)}
@@ -134,7 +114,7 @@ class Map extends Component {
   }
 
   render() {
-    if (!this.state.heatData.length) {
+    if (!this.state.countryNames.length) {
       return this.renderLoading();
     } else {
       return this.renderMap();
