@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import Country from "./Country";
+import Loading from "./Loading";
 
 class Map extends Component {
   constructor() {
@@ -24,12 +25,16 @@ class Map extends Component {
       .then(response => response.json())
       .then(names =>
         this.setState({
-          heatData: names.sort((a, b) => {
+          heatData: names.countries.sort((a, b) => {
             return a.data - b.data;
           })
         })
       )
       .catch(err => console.error(err));
+  }
+
+  componentWillMount() {
+    this.fetchHeatData();
   }
 
   componentDidMount() {
@@ -53,13 +58,12 @@ class Map extends Component {
       .then(response => response.json())
       .then(names =>
         this.setState({
-          countryNames: names.sort((a, b) => {
+          countryNames: names.countries.sort((a, b) => {
             return a.id - b.id;
           })
         })
       )
       .catch(err => console.error(err));
-      this.fetchHeatData();
   }
 
   toggleHover(i) {
@@ -76,7 +80,7 @@ class Map extends Component {
     });
   }
 
-  render() {
+  renderMap() {
     let countryStyle = {
       stroke: "#000000",
       strokeWidth: "0.5px"
@@ -104,7 +108,7 @@ class Map extends Component {
         }
         key={"path" + i}
         d={pathGenerator(d)}
-        fill={`rgba(38,50,56,${this.state.heatData[i] / 1000})`}
+        fill={`rgba(38,50,56,${1 / this.state.heatData[i] * 0.1})`}
         className="countries"
         onClick={() => this.onClick(i)}
         onMouseOver={() => this.toggleHover(i)}
@@ -119,6 +123,22 @@ class Map extends Component {
         <Country country={this.state.clickedCountry} />
       </article>
     );
+  }
+
+  renderLoading() {
+    return (
+      <article className="tile is-child notification is-paddingless">
+        <Loading color="tomato" />
+      </article>
+    );
+  }
+
+  render() {
+    if (!this.state.heatData.length) {
+      return this.renderLoading();
+    } else {
+      return this.renderMap();
+    }
   }
 }
 
