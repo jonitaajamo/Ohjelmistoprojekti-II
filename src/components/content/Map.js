@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import Country from "./Country";
 import Loading from "./Loading";
+import {
+  ComposableMap,
+  ZoomableGroup,
+  Geographies,
+  Geography
+} from "react-simple-maps";
 
 class Map extends Component {
   constructor() {
@@ -13,7 +18,9 @@ class Map extends Component {
       countryHover: false,
       activeCountry: "",
       clicked: false,
-      clickedCountry: ""
+      clickedCountry: "",
+      zoom: 1,
+      center: [0, 20]
     };
   }
 
@@ -56,50 +63,65 @@ class Map extends Component {
   onClick(i) {
     this.setState({
       clicked: true,
-      clickedCountry: this.state.countryNames[i].name
+      clickedCountry: this.state.countryNames[i].name,
+      zoom: this.state.zoom * 2
     });
   }
 
-  renderMap() {
-    let countryStyle = {
-      stroke: "#000000",
-      strokeWidth: "0.5px"
-    };
-
-    let activeStyle = {
-      fill: "tomato",
-      stroke: "#000000",
-      strokeWidth: "0.5px"
-    };
-
-    let svgStyle = {
-      marginBottom: "-82px"
-    };
-
-    const projection = geoMercator().scale(100);
-    const pathGenerator = geoPath().projection(projection);
-    const countries = this.state.worldData.map((d, i) => (
-      <path
-        style={
-          this.state.countryHover &&
-          this.state.activeCountry === this.state.worldData[i].id
-            ? activeStyle
-            : countryStyle
-        }
-        key={"path" + i}
-        d={pathGenerator(d)}
-        fill={`rgba(38,50,56, ${1 * this.state.countryNames[i].data / 10000})`}
-        className="countries"
-        onClick={() => this.onClick(i)}
-        onMouseOver={() => this.toggleHover(i)}
-        onMouseLeave={() => this.toggleHover(i)}
-      />
-    ));
+  renderSimpleMaps() {
     return (
       <article className="tile is-child notification is-paddingless">
-        <svg style={svgStyle} viewBox="82.5 20 800 450">
-          {countries}
-        </svg>
+        <ComposableMap
+          width={800}
+          height={450}
+          style={{
+            width: "100%",
+            height: "auto"
+          }}
+        >
+          <ZoomableGroup
+            center={this.state.center}
+            zoom={this.state.zoom}
+          >
+            <Geographies geography={this.state.worldData}>
+              {(geographies, projection) =>
+                geographies.map((geography, i) => (
+                  <Geography
+                    style={{
+                      default: {
+                        fill: `rgba(38,50,56, ${1 *
+                          this.state.countryNames[i].data /
+                          10000})`,
+                        stroke: "black",
+                        strokeWidth: "0.5px",
+                        outline: "none"
+                      },
+                      hover: {
+                        fill: "gray",
+                        stroke: "black",
+                        strokeWidth: "0.5px",
+                        outline: "none"
+                      },
+                      pressed: {
+                        fill: "tomato",
+                        stroke: "black",
+                        strokeWidth: "0.5px",
+                        outline: "none"
+                      }
+                    }}
+                    key={geography + i}
+                    geography={geography}
+                    projection={projection}
+                    className="countries"
+                    onClick={() => this.onClick(i)}
+                    onMouseOver={() => this.toggleHover(i)}
+                    onMouseLeave={() => this.toggleHover(i)}
+                  />
+                ))
+              }
+            </Geographies>
+          </ZoomableGroup>
+        </ComposableMap>
         <Country country={this.state.clickedCountry} />
       </article>
     );
@@ -117,7 +139,7 @@ class Map extends Component {
     if (!this.state.countryNames.length) {
       return this.renderLoading();
     } else {
-      return this.renderMap();
+      return this.renderSimpleMaps();
     }
   }
 }
