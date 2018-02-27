@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { feature } from "topojson-client";
 import Country from "./Country";
 import Loading from "./Loading";
+import { geoPath } from "d3-geo";
+import { geoTimes } from "d3-geo-projection";
 import {
   ComposableMap,
   ZoomableGroup,
@@ -16,9 +18,9 @@ class Map extends Component {
       worldData: [],
       countryNames: [],
       countryHover: false,
-      activeCountry: "",
+      hoveredCountry: "",
       clicked: false,
-      clickedCountry: "",
+      activeCountry: "",
       zoom: 1,
       center: [0, 20]
     };
@@ -56,19 +58,77 @@ class Map extends Component {
   toggleHover(i) {
     this.setState({
       countryHover: !this.state.countryHover,
-      activeCountry: this.state.worldData[i].id
+      hoveredCountry: this.state.worldData[i].id
     });
   }
 
-  onClick(i) {
+  projection() {
+    return geoTimes()
+      .translate([800 / 2, 450 / 2])
+      .scale(160);
+  }
+
+  onClick(geography, i) {
+    const path = geoPath().projection(this.projection());
+    const centroid = this.projection().invert(path.centroid(geography));
     this.setState({
       clicked: true,
-      clickedCountry: this.state.countryNames[i].name,
-      zoom: this.state.zoom * 2
+      activeCountry: this.state.countryNames[i].name,
+      zoom: 3,
+      center: centroid
     });
+
+    if (this.state.activeCountry === this.state.countryNames[i].name) {
+      this.setState({
+        clicked: false,
+        activeCountry: "",
+        zoom: 1,
+        center: [0, 20]
+      });
+    }
   }
 
-  renderSimpleMaps() {
+  renderMap() {
+    const mapGeographies = (
+      <Geographies geography={this.state.worldData}>
+        {(geographies, projection) =>
+          geographies.map((geography, i) => (
+            <Geography
+              style={{
+                default: {
+                  fill: `rgba(200,50,56, ${1 *
+                    this.state.countryNames[i].data /
+                    10000})`,
+                  stroke: "black",
+                  strokeWidth: "0.5px",
+                  outline: "none"
+                },
+                hover: {
+                  fill: "rgba(200, 50, 56, 0.5)",
+                  stroke: "black",
+                  strokeWidth: "0.5px",
+                  outline: "none"
+                },
+                pressed: {
+                  fill: "tomato",
+                  stroke: "black",
+                  strokeWidth: "0.5px",
+                  outline: "none"
+                }
+              }}
+              key={geography + i}
+              geography={geography}
+              projection={projection}
+              className="countries"
+              onClick={() => this.onClick(geography, i)}
+              onMouseOver={() => this.toggleHover(i)}
+              onMouseLeave={() => this.toggleHover(i)}
+            />
+          ))
+        }
+      </Geographies>
+    );
+
     return (
       <article className="tile is-child notification is-paddingless">
         <ComposableMap
@@ -76,53 +136,15 @@ class Map extends Component {
           height={450}
           style={{
             width: "100%",
-            height: "auto"
+            height: "auto",
+            marginBottom: "-6px"
           }}
         >
-          <ZoomableGroup
-            center={this.state.center}
-            zoom={this.state.zoom}
-          >
-            <Geographies geography={this.state.worldData}>
-              {(geographies, projection) =>
-                geographies.map((geography, i) => (
-                  <Geography
-                    style={{
-                      default: {
-                        fill: `rgba(38,50,56, ${1 *
-                          this.state.countryNames[i].data /
-                          10000})`,
-                        stroke: "black",
-                        strokeWidth: "0.5px",
-                        outline: "none"
-                      },
-                      hover: {
-                        fill: "gray",
-                        stroke: "black",
-                        strokeWidth: "0.5px",
-                        outline: "none"
-                      },
-                      pressed: {
-                        fill: "tomato",
-                        stroke: "black",
-                        strokeWidth: "0.5px",
-                        outline: "none"
-                      }
-                    }}
-                    key={geography + i}
-                    geography={geography}
-                    projection={projection}
-                    className="countries"
-                    onClick={() => this.onClick(i)}
-                    onMouseOver={() => this.toggleHover(i)}
-                    onMouseLeave={() => this.toggleHover(i)}
-                  />
-                ))
-              }
-            </Geographies>
+          <ZoomableGroup center={this.state.center} zoom={this.state.zoom}>
+            {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
-        <Country country={this.state.clickedCountry} />
+        <Country country={this.state.activeCountry} />
       </article>
     );
   }
@@ -139,7 +161,7 @@ class Map extends Component {
     if (!this.state.countryNames.length) {
       return this.renderLoading();
     } else {
-      return this.renderSimpleMaps();
+      return this.renderMap();
     }
   }
 }
