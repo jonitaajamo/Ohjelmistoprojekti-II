@@ -88,8 +88,19 @@ class Map extends Component {
     }
   }
 
+  checkCountry() {
+    let country;
+    if (this.state.clicked) {
+      country = this.state.activeCountry;
+    } else if (this.state.countryHover) {
+      country = this.state.hoveredCountry;
+    } else {
+      country = "Select a country";
+    }
+    return country;
+  }
+
   renderMap() {
-    const country = this.state.clicked ? this.state.activeCountry : this.state.hoveredCountry;
     const mapGeographies = (
       <Geographies geography={this.state.worldData}>
         {(geographies, projection) =>
@@ -145,7 +156,7 @@ class Map extends Component {
             {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
-        <Country country={country} />
+        <Country country={this.checkCountry()} />
       </article>
     );
   }
