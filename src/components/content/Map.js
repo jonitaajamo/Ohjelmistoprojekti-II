@@ -22,7 +22,8 @@ class Map extends Component {
       clicked: false,
       activeCountry: "",
       zoom: 1,
-      center: [0, 20]
+      center: [0, 20],
+      disableOptimization: false
     };
   }
 
@@ -71,12 +72,20 @@ class Map extends Component {
   onClick(geography, i) {
     const path = geoPath().projection(this.projection());
     const centroid = this.projection().invert(path.centroid(geography));
-    this.setState({
-      clicked: true,
-      activeCountry: this.state.countryNames[i].name,
-      zoom: 3,
-      center: centroid
-    });
+    this.setState(
+      {
+        clicked: true,
+        activeCountry: this.state.countryNames[i].name,
+        zoom: 3,
+        center: centroid,
+        disableOptimization: true
+      },
+      () => {
+        this.setState({
+          disableOptimization: false
+        });
+      }
+    );
 
     if (this.state.activeCountry === this.state.countryNames[i].name) {
       this.setState({
@@ -102,7 +111,10 @@ class Map extends Component {
 
   renderMap() {
     const mapGeographies = (
-      <Geographies geography={this.state.worldData}>
+      <Geographies
+        disableOptimization={this.state.disableOptimization}
+        geography={this.state.worldData}
+      >
         {(geographies, projection) =>
           geographies.map((geography, i) => (
             <Geography
@@ -111,20 +123,44 @@ class Map extends Component {
                   fill: `rgba(200,50,56, ${1 *
                     this.state.countryNames[i].data /
                     10000})`,
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  stroke:
+                    this.state.clicked &&
+                    this.state.activeCountry === this.state.countryNames[i].name
+                      ? "tomato"
+                      : "black",
+                  strokeWidth:
+                    this.state.clicked &&
+                    this.state.activeCountry === this.state.countryNames[i].name
+                      ? "2px"
+                      : "0.5px",
                   outline: "none"
                 },
                 hover: {
                   fill: "rgba(200, 50, 56, 0.5)",
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  stroke:
+                    this.state.clicked &&
+                    this.state.activeCountry === this.state.countryNames[i].name
+                      ? "tomato"
+                      : "black",
+                  strokeWidth:
+                    this.state.clicked &&
+                    this.state.activeCountry === this.state.countryNames[i].name
+                      ? "2px"
+                      : "0.5px",
                   outline: "none"
                 },
                 pressed: {
                   fill: "tomato",
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  stroke:
+                    this.state.clicked &&
+                    this.state.activeCountry === this.state.countryNames[i].name
+                      ? "tomato"
+                      : "black",
+                  strokeWidth:
+                    this.state.clicked &&
+                    this.state.activeCountry === this.state.countryNames[i].name
+                      ? "2px"
+                      : "0.5px",
                   outline: "none"
                 }
               }}
