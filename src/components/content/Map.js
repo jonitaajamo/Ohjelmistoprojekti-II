@@ -58,7 +58,7 @@ class Map extends Component {
   toggleHover(i) {
     this.setState({
       countryHover: !this.state.countryHover,
-      hoveredCountry: this.state.worldData[i].id
+      hoveredCountry: this.state.countryNames[i].name
     });
   }
 
@@ -89,6 +89,7 @@ class Map extends Component {
   }
 
   renderMap() {
+    const country = this.state.clicked ? this.state.activeCountry : this.state.hoveredCountry;
     const mapGeographies = (
       <Geographies geography={this.state.worldData}>
         {(geographies, projection) =>
@@ -144,7 +145,7 @@ class Map extends Component {
             {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
-        <Country country={this.state.activeCountry} />
+        <Country country={country} />
       </article>
     );
   }
