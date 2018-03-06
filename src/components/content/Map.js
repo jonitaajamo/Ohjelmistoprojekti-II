@@ -140,9 +140,6 @@ class Map extends Component {
     }
     return weights;
   }
-
-  renderMap() {
-    const weights = this.setWeights();
     
   zoomOut() {
     this.setState(
@@ -162,6 +159,7 @@ class Map extends Component {
   }
 
   renderMap() {
+    const weights = this.setWeights();
     const mapGeographies = (
       <Geographies
         disableOptimization={this.state.disableOptimization}
@@ -225,9 +223,8 @@ class Map extends Component {
           </ZoomableGroup>
         </ComposableMap>
         <button
-          style={margin: "10px"}
+          style={{margin: "10px"}}
           className="button"
-          style={buttonStyle}
           onClick={() => this.zoomOut()}
         >
           Zoom out
