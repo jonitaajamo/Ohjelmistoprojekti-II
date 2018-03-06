@@ -17,6 +17,7 @@ class Map extends Component {
     this.state = {
       worldData: [],
       countryNames: [],
+      weightData: [],
       countryHover: false,
       hoveredCountry: "",
       clicked: false,
@@ -51,6 +52,17 @@ class Map extends Component {
           countryNames: names.countries.sort((a, b) => {
             return a.id - b.id;
           })
+        })
+      )
+      .catch(err => console.error(err));
+
+    fetch(
+      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/getGeographicalWeights-mock.json"
+    )
+      .then(response => response.json())
+      .then(weights =>
+        this.setState({
+          weightData: weights.monthlyWeights
         })
       )
       .catch(err => console.error(err));
@@ -109,6 +121,29 @@ class Map extends Component {
     return country;
   }
 
+  setWeights() {
+    const weights = [];
+    const assetClasses = this.state.weightData.length
+      ? this.state.weightData[0].assetClasses[0].weights
+      : [];
+    for (let i = 0; i < this.state.countryNames.length; i++) {
+      for (let j = 0; j < assetClasses.length; j++) {
+        let id = assetClasses[j].countryId;
+        let weight = assetClasses[j].weight
+        if (this.state.countryNames[i].id == id) {
+          weights.push(weight);
+        }
+      }
+      if (!weights[i]) {
+        weights.push(0);
+      }
+    }
+    return weights;
+  }
+
+  renderMap() {
+    const weights = this.setWeights();
+    
   zoomOut() {
     this.setState(
       {
@@ -127,10 +162,6 @@ class Map extends Component {
   }
 
   renderMap() {
-    const buttonStyle = {
-      margin: "10px",
-    };
-
     const mapGeographies = (
       <Geographies
         disableOptimization={this.state.disableOptimization}
@@ -145,11 +176,9 @@ class Map extends Component {
                     this.state.clicked &&
                     this.state.activeCountry === this.state.countryNames[i].name
                       ? "steelblue"
-                      : this.state.countryNames[i].data === 10
+                      : weights[i] === 0
                         ? "#fcfcfc"
-                        : `rgba(200,50,56, ${1 *
-                            this.state.countryNames[i].data /
-                            10000})`,
+                        : `rgba(200,50,56, ${weights[i] * 2})`,
                   stroke: "black",
                   strokeWidth: "0.5px",
                   outline: "none"
@@ -196,6 +225,7 @@ class Map extends Component {
           </ZoomableGroup>
         </ComposableMap>
         <button
+          style={margin: "10px"}
           className="button"
           style={buttonStyle}
           onClick={() => this.zoomOut()}
