@@ -109,7 +109,28 @@ class Map extends Component {
     return country;
   }
 
+  zoomOut() {
+    this.setState(
+      {
+        clicked: false,
+        zoom: 1,
+        center: [0, 20],
+        activeCountry: "",
+        disableOptimization: true
+      },
+      () => {
+        this.setState({
+          disableOptimization: false
+        });
+      }
+    );
+  }
+
   renderMap() {
+    const buttonStyle = {
+      margin: "10px",
+    };
+
     const mapGeographies = (
       <Geographies
         disableOptimization={this.state.disableOptimization}
@@ -167,13 +188,20 @@ class Map extends Component {
           style={{
             width: "100%",
             height: "auto",
-            marginBottom: "-6px"
+            marginBottom: "-62px"
           }}
         >
           <ZoomableGroup center={this.state.center} zoom={this.state.zoom}>
             {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
+        <button
+          className="button"
+          style={buttonStyle}
+          onClick={() => this.zoomOut()}
+        >
+          Zoom out
+        </button>
         <Country country={this.checkCountry()} />
       </article>
     );
