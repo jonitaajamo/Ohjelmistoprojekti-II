@@ -130,7 +130,7 @@ class Map extends Component {
       for (let j = 0; j < assetClasses.length; j++) {
         let id = assetClasses[j].countryId;
         let weight = assetClasses[j].weight
-        if (this.state.countryNames[i].id == id) {
+        if (this.state.countryNames[i].id === JSON.stringify(id)) {
           weights.push(weight);
         }
       }
