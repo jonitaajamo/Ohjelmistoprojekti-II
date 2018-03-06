@@ -140,7 +140,7 @@ class Map extends Component {
     }
     return weights;
   }
-    
+  
   zoomOutOfGeography() {
     this.setState(
       {
