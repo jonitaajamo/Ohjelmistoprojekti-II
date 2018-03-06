@@ -120,47 +120,29 @@ class Map extends Component {
             <Geography
               style={{
                 default: {
-                  fill: `rgba(200,50,56, ${1 *
-                    this.state.countryNames[i].data /
-                    10000})`,
-                  stroke:
+                  fill:
                     this.state.clicked &&
                     this.state.activeCountry === this.state.countryNames[i].name
-                      ? "tomato"
-                      : "black",
-                  strokeWidth:
-                    this.state.clicked &&
-                    this.state.activeCountry === this.state.countryNames[i].name
-                      ? "2px"
-                      : "0.5px",
+                      ? "steelblue"
+                      : this.state.countryNames[i].data === 10
+                        ? "#fcfcfc"
+                        : `rgba(200,50,56, ${1 *
+                            this.state.countryNames[i].data /
+                            10000})`,
+                  stroke: "black",
+                  strokeWidth: "0.5px",
                   outline: "none"
                 },
                 hover: {
                   fill: "rgba(200, 50, 56, 0.5)",
-                  stroke:
-                    this.state.clicked &&
-                    this.state.activeCountry === this.state.countryNames[i].name
-                      ? "tomato"
-                      : "black",
-                  strokeWidth:
-                    this.state.clicked &&
-                    this.state.activeCountry === this.state.countryNames[i].name
-                      ? "2px"
-                      : "0.5px",
+                  stroke: "black",
+                  strokeWidth: "0.5px",
                   outline: "none"
                 },
                 pressed: {
                   fill: "tomato",
-                  stroke:
-                    this.state.clicked &&
-                    this.state.activeCountry === this.state.countryNames[i].name
-                      ? "tomato"
-                      : "black",
-                  strokeWidth:
-                    this.state.clicked &&
-                    this.state.activeCountry === this.state.countryNames[i].name
-                      ? "2px"
-                      : "0.5px",
+                  stroke: "black",
+                  strokeWidth: "0.5px",
                   outline: "none"
                 }
               }}
