@@ -81,7 +81,7 @@ class Map extends Component {
       .scale(160);
   }
 
-  onClick(geography, i) {
+  onGeographyClick(geography, i) {
     const path = geoPath().projection(this.projection());
     const centroid = this.projection().invert(path.centroid(geography));
     this.setState(
@@ -109,7 +109,7 @@ class Map extends Component {
     }
   }
 
-  checkCountry() {
+  checkHoveredCountry() {
     let country;
     if (this.state.clicked) {
       country = this.state.activeCountry;
@@ -121,7 +121,7 @@ class Map extends Component {
     return country;
   }
 
-  setWeights() {
+  setWeightValuesForHeatmap() {
     const weights = [];
     const assetClasses = this.state.weightData.length
       ? this.state.weightData[0].assetClasses[0].weights
@@ -141,7 +141,7 @@ class Map extends Component {
     return weights;
   }
     
-  zoomOut() {
+  zoomOutOfGeography() {
     this.setState(
       {
         clicked: false,
@@ -159,7 +159,7 @@ class Map extends Component {
   }
 
   renderMap() {
-    const weights = this.setWeights();
+    const weights = this.setWeightValuesForHeatmap();
     const mapGeographies = (
       <Geographies
         disableOptimization={this.state.disableOptimization}
@@ -198,7 +198,7 @@ class Map extends Component {
               geography={geography}
               projection={projection}
               className="countries"
-              onClick={() => this.onClick(geography, i)}
+              onClick={() => this.onGeographyClick(geography, i)}
               onMouseOver={() => this.toggleHover(i)}
               onMouseLeave={() => this.toggleHover(i)}
             />
@@ -225,11 +225,11 @@ class Map extends Component {
         <button
           style={{margin: "10px"}}
           className="button"
-          onClick={() => this.zoomOut()}
+          onClick={() => this.zoomOutOfGeography()}
         >
           Zoom out
         </button>
-        <Country country={this.checkCountry()} />
+        <Country country={this.checkHoveredCountry()} />
       </article>
     );
   }
