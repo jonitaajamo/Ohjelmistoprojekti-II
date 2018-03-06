@@ -7,60 +7,60 @@
         {
           "class": "all",
           "weights": [
-            {"countryId": 1, "weight": 0.7, "marketValue": 14000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 4000000},
-            {"countryId": 3, "weight": 0.05, "marketValue": 1000000},
-            {"countryId": 4, "weight": 0.05, "marketValue": 1000000}
+            {"countryId": 840, "weight": 0.7, "marketValue": 14000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 4000000},
+            {"countryId": 826, "weight": 0.05, "marketValue": 1000000},
+            {"countryId": 643, "weight": 0.05, "marketValue": 1000000}
           ]
         },
         {
           "class": "equity",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 3000000},
-            {"countryId": 2, "weight": 0.9, "marketValue": 27000000}
+            {"countryId": 840, "weight": 0.1, "marketValue": 3000000},
+            {"countryId": 246, "weight": 0.9, "marketValue": 27000000}
           ]
         },
         {
           "class": "bond",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 2000000},
-            {"countryId": 2, "weight": 0.9, "marketValue": 18000000}
+            {"countryId": 840, "weight": 0.1, "marketValue": 2000000},
+            {"countryId": 246, "weight": 0.9, "marketValue": 18000000}
           ]
         },
         {
           "class": "alternative",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 5000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 10000000},
-            {"countryId": 3, "weight": 0.3, "marketValue": 15000000},
-            {"countryId": 4, "weight": 0.4, "marketValue": 20000000}  
+            {"countryId": 840, "weight": 0.1, "marketValue": 5000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 10000000},
+            {"countryId": 826, "weight": 0.3, "marketValue": 15000000},
+            {"countryId": 643, "weight": 0.4, "marketValue": 20000000}  
           ]
         },
         {
           "class": "property",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 3, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 4, "weight": 0.4, "marketValue": 24000000}
+            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
+            {"countryId": 826, "weight": 0.3, "marketValue": 18000000},
+            {"countryId": 643, "weight": 0.4, "marketValue": 24000000}
           ]
         },
         {
           "class": "cash",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 3, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 4, "weight": 0.4, "marketValue": 24000000}
+            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
+            {"countryId": 826, "weight": 0.3, "marketValue": 18000000},
+            {"countryId": 643, "weight": 0.4, "marketValue": 24000000}
           ]
         },
         {
           "class": "unknown",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 3, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 4, "weight": 0.4, "marketValue": 24000000}
+            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
+            {"countryId": 826, "weight": 0.3, "marketValue": 18000000},
+            {"countryId": 643, "weight": 0.4, "marketValue": 24000000}
           ]
         }
       ]
@@ -71,60 +71,60 @@
         {
           "class": "all",
           "weights": [
-            {"countryId": 1, "weight": 0.7, "marketValue": 14000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 4000000},
-            {"countryId": 3, "weight": 0.1, "marketValue": 2000000},
-            {"countryId": 4, "weight": 0, "marketValue": 0}
+            {"countryId": 840, "weight": 0.7, "marketValue": 14000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 4000000},
+            {"countryId": 826, "weight": 0.1, "marketValue": 2000000},
+            {"countryId": 643, "weight": 0, "marketValue": 0}
           ]
         },
         {
           "class": "equity",
           "weights": [
-            {"countryId": 1, "weight": 0.2, "marketValue": 6000000},
-            {"countryId": 2, "weight": 0.8, "marketValue": 24000000}
+            {"countryId": 840, "weight": 0.2, "marketValue": 6000000},
+            {"countryId": 246, "weight": 0.8, "marketValue": 24000000}
           ]
         },
         {
           "class": "bond",
           "weights": [
-            {"countryId": 1, "weight": 0.3, "marketValue": 3000000},
-            {"countryId": 2, "weight": 0.7, "marketValue": 7000000}
+            {"countryId": 840, "weight": 0.3, "marketValue": 3000000},
+            {"countryId": 246, "weight": 0.7, "marketValue": 7000000}
           ]
         },
         {
           "class": "alternative",
           "weights": [
-            {"countryId": 4, "weight": 0.1, "marketValue": 5000000},
-            {"countryId": 3, "weight": 0.2, "marketValue": 10000000},
-            {"countryId": 2, "weight": 0.3, "marketValue": 15000000},
-            {"countryId": 1, "weight": 0.4, "marketValue": 20000000}
+            {"countryId": 643, "weight": 0.1, "marketValue": 5000000},
+            {"countryId": 826, "weight": 0.2, "marketValue": 10000000},
+            {"countryId": 246, "weight": 0.3, "marketValue": 15000000},
+            {"countryId": 840, "weight": 0.4, "marketValue": 20000000}
           ]
         },
         {
           "class": "property",
           "weights": [
-            {"countryId": 4, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 3, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 2, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 1, "weight": 0.4, "marketValue": 24000000}
+            {"countryId": 643, "weight": 0.1, "marketValue": 6000000},
+            {"countryId": 826, "weight": 0.2, "marketValue": 12000000},
+            {"countryId": 246, "weight": 0.3, "marketValue": 18000000},
+            {"countryId": 840, "weight": 0.4, "marketValue": 24000000}
           ]
         },
         {
           "class": "cash",
           "weights": [
-            {"countryId": 2, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 1, "weight": 0.2, "marketValue": 12000000},
+            {"countryId": 246, "weight": 0.1, "marketValue": 6000000},
+            {"countryId": 840, "weight": 0.2, "marketValue": 12000000},
             {"countryId": 4, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 3, "weight": 0.4, "marketValue": 24000000}
+            {"countryId": 826, "weight": 0.4, "marketValue": 24000000}
           ]
         },
         {
           "class": "unknown",
           "weights": [
-            {"countryId": 1, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 2, "weight": 0.2, "marketValue": 12000000},
+            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
+            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
             {"countryId": 4, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 3, "weight": 0.4, "marketValue": 24000000} 
+            {"countryId": 826, "weight": 0.4, "marketValue": 24000000} 
           ]
         }
       ]
