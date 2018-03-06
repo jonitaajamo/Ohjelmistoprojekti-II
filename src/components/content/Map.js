@@ -243,7 +243,7 @@ class Map extends Component {
   }
 
   render() {
-    if (!this.state.countryNames.length) {
+    if (!this.state.weightData.length) {
       return this.renderLoading();
     } else {
       return this.renderMap();
