@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display country name 1`] = `
+<article
+  className="tile is-child notification is-dark"
+  style={
+    Object {
+      "opacity": 0.7,
+    }
+  }
+>
+  <div
+    className="content"
+  >
+    <p
+      className="title"
+    >
+      Finland
+    </p>
+  </div>
+</article>
+`;
