@@ -15,15 +15,15 @@ class Map extends Component {
   constructor() {
     super();
     this.state = {
-      worldData: [],
-      countryNames: [],
-      weightData: [],
-      countryHover: false,
-      hoveredCountry: "",
-      clicked: false,
-      activeCountry: "",
-      zoom: 1,
-      center: [0, 20],
+      geographyBorders: [],
+      geographyNames: [],
+      geographicalWeightData: [],
+      isGeographyHovered: false,
+      hoveredGeographyName: "",
+      isGeographyClicked: false,
+      clickedGeographyName: "",
+      mapZoomValue: 1,
+      mapCenter: [0, 20],
       disableOptimization: false
     };
   }
@@ -33,7 +33,7 @@ class Map extends Component {
       .then(response => response.json())
       .then(worldData =>
         this.setState({
-          worldData: feature(
+          geographyBorders: feature(
             worldData,
             worldData.objects.countries
           ).features.sort((a, b) => {
@@ -49,7 +49,7 @@ class Map extends Component {
       .then(response => response.json())
       .then(names =>
         this.setState({
-          countryNames: names.countries.sort((a, b) => {
+          geographyNames: names.countries.sort((a, b) => {
             return a.id - b.id;
           })
         })
@@ -62,7 +62,7 @@ class Map extends Component {
       .then(response => response.json())
       .then(weights =>
         this.setState({
-          weightData: weights.monthlyWeights
+          geographicalWeightData: weights.monthlyWeights
         })
       )
       .catch(err => console.error(err));
@@ -70,26 +70,26 @@ class Map extends Component {
 
   toggleHover(i) {
     this.setState({
-      countryHover: !this.state.countryHover,
-      hoveredCountry: this.state.countryNames[i].name
+      isGeographyHovered: !this.state.isGeographyHovered,
+      hoveredGeographyName: this.state.geographyNames[i].name
     });
   }
 
-  projection() {
+  mapProjection() {
     return geoTimes()
       .translate([800 / 2, 450 / 2])
       .scale(160);
   }
 
   onGeographyClick(geography, i) {
-    const path = geoPath().projection(this.projection());
-    const centroid = this.projection().invert(path.centroid(geography));
+    const path = geoPath().projection(this.mapProjection());
+    const centroid = this.mapProjection().invert(path.centroid(geography));
     this.setState(
       {
-        clicked: true,
-        activeCountry: this.state.countryNames[i].name,
-        zoom: 3,
-        center: centroid,
+        isGeographyClicked: true,
+        clickedGeographyName: this.state.geographyNames[i].name,
+        mapZoomValue: 3,
+        mapCenter: centroid,
         disableOptimization: true
       },
       () => {
@@ -99,55 +99,55 @@ class Map extends Component {
       }
     );
 
-    if (this.state.activeCountry === this.state.countryNames[i].name) {
+    if (this.state.clickedGeographyName === this.state.geographyNames[i].name) {
       this.setState({
-        clicked: false,
-        activeCountry: "",
-        zoom: 1,
-        center: [0, 20]
+        isGeographyClicked: false,
+        clickedGeographyName: "",
+        mapZoomValue: 1,
+        mapCenter: [0, 20]
       });
     }
   }
 
-  checkHoveredCountry() {
-    let country;
-    if (this.state.clicked) {
-      country = this.state.activeCountry;
-    } else if (this.state.countryHover) {
-      country = this.state.hoveredCountry;
+  checkGeographyName() {
+    let geography;
+    if (this.state.isGeographyClicked) {
+      geography = this.state.clickedGeographyName;
+    } else if (this.state.isGeographyHovered) {
+      geography = this.state.hoveredGeographyName;
     } else {
-      country = "Select a country";
+      geography = "Select a country";
     }
-    return country;
+    return geography;
   }
 
   setWeightValuesForHeatmap() {
-    const weights = [];
-    const assetClasses = this.state.weightData.length
-      ? this.state.weightData[0].assetClasses[0].weights
+    const weightDataForMap = [];
+    const assetClasses = this.state.geographicalWeightData.length
+      ? this.state.geographicalWeightData[0].assetClasses[0].weights
       : [];
-    for (let i = 0; i < this.state.countryNames.length; i++) {
+    for (let i = 0; i < this.state.geographyNames.length; i++) {
       for (let j = 0; j < assetClasses.length; j++) {
         let id = assetClasses[j].countryId;
         let weight = assetClasses[j].weight
-        if (this.state.countryNames[i].id === JSON.stringify(id)) {
-          weights.push(weight);
+        if (this.state.geographyNames[i].id === JSON.stringify(id)) {
+          weightDataForMap.push(weight);
         }
       }
-      if (!weights[i]) {
-        weights.push(0);
+      if (!weightDataForMap[i]) {
+        weightDataForMap.push(0);
       }
     }
-    return weights;
+    return weightDataForMap;
   }
   
   zoomOutOfGeography() {
     this.setState(
       {
-        clicked: false,
-        zoom: 1,
-        center: [0, 20],
-        activeCountry: "",
+        isGeographyClicked: false,
+        mapZoomValue: 1,
+        mapCenter: [0, 20],
+        clickedGeographyName: "",
         disableOptimization: true
       },
       () => {
@@ -159,11 +159,11 @@ class Map extends Component {
   }
 
   renderMap() {
-    const weights = this.setWeightValuesForHeatmap();
+    const weightData = this.setWeightValuesForHeatmap();
     const mapGeographies = (
       <Geographies
         disableOptimization={this.state.disableOptimization}
-        geography={this.state.worldData}
+        geography={this.state.geographyBorders}
       >
         {(geographies, projection) =>
           geographies.map((geography, i) => (
@@ -171,12 +171,12 @@ class Map extends Component {
               style={{
                 default: {
                   fill:
-                    this.state.clicked &&
-                    this.state.activeCountry === this.state.countryNames[i].name
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName === this.state.geographyNames[i].name
                       ? "steelblue"
-                      : weights[i] === 0
+                      : weightData[i] === 0
                         ? "#fcfcfc"
-                        : `rgba(200,50,56, ${weights[i] * 2})`,
+                        : `rgba(200,50,56, ${weightData[i] * 2})`,
                   stroke: "black",
                   strokeWidth: "0.5px",
                   outline: "none"
@@ -218,7 +218,7 @@ class Map extends Component {
             marginBottom: "-62px"
           }}
         >
-          <ZoomableGroup center={this.state.center} zoom={this.state.zoom}>
+          <ZoomableGroup center={this.state.mapCenter} zoom={this.state.mapZoomValue}>
             {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
@@ -229,7 +229,7 @@ class Map extends Component {
         >
           Zoom out
         </button>
-        <Country country={this.checkHoveredCountry()} />
+        <Country country={this.checkGeographyName()} />
       </article>
     );
   }
@@ -243,7 +243,7 @@ class Map extends Component {
   }
 
   render() {
-    if (!this.state.weightData.length) {
+    if (!this.state.geographicalWeightData.length) {
       return this.renderLoading();
     } else {
       return this.renderMap();
