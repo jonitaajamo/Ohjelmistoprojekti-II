@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 import Country from "../components/content/Country";
-import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 
-it('should display country name', () => {
-  const component = renderer.create(
-    <Country country='Finland'/>
-  );
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+it("displays country name", () => {
+  const wrapper = shallow(<Country country="Finland" />);
+  expect(wrapper).toMatchSnapshot();
 });

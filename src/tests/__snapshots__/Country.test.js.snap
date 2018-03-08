@@ -1,22 +1,125 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should display country name 1`] = `
-<article
-  className="tile is-child notification is-dark"
-  style={
-    Object {
-      "opacity": 0.7,
-    }
-  }
+exports[`displays country name 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Country
+    country="Finland"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="content"
 >
-  <div
-    className="content"
-  >
-    <p
-      className="title"
-    >
-      Finland
-    </p>
-  </div>
-</article>
+        <p
+                className="title"
+        >
+                Finland
+        </p>
+</div>,
+      "className": "tile is-child notification is-dark",
+      "style": Object {
+        "opacity": 0.7,
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <p
+          className="title"
+>
+          Finland
+</p>,
+        "className": "content",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Finland",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "Finland",
+        "type": "p",
+      },
+      "type": "div",
+    },
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="content"
+>
+          <p
+                    className="title"
+          >
+                    Finland
+          </p>
+</div>,
+        "className": "tile is-child notification is-dark",
+        "style": Object {
+          "opacity": 0.7,
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p
+            className="title"
+>
+            Finland
+</p>,
+          "className": "content",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Finland",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "Finland",
+          "type": "p",
+        },
+        "type": "div",
+      },
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
 `;
