@@ -2,21 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
 import Map from "../components/content/Map";
-import { shallow, configure } from "enzyme";
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
+import { shallow } from "enzyme";
 
 describe("Map", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(<Map />, div);
+    ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("changes state when country is clicked", () => {
-    const mapComponent = shallow(<Map />);
-    mapComponent.setState({ clicked: true });
-    const status = mapComponent.state().clicked;
-    expect(status).toEqual(true);
+  it("initially renders Loading component", () => {
+    const wrapper = shallow(<Map />);
+    expect(wrapper.find("Loading").length).toEqual(1);
   });
 });
