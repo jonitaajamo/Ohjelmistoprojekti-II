@@ -1,12 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`displays country name 1`] = `
+exports[`Country renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Country
-    country="Finland"
-/>,
+  Symbol(enzyme.__unrendered__): <Country />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -25,7 +23,7 @@ ShallowWrapper {
         <p
                 className="title"
         >
-                Finland
+                Select a country
         </p>
 </div>,
       "className": "tile is-child notification is-dark",
@@ -42,7 +40,7 @@ ShallowWrapper {
         "children": <p
           className="title"
 >
-          Finland
+          Select a country
 </p>,
         "className": "content",
       },
@@ -52,11 +50,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Finland",
+          "children": "Select a country",
           "className": "title",
         },
         "ref": null,
-        "rendered": "Finland",
+        "rendered": "Select a country",
         "type": "p",
       },
       "type": "div",
@@ -75,7 +73,7 @@ ShallowWrapper {
           <p
                     className="title"
           >
-                    Finland
+                    Select a country
           </p>
 </div>,
         "className": "tile is-child notification is-dark",
@@ -92,7 +90,7 @@ ShallowWrapper {
           "children": <p
             className="title"
 >
-            Finland
+            Select a country
 </p>,
           "className": "content",
         },
@@ -102,11 +100,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Finland",
+            "children": "Select a country",
             "className": "title",
           },
           "ref": null,
-          "rendered": "Finland",
+          "rendered": "Select a country",
           "type": "p",
         },
         "type": "div",
