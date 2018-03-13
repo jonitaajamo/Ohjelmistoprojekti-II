@@ -12,12 +12,11 @@ import {
 } from "react-simple-maps";
 
 class Map extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       geographyBorders: [],
       geographyNames: [],
-      geographicalWeightData: [],
       isGeographyHovered: false,
       hoveredGeographyName: "",
       isGeographyClicked: false,
@@ -52,17 +51,6 @@ class Map extends Component {
           geographyNames: names.countries.sort((a, b) => {
             return a.id - b.id;
           })
-        })
-      )
-      .catch(err => console.error(err));
-
-    fetch(
-      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/getGeographicalWeights-mock.json"
-    )
-      .then(response => response.json())
-      .then(weights =>
-        this.setState({
-          geographicalWeightData: weights.monthlyWeights
         })
       )
       .catch(err => console.error(err));
@@ -123,13 +111,13 @@ class Map extends Component {
 
   setWeightValuesForHeatmap() {
     const weightDataForMap = [];
-    const assetClasses = this.state.geographicalWeightData.length
-      ? this.state.geographicalWeightData[0].assetClasses[0].weights
+    const assetClasses = this.props.geographicalWeightData.length
+      ? this.props.geographicalWeightData[0].assetClasses[0].weights
       : [];
     for (let i = 0; i < this.state.geographyNames.length; i++) {
       for (let j = 0; j < assetClasses.length; j++) {
         let id = assetClasses[j].countryId;
-        let weight = assetClasses[j].weight
+        let weight = assetClasses[j].weight;
         if (this.state.geographyNames[i].id === JSON.stringify(id)) {
           weightDataForMap.push(weight);
         }
@@ -243,7 +231,7 @@ class Map extends Component {
   }
 
   render() {
-    if (!this.state.geographyBorders.length) {
+    if (!this.props.geographicalWeightData.length) {
       return this.renderLoading();
     } else {
       return this.renderMap();

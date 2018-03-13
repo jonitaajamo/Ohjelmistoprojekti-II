@@ -5,9 +5,33 @@ import StockMarket from "./content/StockMarket";
 import Portfolio from "./content/Portfolio";
 import Timeline from "./content/Timeline";
 
-class Content extends Component {
+export default class Content extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      geographicalWeightData: []
+    };
+  }
+
+  fetchGeographicalWeightData() {
+    fetch(
+      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/getGeographicalWeights-mock.json"
+    )
+      .then(response => response.json())
+      .then(weights =>
+        this.setState({
+          geographicalWeightData: weights.monthlyWeights
+        })
+      )
+      .catch(err => console.error(err));
+  }
+
+  componentDidMount() {
+    this.fetchGeographicalWeightData();
+  }
+
   render() {
-    let contentStyle = {
+    const contentStyle = {
       width: "99%",
       margin: "auto"
     };
@@ -16,7 +40,7 @@ class Content extends Component {
       <div style={contentStyle} className="tile is-ancestor">
         <div className="tile is-vertical is-8">
           <div className="tile is-parent">
-            <Map />
+            <Map geographicalWeightData={this.state.geographicalWeightData} />
           </div>
           <div className="tile is-parent">
             <Timeline />
@@ -35,5 +59,3 @@ class Content extends Component {
     );
   }
 }
-
-export default Content;
