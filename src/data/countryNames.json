@@ -2,888 +2,711 @@
   "countries": [
     {
       "id": "-99",
-      "name": "Undefined",
-      "data": 10
+      "name": "Undefined"
     },
     {
       "id": "-99",
-      "name": "Undefined",
-      "data": 10
+      "name": "Undefined"
     },
     {
       "id": "-99",
-      "name": "Undefined",
-      "data": 10
+      "name": "Undefined"
     },
     {
       "id": "004",
-      "name": "Afghanistan",
-      "data": 10
+      "name": "Afghanistan"
     },
     {
       "id": "008",
-      "name": "Albania",
-      "data": 10
+      "name": "Albania"
     },
     {
       "id": "012",
-      "name": "Algeria",
-      "data": 10
+      "name": "Algeria"
     },
     {
       "id": "024",
-      "name": "Angola",
-      "data": 10
+      "name": "Angola"
     },
     {
       "id": "010",
-      "name": "Antarctica",
-      "data": 10
+      "name": "Antarctica"
     },
     {
       "id": "032",
-      "name": "Argentina",
-      "data": 10
+      "name": "Argentina"
     },
     {
       "id": "051",
-      "name": "Armenia",
-      "data": 10
+      "name": "Armenia"
     },
     {
       "id": "036",
-      "name": "Australia",
-      "data": 10
+      "name": "Australia"
     },
     {
       "id": "040",
-      "name": "Austria",
-      "data": 10
+      "name": "Austria"
     },
     {
       "id": "031",
-      "name": "Azerbaijan",
-      "data": 10
+      "name": "Azerbaijan"
     },
     {
       "id": "044",
-      "name": "Bahamas",
-      "data": 10
+      "name": "Bahamas"
     },
     {
       "id": "050",
-      "name": "Bangladesh",
-      "data": 10
+      "name": "Bangladesh"
     },
     {
       "id": "112",
-      "name": "Belarus",
-      "data": 10
+      "name": "Belarus"
     },
     {
       "id": "056",
-      "name": "Belgium",
-      "data": 10
+      "name": "Belgium"
     },
     {
       "id": "084",
-      "name": "Belize",
-      "data": 10
+      "name": "Belize"
     },
     {
       "id": "204",
-      "name": "Benin",
-      "data": 10
+      "name": "Benin"
     },
     {
       "id": "064",
-      "name": "Bhutan",
-      "data": 10
+      "name": "Bhutan"
     },
     {
       "id": "068",
-      "name": "Bolivia, Plurinational State of",
-      "data": 10
+      "name": "Bolivia, Plurinational State of"
     },
     {
       "id": "070",
-      "name": "Bosnia and Herzegovina",
-      "data": 10
+      "name": "Bosnia and Herzegovina"
     },
     {
       "id": "072",
-      "name": "Botswana",
-      "data": 10
+      "name": "Botswana"
     },
     {
       "id": "076",
-      "name": "Brazil",
-      "data": 1000
+      "name": "Brazil"
     },
     {
       "id": "096",
-      "name": "Brunei Darussalam",
-      "data": 10
+      "name": "Brunei Darussalam"
     },
     {
       "id": "100",
-      "name": "Bulgaria",
-      "data": 1034
+      "name": "Bulgaria"
     },
     {
       "id": "854",
-      "name": "Burkina Faso",
-      "data": 10
+      "name": "Burkina Faso"
     },
     {
       "id": "108",
-      "name": "Burundi",
-      "data": 10
+      "name": "Burundi"
     },
     {
       "id": "116",
-      "name": "Cambodia",
-      "data": 10
+      "name": "Cambodia"
     },
     {
       "id": "120",
-      "name": "Cameroon",
-      "data": 10
+      "name": "Cameroon"
     },
     {
       "id": "124",
-      "name": "Canada",
-      "data": 10125
+      "name": "Canada"
     },
     {
       "id": "140",
-      "name": "Central African Republic",
-      "data": 10
+      "name": "Central African Republic"
     },
     {
       "id": "148",
-      "name": "Chad",
-      "data": 10
+      "name": "Chad"
     },
     {
       "id": "152",
-      "name": "Chile",
-      "data": 10
+      "name": "Chile"
     },
     {
       "id": "156",
-      "name": "China",
-      "data": 1034
+      "name": "China"
     },
     {
       "id": "170",
-      "name": "Colombia",
-      "data": 10
+      "name": "Colombia"
     },
     {
       "id": "178",
-      "name": "Congo",
-      "data": 10
+      "name": "Congo"
     },
     {
       "id": "180",
-      "name": "Congo, the Democratic Republic of the",
-      "data": 10
+      "name": "Congo, the Democratic Republic of the"
     },
     {
       "id": "188",
-      "name": "Costa Rica",
-      "data": 10
+      "name": "Costa Rica"
     },
     {
       "id": "384",
-      "name": "Cote dIvoire",
-      "data": 10
+      "name": "Cote dIvoire"
     },
     {
       "id": "191",
-      "name": "Croatia",
-      "data": 10
+      "name": "Croatia"
     },
     {
       "id": "192",
-      "name": "Cuba",
-      "data": 10
+      "name": "Cuba"
     },
     {
       "id": "196",
-      "name": "Cyprus",
-      "data": 10
+      "name": "Cyprus"
     },
     {
       "id": "203",
-      "name": "Czech Republic",
-      "data": 10
+      "name": "Czech Republic"
     },
     {
       "id": "208",
-      "name": "Denmark",
-      "data": 10
+      "name": "Denmark"
     },
     {
       "id": "262",
-      "name": "Djibouti",
-      "data": 10
+      "name": "Djibouti"
     },
     {
       "id": "214",
-      "name": "Dominican Republic",
-      "data": 10
+      "name": "Dominican Republic"
     },
     {
       "id": "218",
-      "name": "Ecuador",
-      "data": 10
+      "name": "Ecuador"
     },
     {
       "id": "818",
-      "name": "Egypt",
-      "data": 10
+      "name": "Egypt"
     },
     {
       "id": "222",
-      "name": "El Salvador",
-      "data": 10
+      "name": "El Salvador"
     },
     {
       "id": "226",
-      "name": "Equatorial Guinea",
-      "data": 10
+      "name": "Equatorial Guinea"
     },
     {
       "id": "232",
-      "name": "Eritrea",
-      "data": 10
+      "name": "Eritrea"
     },
     {
       "id": "233",
-      "name": "Estonia",
-      "data": 10
+      "name": "Estonia"
     },
     {
       "id": "231",
-      "name": "Ethiopia",
-      "data": 10
+      "name": "Ethiopia"
     },
     {
       "id": "238",
-      "name": "Falkland Islands (Malvinas)",
-      "data": 10
+      "name": "Falkland Islands (Malvinas)"
     },
     {
       "id": "242",
-      "name": "Fiji",
-      "data": 10
+      "name": "Fiji"
     },
     {
       "id": "246",
-      "name": "Finland",
-      "data": 1010
+      "name": "Finland"
     },
     {
       "id": "250",
-      "name": "France",
-      "data": 10232
+      "name": "France"
     },
     {
       "id": "260",
-      "name": "French Southern Territories",
-      "data": 10
+      "name": "French Southern Territories"
     },
     {
       "id": "266",
-      "name": "Gabon",
-      "data": 10
+      "name": "Gabon"
     },
     {
       "id": "270",
-      "name": "Gambia",
-      "data": 10
+      "name": "Gambia"
     },
     {
       "id": "268",
-      "name": "Georgia",
-      "data": 10
+      "name": "Georgia"
     },
     {
       "id": "276",
-      "name": "Germany",
-      "data": 10
+      "name": "Germany"
     },
     {
       "id": "288",
-      "name": "Ghana",
-      "data": 10
+      "name": "Ghana"
     },
     {
       "id": "300",
-      "name": "Greece",
-      "data": 10
+      "name": "Greece"
     },
     {
       "id": "304",
-      "name": "Greenland",
-      "data": 10
+      "name": "Greenland"
     },
     {
       "id": "320",
-      "name": "Guatemala",
-      "data": 10
+      "name": "Guatemala"
     },
     {
       "id": "324",
-      "name": "Guinea",
-      "data": 10
+      "name": "Guinea"
     },
     {
       "id": "624",
-      "name": "Guinea-Bissau",
-      "data": 10
+      "name": "Guinea-Bissau"
     },
     {
       "id": "328",
-      "name": "Guyana",
-      "data": 10
+      "name": "Guyana"
     },
     {
       "id": "332",
-      "name": "Haiti",
-      "data": 10
+      "name": "Haiti"
     },
     {
       "id": "340",
-      "name": "Honduras",
-      "data": 10
+      "name": "Honduras"
     },
     {
       "id": "348",
-      "name": "Hungary",
-      "data": 10
+      "name": "Hungary"
     },
     {
       "id": "352",
-      "name": "Iceland",
-      "data": 10
+      "name": "Iceland"
     },
     {
       "id": "356",
-      "name": "India",
-      "data": 10
+      "name": "India"
     },
     {
       "id": "360",
-      "name": "Indonesia",
-      "data": 10
+      "name": "Indonesia"
     },
     {
       "id": "364",
-      "name": "Iran, Islamic Republic of",
-      "data": 10
+      "name": "Iran, Islamic Republic of"
     },
     {
       "id": "368",
-      "name": "Iraq",
-      "data": 10
+      "name": "Iraq"
     },
     {
       "id": "372",
-      "name": "Ireland",
-      "data": 10
+      "name": "Ireland"
     },
     {
       "id": "376",
-      "name": "Israel",
-      "data": 10
+      "name": "Israel"
     },
     {
       "id": "380",
-      "name": "Italy",
-      "data": 10
+      "name": "Italy"
     },
     {
       "id": "388",
-      "name": "Jamaica",
-      "data": 10
+      "name": "Jamaica"
     },
     {
       "id": "392",
-      "name": "Japan",
-      "data": 1012
+      "name": "Japan"
     },
     {
       "id": "400",
-      "name": "Jordan",
-      "data": 10
+      "name": "Jordan"
     },
     {
       "id": "398",
-      "name": "Kazakhstan",
-      "data": 10
+      "name": "Kazakhstan"
     },
     {
       "id": "404",
-      "name": "Kenya",
-      "data": 10
+      "name": "Kenya"
     },
     {
       "id": "408",
-      "name": "Korea, Democratic Peoples Republic of",
-      "data": 10
+      "name": "Korea, Democratic Peoples Republic of"
     },
     {
       "id": "410",
-      "name": "Korea, Republic of",
-      "data": 10
+      "name": "Korea, Republic of"
     },
     {
       "id": "414",
-      "name": "Kuwait",
-      "data": 10
+      "name": "Kuwait"
     },
     {
       "id": "417",
-      "name": "Kyrgyzstan",
-      "data": 10
+      "name": "Kyrgyzstan"
     },
     {
       "id": "418",
-      "name": "Lao Peoples Democratic Republic",
-      "data": 10
+      "name": "Lao Peoples Democratic Republic"
     },
     {
       "id": "428",
-      "name": "Latvia",
-      "data": 10
+      "name": "Latvia"
     },
     {
       "id": "422",
-      "name": "Lebanon",
-      "data": 10
+      "name": "Lebanon"
     },
     {
       "id": "426",
-      "name": "Lesotho",
-      "data": 10
+      "name": "Lesotho"
     },
     {
       "id": "430",
-      "name": "Liberia",
-      "data": 10
+      "name": "Liberia"
     },
     {
       "id": "434",
-      "name": "Libya",
-      "data": 10
+      "name": "Libya"
     },
     {
       "id": "440",
-      "name": "Lithuania",
-      "data": 10
+      "name": "Lithuania"
     },
     {
       "id": "442",
-      "name": "Luxembourg",
-      "data": 10
+      "name": "Luxembourg"
     },
     {
       "id": "807",
-      "name": "Macedonia, the former Yugoslav Republic of",
-      "data": 10
+      "name": "Macedonia, the former Yugoslav Republic of"
     },
     {
       "id": "450",
-      "name": "Madagascar",
-      "data": 10
+      "name": "Madagascar"
     },
     {
       "id": "454",
-      "name": "Malawi",
-      "data": 10
+      "name": "Malawi"
     },
     {
       "id": "458",
-      "name": "Malaysia",
-      "data": 10
+      "name": "Malaysia"
     },
     {
       "id": "466",
-      "name": "Mali",
-      "data": 10
+      "name": "Mali"
     },
     {
       "id": "478",
-      "name": "Mauritania",
-      "data": 10
+      "name": "Mauritania"
     },
     {
       "id": "484",
-      "name": "Mexico",
-      "data": 1011
+      "name": "Mexico"
     },
     {
       "id": "498",
-      "name": "Moldova, Republic of",
-      "data": 10
+      "name": "Moldova, Republic of"
     },
     {
       "id": "496",
-      "name": "Mongolia",
-      "data": 10
+      "name": "Mongolia"
     },
     {
       "id": "499",
-      "name": "Montenegro",
-      "data": 10
+      "name": "Montenegro"
     },
     {
       "id": "504",
-      "name": "Morocco",
-      "data": 10
+      "name": "Morocco"
     },
     {
       "id": "508",
-      "name": "Mozambique",
-      "data": 10
+      "name": "Mozambique"
     },
     {
       "id": "104",
-      "name": "Myanmar",
-      "data": 10
+      "name": "Myanmar"
     },
     {
       "id": "516",
-      "name": "Namibia",
-      "data": 10
+      "name": "Namibia"
     },
     {
       "id": "524",
-      "name": "Nepal",
-      "data": 10
+      "name": "Nepal"
     },
     {
       "id": "528",
-      "name": "Netherlands",
-      "data": 10
+      "name": "Netherlands"
     },
     {
       "id": "540",
-      "name": "New Caledonia",
-      "data": 10
+      "name": "New Caledonia"
     },
     {
       "id": "554",
-      "name": "New Zealand",
-      "data": 10
+      "name": "New Zealand"
     },
     {
       "id": "558",
-      "name": "Nicaragua",
-      "data": 10
+      "name": "Nicaragua"
     },
     {
       "id": "562",
-      "name": "Niger",
-      "data": 10
+      "name": "Niger"
     },
     {
       "id": "566",
-      "name": "Nigeria",
-      "data": 10
+      "name": "Nigeria"
     },
     {
       "id": "578",
-      "name": "Norway",
-      "data": 10
+      "name": "Norway"
     },
     {
       "id": "512",
-      "name": "Oman",
-      "data": 10
+      "name": "Oman"
     },
     {
       "id": "586",
-      "name": "Pakistan",
-      "data": 10
+      "name": "Pakistan"
     },
     {
       "id": "275",
-      "name": "Palestinian Territory, Occupied",
-      "data": 10
+      "name": "Palestinian Territory, Occupied"
     },
     {
       "id": "591",
-      "name": "Panama",
-      "data": 10
+      "name": "Panama"
     },
     {
       "id": "598",
-      "name": "Papua New Guinea",
-      "data": 10
+      "name": "Papua New Guinea"
     },
     {
       "id": "600",
-      "name": "Paraguay",
-      "data": 10
+      "name": "Paraguay"
     },
     {
       "id": "604",
-      "name": "Peru",
-      "data": 10
+      "name": "Peru"
     },
     {
       "id": "608",
-      "name": "Philippines",
-      "data": 10
+      "name": "Philippines"
     },
     {
       "id": "616",
-      "name": "Poland",
-      "data": 10
+      "name": "Poland"
     },
     {
       "id": "620",
-      "name": "Portugal",
-      "data": 10
+      "name": "Portugal"
     },
     {
       "id": "630",
-      "name": "Puerto Rico",
-      "data": 10
+      "name": "Puerto Rico"
     },
     {
       "id": "634",
-      "name": "Qatar",
-      "data": 10
+      "name": "Qatar"
     },
     {
       "id": "642",
-      "name": "Romania",
-      "data": 10
+      "name": "Romania"
     },
     {
       "id": "643",
-      "name": "Russian Federation",
-      "data": 1000
+      "name": "Russian Federation"
     },
     {
       "id": "646",
-      "name": "Rwanda",
-      "data": 10
+      "name": "Rwanda"
     },
     {
       "id": "682",
-      "name": "Saudi Arabia",
-      "data": 10
+      "name": "Saudi Arabia"
     },
     {
       "id": "686",
-      "name": "Senegal",
-      "data": 10
+      "name": "Senegal"
     },
     {
       "id": "688",
-      "name": "Serbia",
-      "data": 10
+      "name": "Serbia"
     },
     {
       "id": "694",
-      "name": "Sierra Leone",
-      "data": 10
+      "name": "Sierra Leone"
     },
     {
       "id": "703",
-      "name": "Slovakia",
-      "data": 10
+      "name": "Slovakia"
     },
     {
       "id": "705",
-      "name": "Slovenia",
-      "data": 10
+      "name": "Slovenia"
     },
     {
       "id": "090",
-      "name": "Solomon Islands",
-      "data": 10
+      "name": "Solomon Islands"
     },
     {
       "id": "706",
-      "name": "Somalia",
-      "data": 10
+      "name": "Somalia"
     },
     {
       "id": "710",
-      "name": "South Africa",
-      "data": 10
+      "name": "South Africa"
     },
     {
       "id": "728",
-      "name": "South Sudan",
-      "data": 10
+      "name": "South Sudan"
     },
     {
       "id": "724",
-      "name": "Spain",
-      "data": 10
+      "name": "Spain"
     },
     {
       "id": "144",
-      "name": "Sri Lanka",
-      "data": 10
+      "name": "Sri Lanka"
     },
     {
       "id": "729",
-      "name": "Sudan",
-      "data": 10
+      "name": "Sudan"
     },
     {
       "id": "740",
-      "name": "Suriname",
-      "data": 10
+      "name": "Suriname"
     },
     {
       "id": "748",
-      "name": "Swaziland",
-      "data": 10
+      "name": "Swaziland"
     },
     {
       "id": "752",
-      "name": "Sweden",
-      "data": 1013
+      "name": "Sweden"
     },
     {
       "id": "756",
-      "name": "Switzerland",
-      "data": 10
+      "name": "Switzerland"
     },
     {
       "id": "760",
-      "name": "Syrian Arab Republic",
-      "data": 10
+      "name": "Syrian Arab Republic"
     },
     {
       "id": "158",
-      "name": "Taiwan, Province of China",
-      "data": 10
+      "name": "Taiwan, Province of China"
     },
     {
       "id": "762",
-      "name": "Tajikistan",
-      "data": 10
+      "name": "Tajikistan"
     },
     {
       "id": "834",
-      "name": "Tanzania, United Republic of",
-      "data": 10
+      "name": "Tanzania, United Republic of"
     },
     {
       "id": "764",
-      "name": "Thailand",
-      "data": 10
+      "name": "Thailand"
     },
     {
       "id": "626",
-      "name": "Timor-Leste",
-      "data": 10
+      "name": "Timor-Leste"
     },
     {
       "id": "768",
-      "name": "Togo",
-      "data": 10
+      "name": "Togo"
     },
     {
       "id": "780",
-      "name": "Trinidad and Tobago",
-      "data": 10
+      "name": "Trinidad and Tobago"
     },
     {
       "id": "788",
-      "name": "Tunisia",
-      "data": 10
+      "name": "Tunisia"
     },
     {
       "id": "792",
-      "name": "Turkey",
-      "data": 10
+      "name": "Turkey"
     },
     {
       "id": "795",
-      "name": "Turkmenistan",
-      "data": 10
+      "name": "Turkmenistan"
     },
     {
       "id": "800",
-      "name": "Uganda",
-      "data": 10
+      "name": "Uganda"
     },
     {
       "id": "804",
-      "name": "Ukraine",
-      "data": 10
+      "name": "Ukraine"
     },
     {
       "id": "784",
-      "name": "United Arab Emirates",
-      "data": 10
+      "name": "United Arab Emirates"
     },
     {
       "id": "826",
-      "name": "United Kingdom",
-      "data": 299
+      "name": "United Kingdom"
     },
     {
       "id": "840",
-      "name": "United States",
-      "data": 10000
+      "name": "United States"
     },
     {
       "id": "858",
-      "name": "Uruguay",
-      "data": 10
+      "name": "Uruguay"
     },
     {
       "id": "860",
-      "name": "Uzbekistan",
-      "data": 10
+      "name": "Uzbekistan"
     },
     {
       "id": "548",
-      "name": "Vanuatu",
-      "data": 10
+      "name": "Vanuatu"
     },
     {
       "id": "862",
-      "name": "Venezuela, Bolivarian Republic of",
-      "data": 14
+      "name": "Venezuela, Bolivarian Republic of"
     },
     {
       "id": "704",
-      "name": "Viet Nam",
-      "data": 22
+      "name": "Vietnam"
     },
     {
       "id": "732",
-      "name": "Western Sahara",
-      "data": 10
+      "name": "Western Sahara"
     },
     {
       "id": "887",
-      "name": "Yemen",
-      "data": 10
+      "name": "Yemen"
     },
     {
       "id": "894",
-      "name": "Zambia",
-      "data": 10
+      "name": "Zambia"
     },
     {
       "id": "716",
-      "name": "Zimbabwe",
-      "data": 10
+      "name": "Zimbabwe"
     }
   ]
 }
