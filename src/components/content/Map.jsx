@@ -243,7 +243,7 @@ class Map extends Component {
   }
 
   render() {
-    if (!this.state.geographicalWeightData.length) {
+    if (!this.state.geographyBorders.length) {
       return this.renderLoading();
     } else {
       return this.renderMap();
