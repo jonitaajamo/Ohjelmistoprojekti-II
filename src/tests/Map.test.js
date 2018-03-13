@@ -33,7 +33,6 @@ describe("Map", () => {
 
   it("renders map when data is loaded", () => {
     const wrapper = shallow(<Map geographicalWeightData={expected} />);
-    console.log(wrapper.debug());
     expect(wrapper.find("ComposableMap").length).toEqual(1);
   });
 
@@ -42,7 +41,6 @@ describe("Map", () => {
     wrapper.instance().onGeographyClick = jest.fn();
     wrapper.setState({ geographyBorders: [1, 2]});
     wrapper.update();
-    console.log(wrapper.debug())
     wrapper
       .find("Geography")
       .at(0)
