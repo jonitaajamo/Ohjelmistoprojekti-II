@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Map from "./content/Map";
-import Currency from "./content/Currency";
+import Assets from "./content/Assets";
 import Portfolio from "./content/Portfolio";
 import Timeline from "./content/Timeline";
 
@@ -50,7 +50,7 @@ export default class Content extends Component {
         </div>
         <div className="tile">
           <div className="tile is-parent is-vertical">
-            <Currency />
+            <Assets />
             
           </div>
         </div>
