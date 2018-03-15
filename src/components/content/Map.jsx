@@ -148,9 +148,7 @@ class Map extends Component {
   }
 
   touchWarning(event) {
-    console.log("tulostetaan event ", event);
     if (event.touches.length === 1) {
-      console.log("ifissä");
       this.setState({
         touchError: true
       });
