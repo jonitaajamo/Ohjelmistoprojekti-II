@@ -4,7 +4,7 @@ import Map from "../components/content/Map";
 import { shallow, mount } from "enzyme";
 
 describe("Map", () => {
-  const expected = [
+  const mockData = [
     {
       month: "2012-01",
       assetClasses: [
@@ -21,6 +21,11 @@ describe("Map", () => {
     }
   ];
 
+  const initialState = {
+    geographyBorders: [1, 2],
+    geographyNames: ["Finland", "Sweden"]
+  };
+
   it("renders without crashing", () => {
     const wrapper = shallow(<Map geographicalWeightData={[]} />);
     expect(wrapper).toMatchSnapshot();
@@ -32,26 +37,42 @@ describe("Map", () => {
   });
 
   it("renders map when data is loaded", () => {
-    const wrapper = shallow(<Map geographicalWeightData={expected} />);
+    const wrapper = shallow(<Map geographicalWeightData={mockData} />);
     expect(wrapper.find("ComposableMap").length).toEqual(1);
   });
 
   it("fires event handler when geography is clicked", () => {
-    const wrapper = mount(<Map geographicalWeightData={expected} />);
+    const wrapper = mount(<Map geographicalWeightData={mockData} />);
     wrapper.instance().onGeographyClick = jest.fn();
-    wrapper.setState({ geographyBorders: [1, 2]});
+    wrapper.setState(initialState);
     wrapper.update();
     wrapper
       .find("Geography")
       .at(0)
       .simulate("click");
-    expect(wrapper.instance().onGeographyClick).toHaveBeenCalled();
+    expect(wrapper.instance().onGeographyClick).toHaveBeenCalledTimes(1);
+  });
+
+  it("zooms in when geography is clicked", () => {
+    const wrapper = mount(<Map geographicalWeightData={mockData} />);
+    wrapper.setState(initialState);
+    wrapper
+      .find("Geography")
+      .at(0)
+      .simulate("click");
+    expect(wrapper.state().mapZoomValue).toBe(3);
   });
 
   it("zooms out when button is clicked", () => {
-    const wrapper = shallow(<Map geographicalWeightData={expected} />);
+    const wrapper = shallow(<Map geographicalWeightData={mockData} />);
     wrapper.setState({ mapZoomValue: 3 });
     wrapper.find("button").simulate("click");
     expect(wrapper.state().mapZoomValue).toBe(1);
+  });
+
+  it("sets weight values when map is rendered", () => {
+    const spy = jest.spyOn(Map.prototype, "setWeightValuesForHeatmap");
+    const wrapper = mount(<Map geographicalWeightData={mockData} />);
+    expect(spy).toHaveBeenCalledTimes(1);
   });
 });
