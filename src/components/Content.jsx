@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Map from "./content/Map";
 import Currency from "./content/Currency";
-import StockMarket from "./content/StockMarket";
 import Portfolio from "./content/Portfolio";
 import Timeline from "./content/Timeline";
 
@@ -52,7 +51,7 @@ export default class Content extends Component {
         <div className="tile">
           <div className="tile is-parent is-vertical">
             <Currency />
-            <StockMarket />
+            
           </div>
         </div>
       </div>
