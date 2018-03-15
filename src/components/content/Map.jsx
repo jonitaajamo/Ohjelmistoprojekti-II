@@ -24,7 +24,8 @@ class Map extends Component {
       clickedGeographyName: "",
       mapZoomValue: 1,
       mapCenter: [0, 20],
-      disableOptimization: false
+      disableOptimization: false,
+      touchError: false
     };
   }
 
@@ -129,7 +130,7 @@ class Map extends Component {
     for (let i = 0; i < this.state.geographyNames.length; i++) {
       for (let j = 0; j < assetClasses.length; j++) {
         let id = assetClasses[j].countryId;
-        let weight = assetClasses[j].weight
+        let weight = assetClasses[j].weight;
         if (this.state.geographyNames[i].id === JSON.stringify(id)) {
           weightDataForMap.push(weight);
         }
@@ -140,7 +141,7 @@ class Map extends Component {
     }
     return weightDataForMap;
   }
-  
+
   zoomOutOfGeography() {
     this.setState(
       {
@@ -158,6 +159,21 @@ class Map extends Component {
     );
   }
 
+  touchWarning(event) {
+    console.log("tulostetaan event ", event);
+    if (event.touches.length === 1) {
+      console.log("ifissä");
+      this.setState({
+        touchError: true
+      });
+      setTimeout(() => {
+        this.setState({
+          touchError: false
+        });
+      }, 2000);
+    }
+  }
+
   renderMap() {
     const weightData = this.setWeightValuesForHeatmap();
     const mapGeographies = (
@@ -172,7 +188,8 @@ class Map extends Component {
                 default: {
                   fill:
                     this.state.isGeographyClicked &&
-                    this.state.clickedGeographyName === this.state.geographyNames[i].name
+                    this.state.clickedGeographyName ===
+                      this.state.geographyNames[i].name
                       ? "steelblue"
                       : weightData[i] === 0
                         ? "#fcfcfc"
@@ -207,8 +224,28 @@ class Map extends Component {
       </Geographies>
     );
 
+    const errorStyle = {
+      position: "absolute",
+      top: "0",
+      left: "0",
+      width: "100%",
+      height: "100%",
+      zIndex: "10",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      color: "rgba(255, 255, 255, 1)",
+      display: this.state.touchError === false ? "none" : "flex",
+      margin: "0 auto",
+      alignItems: "center",
+      justifyContent: "center",
+      paddingBottom: "62px"
+    };
+
     return (
-      <article className="tile is-child notification is-paddingless">
+      <article
+        onTouchMove={this.touchWarning.bind(this)}
+        className="tile is-child notification is-paddingless"
+      >
+        <div style={errorStyle}><div>The map must be dragged with two fingers</div></div>
         <ComposableMap
           width={800}
           height={450}
@@ -218,12 +255,15 @@ class Map extends Component {
             marginBottom: "-62px"
           }}
         >
-          <ZoomableGroup center={this.state.mapCenter} zoom={this.state.mapZoomValue}>
+          <ZoomableGroup
+            center={this.state.mapCenter}
+            zoom={this.state.mapZoomValue}
+          >
             {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
         <button
-          style={{margin: "10px"}}
+          style={{ margin: "10px" }}
           className="button"
           onClick={() => this.zoomOutOfGeography()}
         >
