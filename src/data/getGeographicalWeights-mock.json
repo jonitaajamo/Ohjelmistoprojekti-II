@@ -7,60 +7,60 @@
         {
           "class": "all",
           "weights": [
-            {"countryId": 840, "weight": 0.7, "marketValue": 14000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 4000000},
-            {"countryId": 826, "weight": 0.05, "marketValue": 1000000},
-            {"countryId": 643, "weight": 0.05, "marketValue": 1000000}
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
           ]
         },
         {
           "class": "equity",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 3000000},
-            {"countryId": 246, "weight": 0.9, "marketValue": 27000000}
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
           ]
         },
         {
           "class": "bond",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 2000000},
-            {"countryId": 246, "weight": 0.9, "marketValue": 18000000}
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
           ]
         },
         {
           "class": "alternative",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 5000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 10000000},
-            {"countryId": 826, "weight": 0.3, "marketValue": 15000000},
-            {"countryId": 643, "weight": 0.4, "marketValue": 20000000}  
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
           ]
         },
         {
           "class": "property",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 826, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 643, "weight": 0.4, "marketValue": 24000000}
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
           ]
         },
         {
           "class": "cash",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 826, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 643, "weight": 0.4, "marketValue": 24000000}
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
           ]
         },
         {
           "class": "unknown",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 826, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 643, "weight": 0.4, "marketValue": 24000000}
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
           ]
         }
       ]
@@ -71,60 +71,4860 @@
         {
           "class": "all",
           "weights": [
-            {"countryId": 840, "weight": 0.7, "marketValue": 14000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 4000000},
-            {"countryId": 826, "weight": 0.1, "marketValue": 2000000},
-            {"countryId": 643, "weight": 0, "marketValue": 0}
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 643, "weight": 0, "marketValue": 0 }
           ]
         },
         {
           "class": "equity",
           "weights": [
-            {"countryId": 840, "weight": 0.2, "marketValue": 6000000},
-            {"countryId": 246, "weight": 0.8, "marketValue": 24000000}
+            { "countryId": 276, "weight": 0.2, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.8, "marketValue": 24000000 }
           ]
         },
         {
           "class": "bond",
           "weights": [
-            {"countryId": 840, "weight": 0.3, "marketValue": 3000000},
-            {"countryId": 246, "weight": 0.7, "marketValue": 7000000}
+            { "countryId": 276, "weight": 0.3, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.7, "marketValue": 7000000 }
           ]
         },
         {
           "class": "alternative",
           "weights": [
-            {"countryId": 643, "weight": 0.1, "marketValue": 5000000},
-            {"countryId": 826, "weight": 0.2, "marketValue": 10000000},
-            {"countryId": 246, "weight": 0.3, "marketValue": 15000000},
-            {"countryId": 840, "weight": 0.4, "marketValue": 20000000}
+            { "countryId": 643, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 276, "weight": 0.4, "marketValue": 20000000 }
           ]
         },
         {
           "class": "property",
           "weights": [
-            {"countryId": 643, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 826, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 246, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 840, "weight": 0.4, "marketValue": 24000000}
+            { "countryId": 643, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 276, "weight": 0.4, "marketValue": 24000000 }
           ]
         },
         {
           "class": "cash",
           "weights": [
-            {"countryId": 246, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 840, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 643, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 826, "weight": 0.4, "marketValue": 24000000}
+            { "countryId": 246, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 276, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 643, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 826, "weight": 0.4, "marketValue": 24000000 }
           ]
         },
         {
           "class": "unknown",
           "weights": [
-            {"countryId": 840, "weight": 0.1, "marketValue": 6000000},
-            {"countryId": 246, "weight": 0.2, "marketValue": 12000000},
-            {"countryId": 643, "weight": 0.3, "marketValue": 18000000},
-            {"countryId": 826, "weight": 0.4, "marketValue": 24000000} 
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 643, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 826, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-06",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-07",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-08",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-09",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-10",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-11",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2012-12",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-01",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-02",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-06",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-07",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-08",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-09",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-10",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-11",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2013-12",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-01",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-02",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-06",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-07",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-08",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-09",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-10",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-11",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2014-12",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-01",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-02",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-06",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-07",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-08",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-09",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-10",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-11",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2015-12",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-01",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-02",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-06",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-07",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-08",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-09",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-10",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-11",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2016-12",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-01",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-02",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-06",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-07",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-08",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-09",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 13000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 3000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 2000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-10",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-11",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2017-12",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2018-01",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2018-02",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 7000000 },
+            { "countryId": 826, "weight": 0.2, "marketValue": 3000000 },
+            { "countryId": 643, "weight": 0.2, "marketValue": 3000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2018-03",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.05, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2018-04",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.5, "marketValue": 14000000 },
+            { "countryId": 246, "weight": 0.3, "marketValue": 4000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        }
+      ]
+    },
+    {
+      "month": "2018-05",
+      "assetClasses": [
+        {
+          "class": "all",
+          "weights": [
+            { "countryId": 276, "weight": 0.6, "marketValue": 13000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 5000000 },
+            { "countryId": 826, "weight": 0.1, "marketValue": 1000000 },
+            { "countryId": 643, "weight": 0.1, "marketValue": 1000000 }
+          ]
+        },
+        {
+          "class": "equity",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 3000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 27000000 }
+          ]
+        },
+        {
+          "class": "bond",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 2000000 },
+            { "countryId": 246, "weight": 0.9, "marketValue": 18000000 }
+          ]
+        },
+        {
+          "class": "alternative",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 5000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 10000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 15000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 20000000 }
+          ]
+        },
+        {
+          "class": "property",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "cash",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
+          ]
+        },
+        {
+          "class": "unknown",
+          "weights": [
+            { "countryId": 276, "weight": 0.1, "marketValue": 6000000 },
+            { "countryId": 246, "weight": 0.2, "marketValue": 12000000 },
+            { "countryId": 826, "weight": 0.3, "marketValue": 18000000 },
+            { "countryId": 643, "weight": 0.4, "marketValue": 24000000 }
           ]
         }
       ]
