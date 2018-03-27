@@ -8,7 +8,9 @@ export default class Content extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      geographicalWeightData: []
+      geographicalWeightData: [],
+      selectedMonth: 0,
+      disableOptimization: false
     };
   }
 
@@ -29,20 +31,44 @@ export default class Content extends Component {
     this.fetchGeographicalWeightData();
   }
 
+  changeMonth(event) {
+    this.setState(
+      {
+        selectedMonth: JSON.parse(event.target.value),
+        disableOptimization: true
+      },
+      () => {
+        this.setState({
+          disableOptimization: false
+        });
+      }
+    );
+  }
+
   render() {
     const contentStyle = {
       width: "99%",
       margin: "auto"
     };
 
+    const weightDataLength = this.state.geographicalWeightData.length - 1;
+
     return (
       <div style={contentStyle} className="tile is-ancestor">
         <div className="tile is-vertical is-8">
           <div className="tile is-parent">
-            <Map geographicalWeightData={this.state.geographicalWeightData} />
+            <Map
+              geographicalWeightData={this.state.geographicalWeightData}
+              selectedMonth={this.state.selectedMonth}
+              disableOptimization={this.state.disableOptimization}
+            />
           </div>
           <div className="tile is-parent">
-            <Timeline />
+            <Timeline
+              length={weightDataLength}
+              onChange={this.changeMonth.bind(this)}
+              month={this.state.selectedMonth}
+            />
           </div>
           <div className="tile is-parent">
             <Portfolio />
@@ -51,7 +77,6 @@ export default class Content extends Component {
         <div className="tile">
           <div className="tile is-parent is-vertical">
             <Assets />
-            
           </div>
         </div>
       </div>
