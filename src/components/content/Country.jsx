@@ -1,6 +1,6 @@
 import React from "react";
 
-let style = {
+const style = {
   opacity: 0.7
 };
 
