@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import "bulma/css/bulma.css";
 import "./App.css";
-import "bulma/css/bulma.css"
 import Content from "./components/Content";
-import Header from  "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
         <Content />
         <Footer />
       </div>
-    )
+    );
   }
 }
 

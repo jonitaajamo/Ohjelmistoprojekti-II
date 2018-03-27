@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import AllButton from "./AllButton";
 
 export default class TimelineTabs extends Component {
   render() {
     return (
-      <article className="tile is-child notification is-danger">
-        <input className="progress" type="range" />
-      </article>
+      <div className="tabs is-toggle is-toggle-rounded is-centered">
+        <AllButton asset="all" />
+      </div>
     );
   }
 }
