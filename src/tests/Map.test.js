@@ -1,7 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Map from "../components/content/Map";
-import { shallow, mount } from "enzyme";
 
 describe("Map", () => {
   const mockData = [
@@ -37,12 +35,12 @@ describe("Map", () => {
   });
 
   it("renders map when data is loaded", () => {
-    const wrapper = shallow(<Map geographicalWeightData={mockData} />);
+    const wrapper = shallow(<Map geographicalWeightData={mockData} selectedMonth={0} />);
     expect(wrapper.find("ComposableMap").length).toEqual(1);
   });
 
   it("fires event handler when geography is clicked", () => {
-    const wrapper = mount(<Map geographicalWeightData={mockData} />);
+    const wrapper = mount(<Map geographicalWeightData={mockData} selectedMonth={0} />);
     wrapper.instance().onGeographyClick = jest.fn();
     wrapper.setState(initialState);
     wrapper.update();
@@ -54,7 +52,7 @@ describe("Map", () => {
   });
 
   it("zooms in when geography is clicked", () => {
-    const wrapper = mount(<Map geographicalWeightData={mockData} />);
+    const wrapper = mount(<Map geographicalWeightData={mockData} selectedMonth={0} />);
     wrapper.setState(initialState);
     wrapper
       .find("Geography")
@@ -64,7 +62,7 @@ describe("Map", () => {
   });
 
   it("zooms out when button is clicked", () => {
-    const wrapper = shallow(<Map geographicalWeightData={mockData} />);
+    const wrapper = shallow(<Map geographicalWeightData={mockData} selectedMonth={0} />);
     wrapper.setState({ mapZoomValue: 3 });
     wrapper.find("button").simulate("click");
     expect(wrapper.state().mapZoomValue).toBe(1);
@@ -72,7 +70,7 @@ describe("Map", () => {
 
   it("sets weight values when map is rendered", () => {
     const spy = jest.spyOn(Map.prototype, "setWeightValuesForHeatmap");
-    const wrapper = mount(<Map geographicalWeightData={mockData} />);
+    const wrapper = mount(<Map geographicalWeightData={mockData} selectedMonth={0} />);
     expect(spy).toHaveBeenCalledTimes(1);
   });
 });

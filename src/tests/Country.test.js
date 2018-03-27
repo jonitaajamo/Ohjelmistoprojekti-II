@@ -1,6 +1,5 @@
 import React from "react";
 import Country from "../components/content/Country";
-import { shallow } from "enzyme";
 
 describe("Country", () => {
   it("renders correctly", () => {
