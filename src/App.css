@@ -4,3 +4,11 @@ html, body{
   body{
     position: relative;
   }
+
+.tab a:link {
+  text-decoration: none;
+}
+
+.tab li::first-letter {
+  text-transform: capitalize;
+}
