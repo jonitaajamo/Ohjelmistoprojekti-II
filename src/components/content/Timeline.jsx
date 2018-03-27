@@ -1,7 +1,9 @@
 import React from "react";
+import TimelineTabs from "./TimelineTabs";
 
 const Timeline = () => (
   <article className="tile is-child notification is-danger">
+  <TimelineTabs />
     <input className="progress" type="range"></input>
   </article>
 );
