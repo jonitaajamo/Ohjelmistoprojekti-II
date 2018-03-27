@@ -73,8 +73,8 @@
           "weights": [
             { "countryId": 276, "weight": 0.7, "marketValue": 14000000 },
             { "countryId": 246, "weight": 0.2, "marketValue": 4000000 },
-            { "countryId": 826, "weight": 0.1, "marketValue": 2000000 },
-            { "countryId": 643, "weight": 0, "marketValue": 0 }
+            { "countryId": 826, "weight": 0.05, "marketValue": 2000000 },
+            { "countryId": 643, "weight": 0.05, "marketValue": 1000000 }
           ]
         },
         {
