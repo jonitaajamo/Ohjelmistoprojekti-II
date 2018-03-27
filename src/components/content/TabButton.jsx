@@ -4,8 +4,7 @@ export default class TabButton extends Component {
   constructor() {
     super();
     this.state = {
-      isTabButtonClicked: false,
-      isClicked: false
+      isTabButtonClicked: false
     };
   }
 
