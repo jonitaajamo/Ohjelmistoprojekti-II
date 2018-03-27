@@ -112,8 +112,9 @@ class Map extends Component {
 
   setWeightValuesForHeatmap() {
     const weightDataForMap = [];
+    const month = this.props.selectedMonth;
     const assetClasses = this.props.geographicalWeightData.length
-      ? this.props.geographicalWeightData[0].assetClasses[0].weights
+      ? this.props.geographicalWeightData[month].assetClasses[0].weights
       : [];
     for (let i = 0; i < this.state.geographyNames.length; i++) {
       for (let j = 0; j < assetClasses.length; j++) {
@@ -162,9 +163,11 @@ class Map extends Component {
 
   renderMap() {
     const weightData = this.setWeightValuesForHeatmap();
+    const optimization =
+      this.state.disableOptimization || this.props.disableOptimization;
     const mapGeographies = (
       <Geographies
-        disableOptimization={this.state.disableOptimization}
+        disableOptimization={optimization}
         geography={this.state.geographyBorders}
       >
         {(geographies, projection) =>
@@ -231,7 +234,9 @@ class Map extends Component {
         onTouchMove={this.touchWarning.bind(this)}
         className="tile is-child notification is-paddingless"
       >
-        <div style={errorStyle}><div>The map must be dragged with two fingers</div></div>
+        <div style={errorStyle}>
+          <div>The map must be dragged with two fingers</div>
+        </div>
         <ComposableMap
           width={800}
           height={450}
