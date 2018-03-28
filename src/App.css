@@ -1,14 +1,8 @@
-html, body{
-    min-height: 100%;
-  }
-  body{
-    position: relative;
-  }
-
-.tab a:link {
-  text-decoration: none;
+html,
+body {
+  min-height: 100%;
 }
 
-.tab li::first-letter {
-  text-transform: capitalize;
+body {
+  position: relative;
 }

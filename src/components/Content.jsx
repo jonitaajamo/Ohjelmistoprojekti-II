@@ -45,6 +45,43 @@ export default class Content extends Component {
     );
   }
 
+  changeMonthOnClick(event) {
+    const { selectedMonth, geographicalWeightData } = this.state;
+    const weightDataLength = geographicalWeightData.length - 1;
+    if (event.target.classList.contains("left") && selectedMonth > 0) {
+      this.setState(
+        prevState => {
+          return {
+            selectedMonth: prevState.selectedMonth - 1,
+            disableOptimization: true
+          };
+        },
+        () => {
+          this.setState({
+            disableOptimization: false
+          });
+        }
+      );
+    } else if (
+      event.target.classList.contains("right") &&
+      selectedMonth < weightDataLength
+    ) {
+      this.setState(
+        prevState => {
+          return {
+            selectedMonth: prevState.selectedMonth + 1,
+            disableOptimization: true
+          };
+        },
+        () => {
+          this.setState({
+            disableOptimization: false
+          });
+        }
+      );
+    }
+  }
+
   render() {
     const contentStyle = {
       width: "99%",
@@ -69,6 +106,7 @@ export default class Content extends Component {
               geographicalWeightData={this.state.geographicalWeightData}
               onChange={this.changeMonth.bind(this)}
               month={this.state.selectedMonth}
+              onMonthButtonClick={this.changeMonthOnClick.bind(this)}
             />
           </div>
           <div className="tile is-parent">
