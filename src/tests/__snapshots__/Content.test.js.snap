@@ -27,6 +27,8 @@ ShallowWrapper {
                     <Map
                               disableOptimization={false}
                               geographicalWeightData={Array []}
+                              geographyBorders={Array []}
+                              geographyNames={Array []}
                               selectedAsset={0}
                               selectedMonth={0}
                     />
@@ -79,6 +81,8 @@ ShallowWrapper {
               <Map
                             disableOptimization={false}
                             geographicalWeightData={Array []}
+                            geographyBorders={Array []}
+                            geographyNames={Array []}
                             selectedAsset={0}
                             selectedMonth={0}
               />
@@ -113,6 +117,8 @@ ShallowWrapper {
               "children": <Map
                 disableOptimization={false}
                 geographicalWeightData={Array []}
+                geographyBorders={Array []}
+                geographyNames={Array []}
                 selectedAsset={0}
                 selectedMonth={0}
 />,
@@ -126,6 +132,8 @@ ShallowWrapper {
               "props": Object {
                 "disableOptimization": false,
                 "geographicalWeightData": Array [],
+                "geographyBorders": Array [],
+                "geographyNames": Array [],
                 "selectedAsset": 0,
                 "selectedMonth": 0,
               },
@@ -246,6 +254,8 @@ ShallowWrapper {
                         <Map
                                     disableOptimization={false}
                                     geographicalWeightData={Array []}
+                                    geographyBorders={Array []}
+                                    geographyNames={Array []}
                                     selectedAsset={0}
                                     selectedMonth={0}
                         />
@@ -298,6 +308,8 @@ ShallowWrapper {
                 <Map
                                 disableOptimization={false}
                                 geographicalWeightData={Array []}
+                                geographyBorders={Array []}
+                                geographyNames={Array []}
                                 selectedAsset={0}
                                 selectedMonth={0}
                 />
@@ -332,6 +344,8 @@ ShallowWrapper {
                 "children": <Map
                   disableOptimization={false}
                   geographicalWeightData={Array []}
+                  geographyBorders={Array []}
+                  geographyNames={Array []}
                   selectedAsset={0}
                   selectedMonth={0}
 />,
@@ -345,6 +359,8 @@ ShallowWrapper {
                 "props": Object {
                   "disableOptimization": false,
                   "geographicalWeightData": Array [],
+                  "geographyBorders": Array [],
+                  "geographyNames": Array [],
                   "selectedAsset": 0,
                   "selectedMonth": 0,
                 },

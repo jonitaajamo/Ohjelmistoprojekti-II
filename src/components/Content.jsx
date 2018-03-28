@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { feature } from "topojson-client";
 import Map from "./content/Map";
 import Assets from "./content/Assets";
 import Portfolio from "./content/Portfolio";
@@ -8,13 +9,15 @@ export default class Content extends Component {
     super(props);
     this.state = {
       geographicalWeightData: [],
+      geographyBorders: [],
+      geographyNames: [],
       selectedMonth: 0,
       selectedAsset: 0,
       disableOptimization: false
     };
   }
 
-  fetchGeographicalWeightData() {
+  fetchDataForMap() {
     fetch(
       "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/getGeographicalWeights-mock.json"
     )
@@ -25,10 +28,37 @@ export default class Content extends Component {
         })
       )
       .catch(err => console.error(err));
+
+      fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
+      .then(response => response.json())
+      .then(worldData =>
+        this.setState({
+          geographyBorders: feature(
+            worldData,
+            worldData.objects.countries
+          ).features.sort((a, b) => {
+            return a.id - b.id;
+          })
+        })
+      )
+      .catch(err => console.error(err));
+
+    fetch(
+      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json"
+    )
+      .then(response => response.json())
+      .then(names =>
+        this.setState({
+          geographyNames: names.countries.sort((a, b) => {
+            return a.id - b.id;
+          })
+        })
+      )
+      .catch(err => console.error(err));
   }
 
   componentDidMount() {
-    this.fetchGeographicalWeightData();
+    this.fetchDataForMap();
   }
 
   changeMonth(event) {
@@ -110,6 +140,8 @@ export default class Content extends Component {
           <div className="tile is-parent">
             <Map
               geographicalWeightData={this.state.geographicalWeightData}
+              geographyNames={this.state.geographyNames}
+              geographyBorders={this.state.geographyBorders}
               selectedMonth={this.state.selectedMonth}
               selectedAsset={this.state.selectedAsset}
               disableOptimization={this.state.disableOptimization}

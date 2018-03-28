@@ -25,14 +25,29 @@ ShallowWrapper {
           geographicalWeightData={undefined}
           onAssetChange={undefined}
 />,
-        <input
-          className="progress"
-          max={76}
-          min="0"
-          onChange={undefined}
-          type="range"
-          value={10}
-/>,
+        <div
+          className="columns"
+          style={
+                    Object {
+                              "alignItems": "center",
+                              "justifyContent": "center",
+                            }
+          }
+>
+          <input
+                    className="progress"
+                    max={76}
+                    min="0"
+                    onChange={undefined}
+                    style={
+                              Object {
+                                        "outline": "none",
+                                      }
+                    }
+                    type="range"
+                    value={10}
+          />
+</div>,
         <span
           className="field has-addons has-addons-centered"
 >
@@ -55,21 +70,32 @@ ShallowWrapper {
                     </span>
           </a>
           <a
+                    className="button left"
+          >
+                    <span
+                              className="icon left"
+                    >
+                              <i
+                                        className="fas fa-play left"
+                              />
+                    </span>
+          </a>
+          <a
                     className="button right"
                     id="next"
                     onClick={undefined}
           >
+                    <span
+                              className="right"
+                    >
+                              Next month
+                    </span>
                     <span
                               className="icon right"
                     >
                               <i
                                         className="fas fa-arrow-right right"
                               />
-                    </span>
-                    <span
-                              className="right"
-                    >
-                              Next month
                     </span>
           </a>
 </span>,
@@ -95,16 +121,46 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "progress",
-          "max": 76,
-          "min": "0",
-          "onChange": undefined,
-          "type": "range",
-          "value": 10,
+          "children": <input
+            className="progress"
+            max={76}
+            min="0"
+            onChange={undefined}
+            style={
+                        Object {
+                                    "outline": "none",
+                                  }
+            }
+            type="range"
+            value={10}
+/>,
+          "className": "columns",
+          "style": Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "progress",
+            "max": 76,
+            "min": "0",
+            "onChange": undefined,
+            "style": Object {
+              "outline": "none",
+            },
+            "type": "range",
+            "value": 10,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -131,21 +187,32 @@ ShallowWrapper {
               </span>
 </a>,
             <a
+              className="button left"
+>
+              <span
+                            className="icon left"
+              >
+                            <i
+                                          className="fas fa-play left"
+                            />
+              </span>
+</a>,
+            <a
               className="button right"
               id="next"
               onClick={undefined}
 >
+              <span
+                            className="right"
+              >
+                            Next month
+              </span>
               <span
                             className="icon right"
               >
                             <i
                                           className="fas fa-arrow-right right"
                             />
-              </span>
-              <span
-                            className="right"
-              >
-                            Next month
               </span>
 </a>,
           ],
@@ -222,18 +289,59 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": <span
+                className="icon left"
+>
+                <i
+                                className="fas fa-play left"
+                />
+</span>,
+              "className": "button left",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <i
+                  className="fas fa-play left"
+/>,
+                "className": "icon left",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-play left",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              "type": "span",
+            },
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": Array [
+                <span
+                  className="right"
+>
+                  Next month
+</span>,
                 <span
                   className="icon right"
 >
                   <i
                                     className="fas fa-arrow-right right"
                   />
-</span>,
-                <span
-                  className="right"
->
-                  Next month
 </span>,
               ],
               "className": "button right",
@@ -242,6 +350,18 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Next month",
+                  "className": "right",
+                },
+                "ref": null,
+                "rendered": "Next month",
+                "type": "span",
+              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -266,18 +386,6 @@ ShallowWrapper {
                 },
                 "type": "span",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Next month",
-                  "className": "right",
-                },
-                "ref": null,
-                "rendered": "Next month",
-                "type": "span",
-              },
             ],
             "type": "a",
           },
@@ -298,14 +406,29 @@ ShallowWrapper {
             geographicalWeightData={undefined}
             onAssetChange={undefined}
 />,
-          <input
-            className="progress"
-            max={76}
-            min="0"
-            onChange={undefined}
-            type="range"
-            value={10}
-/>,
+          <div
+            className="columns"
+            style={
+                        Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+            }
+>
+            <input
+                        className="progress"
+                        max={76}
+                        min="0"
+                        onChange={undefined}
+                        style={
+                                    Object {
+                                                "outline": "none",
+                                              }
+                        }
+                        type="range"
+                        value={10}
+            />
+</div>,
           <span
             className="field has-addons has-addons-centered"
 >
@@ -328,21 +451,32 @@ ShallowWrapper {
                         </span>
             </a>
             <a
+                        className="button left"
+            >
+                        <span
+                                    className="icon left"
+                        >
+                                    <i
+                                                className="fas fa-play left"
+                                    />
+                        </span>
+            </a>
+            <a
                         className="button right"
                         id="next"
                         onClick={undefined}
             >
+                        <span
+                                    className="right"
+                        >
+                                    Next month
+                        </span>
                         <span
                                     className="icon right"
                         >
                                     <i
                                                 className="fas fa-arrow-right right"
                                     />
-                        </span>
-                        <span
-                                    className="right"
-                        >
-                                    Next month
                         </span>
             </a>
 </span>,
@@ -368,16 +502,46 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "progress",
-            "max": 76,
-            "min": "0",
-            "onChange": undefined,
-            "type": "range",
-            "value": 10,
+            "children": <input
+              className="progress"
+              max={76}
+              min="0"
+              onChange={undefined}
+              style={
+                            Object {
+                                          "outline": "none",
+                                        }
+              }
+              type="range"
+              value={10}
+/>,
+            "className": "columns",
+            "style": Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "progress",
+              "max": 76,
+              "min": "0",
+              "onChange": undefined,
+              "style": Object {
+                "outline": "none",
+              },
+              "type": "range",
+              "value": 10,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -404,21 +568,32 @@ ShallowWrapper {
                 </span>
 </a>,
               <a
+                className="button left"
+>
+                <span
+                                className="icon left"
+                >
+                                <i
+                                                className="fas fa-play left"
+                                />
+                </span>
+</a>,
+              <a
                 className="button right"
                 id="next"
                 onClick={undefined}
 >
+                <span
+                                className="right"
+                >
+                                Next month
+                </span>
                 <span
                                 className="icon right"
                 >
                                 <i
                                                 className="fas fa-arrow-right right"
                                 />
-                </span>
-                <span
-                                className="right"
-                >
-                                Next month
                 </span>
 </a>,
             ],
@@ -495,18 +670,59 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "children": <span
+                  className="icon left"
+>
+                  <i
+                                    className="fas fa-play left"
+                  />
+</span>,
+                "className": "button left",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="fas fa-play left"
+/>,
+                  "className": "icon left",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-play left",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                "type": "span",
+              },
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
                 "children": Array [
+                  <span
+                    className="right"
+>
+                    Next month
+</span>,
                   <span
                     className="icon right"
 >
                     <i
                                         className="fas fa-arrow-right right"
                     />
-</span>,
-                  <span
-                    className="right"
->
-                    Next month
 </span>,
                 ],
                 "className": "button right",
@@ -515,6 +731,18 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Next month",
+                    "className": "right",
+                  },
+                  "ref": null,
+                  "rendered": "Next month",
+                  "type": "span",
+                },
                 Object {
                   "instance": null,
                   "key": undefined,
@@ -537,18 +765,6 @@ ShallowWrapper {
                     "rendered": null,
                     "type": "i",
                   },
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Next month",
-                    "className": "right",
-                  },
-                  "ref": null,
-                  "rendered": "Next month",
                   "type": "span",
                 },
               ],
