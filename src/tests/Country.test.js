@@ -1,5 +1,5 @@
 import React from "react";
-import Country from "../components/content/Country";
+import Country from "../components/content/map/Country";
 
 describe("Country", () => {
   it("renders correctly", () => {

@@ -29,20 +29,13 @@ ShallowWrapper {
                               geographicalWeightData={Array []}
                               geographyBorders={Array []}
                               geographyNames={Array []}
-                              selectedAsset={0}
-                              selectedMonth={0}
-                    />
-          </div>
-          <div
-                    className="tile is-parent"
-          >
-                    <Timeline
-                              geographicalWeightData={Array []}
                               length={-1}
                               month={0}
                               onAssetChange={[Function]}
                               onChange={[Function]}
                               onMonthButtonClick={[Function]}
+                              selectedAsset={0}
+                              selectedMonth={0}
                     />
           </div>
           <div
@@ -83,20 +76,13 @@ ShallowWrapper {
                             geographicalWeightData={Array []}
                             geographyBorders={Array []}
                             geographyNames={Array []}
-                            selectedAsset={0}
-                            selectedMonth={0}
-              />
-</div>,
-            <div
-              className="tile is-parent"
->
-              <Timeline
-                            geographicalWeightData={Array []}
                             length={-1}
                             month={0}
                             onAssetChange={[Function]}
                             onChange={[Function]}
                             onMonthButtonClick={[Function]}
+                            selectedAsset={0}
+                            selectedMonth={0}
               />
 </div>,
             <div
@@ -119,6 +105,11 @@ ShallowWrapper {
                 geographicalWeightData={Array []}
                 geographyBorders={Array []}
                 geographyNames={Array []}
+                length={-1}
+                month={0}
+                onAssetChange={[Function]}
+                onChange={[Function]}
+                onMonthButtonClick={[Function]}
                 selectedAsset={0}
                 selectedMonth={0}
 />,
@@ -134,42 +125,13 @@ ShallowWrapper {
                 "geographicalWeightData": Array [],
                 "geographyBorders": Array [],
                 "geographyNames": Array [],
-                "selectedAsset": 0,
-                "selectedMonth": 0,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <Timeline
-                geographicalWeightData={Array []}
-                length={-1}
-                month={0}
-                onAssetChange={[Function]}
-                onChange={[Function]}
-                onMonthButtonClick={[Function]}
-/>,
-              "className": "tile is-parent",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "geographicalWeightData": Array [],
                 "length": -1,
                 "month": 0,
                 "onAssetChange": [Function],
                 "onChange": [Function],
                 "onMonthButtonClick": [Function],
+                "selectedAsset": 0,
+                "selectedMonth": 0,
               },
               "ref": null,
               "rendered": null,
@@ -256,20 +218,13 @@ ShallowWrapper {
                                     geographicalWeightData={Array []}
                                     geographyBorders={Array []}
                                     geographyNames={Array []}
-                                    selectedAsset={0}
-                                    selectedMonth={0}
-                        />
-            </div>
-            <div
-                        className="tile is-parent"
-            >
-                        <Timeline
-                                    geographicalWeightData={Array []}
                                     length={-1}
                                     month={0}
                                     onAssetChange={[Function]}
                                     onChange={[Function]}
                                     onMonthButtonClick={[Function]}
+                                    selectedAsset={0}
+                                    selectedMonth={0}
                         />
             </div>
             <div
@@ -310,20 +265,13 @@ ShallowWrapper {
                                 geographicalWeightData={Array []}
                                 geographyBorders={Array []}
                                 geographyNames={Array []}
-                                selectedAsset={0}
-                                selectedMonth={0}
-                />
-</div>,
-              <div
-                className="tile is-parent"
->
-                <Timeline
-                                geographicalWeightData={Array []}
                                 length={-1}
                                 month={0}
                                 onAssetChange={[Function]}
                                 onChange={[Function]}
                                 onMonthButtonClick={[Function]}
+                                selectedAsset={0}
+                                selectedMonth={0}
                 />
 </div>,
               <div
@@ -346,6 +294,11 @@ ShallowWrapper {
                   geographicalWeightData={Array []}
                   geographyBorders={Array []}
                   geographyNames={Array []}
+                  length={-1}
+                  month={0}
+                  onAssetChange={[Function]}
+                  onChange={[Function]}
+                  onMonthButtonClick={[Function]}
                   selectedAsset={0}
                   selectedMonth={0}
 />,
@@ -361,42 +314,13 @@ ShallowWrapper {
                   "geographicalWeightData": Array [],
                   "geographyBorders": Array [],
                   "geographyNames": Array [],
-                  "selectedAsset": 0,
-                  "selectedMonth": 0,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <Timeline
-                  geographicalWeightData={Array []}
-                  length={-1}
-                  month={0}
-                  onAssetChange={[Function]}
-                  onChange={[Function]}
-                  onMonthButtonClick={[Function]}
-/>,
-                "className": "tile is-parent",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "geographicalWeightData": Array [],
                   "length": -1,
                   "month": 0,
                   "onAssetChange": [Function],
                   "onChange": [Function],
                   "onMonthButtonClick": [Function],
+                  "selectedAsset": 0,
+                  "selectedMonth": 0,
                 },
                 "ref": null,
                 "rendered": null,

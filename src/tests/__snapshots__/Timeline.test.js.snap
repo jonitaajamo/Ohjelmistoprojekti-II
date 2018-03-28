@@ -21,7 +21,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <TimelineTabs
+        <Tabs
           geographicalWeightData={undefined}
           onAssetChange={undefined}
 />,
@@ -402,7 +402,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <TimelineTabs
+          <Tabs
             geographicalWeightData={undefined}
             onAssetChange={undefined}
 />,
