@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import TabButton from "./TabButton";
+import Button from "./tabs/Button";
 
-export default class TimelineTabs extends Component {
+export default class Tabs extends Component {
   constructor() {
     super();
     this.state = {
@@ -20,7 +20,7 @@ export default class TimelineTabs extends Component {
     const buttons = this.props.geographicalWeightData.length
       ? this.props.geographicalWeightData[0].assetClasses.map((item, key) => {
           return (
-            <TabButton
+            <Button
               isActive={item.class === this.state.active ? "is-active" : ""}
               onClickHandler={() => this.clickHandler(item.class, key)}
               key={key}
