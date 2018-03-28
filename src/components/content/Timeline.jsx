@@ -7,6 +7,7 @@ export default class Timeline extends Component {
       <article className="tile is-child notification">
         <TimelineTabs
           geographicalWeightData={this.props.geographicalWeightData}
+          onAssetChange={this.props.onAssetChange}
         />
         <input
           className="progress"
