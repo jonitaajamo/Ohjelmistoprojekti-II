@@ -10,6 +10,7 @@ export default class Content extends Component {
     this.state = {
       geographicalWeightData: [],
       selectedMonth: 0,
+      selectedAsset: 0,
       disableOptimization: false
     };
   }
@@ -45,6 +46,20 @@ export default class Content extends Component {
     );
   }
 
+  changeAsset(item) {
+    this.setState(
+      {
+        selectedAsset: item,
+        disableOptimization: true
+      },
+      () => {
+        this.setState({
+          disableOptimization: false
+        });
+      }
+    );
+  }
+
   render() {
     const contentStyle = {
       width: "99%",
@@ -60,6 +75,7 @@ export default class Content extends Component {
             <Map
               geographicalWeightData={this.state.geographicalWeightData}
               selectedMonth={this.state.selectedMonth}
+              selectedAsset={this.state.selectedAsset}
               disableOptimization={this.state.disableOptimization}
             />
           </div>
@@ -68,6 +84,7 @@ export default class Content extends Component {
               length={weightDataLength}
               geographicalWeightData={this.state.geographicalWeightData}
               onChange={this.changeMonth.bind(this)}
+              onAssetChange={this.changeAsset.bind(this)}
               month={this.state.selectedMonth}
             />
           </div>

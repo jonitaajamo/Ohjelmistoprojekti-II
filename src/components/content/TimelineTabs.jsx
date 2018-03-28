@@ -5,14 +5,15 @@ export default class TimelineTabs extends Component {
   constructor() {
     super();
     this.state = {
-      active: ""
+      active: "all"
     };
   }
 
-  setButtonActive(name) {
+  clickHandler(name, key) {
     this.setState({
       active: name
     });
+    this.props.onAssetChange(key);
   }
 
   render() {
@@ -21,7 +22,7 @@ export default class TimelineTabs extends Component {
           return (
             <TabButton
               isActive={item.class === this.state.active ? "is-active" : ""}
-              onClickHandler={() => this.setButtonActive(item.class)}
+              onClickHandler={() => this.clickHandler(item.class, key)}
               key={key}
               asset={item.class}
             />
