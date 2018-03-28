@@ -152,7 +152,6 @@ export default class Content extends Component {
               onMonthButtonClick={this.changeMonthOnClick.bind(this)}
             />
           </div>
-
           <div className="tile is-parent">
             <Portfolio />
           </div>

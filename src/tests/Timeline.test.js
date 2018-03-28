@@ -1,5 +1,5 @@
 import React from "react";
-import Timeline from "../components/content/Timeline";
+import Timeline from "../components/content/map/Timeline";
 
 describe("Timeline", () => {
   const props = {
@@ -14,7 +14,7 @@ describe("Timeline", () => {
 
   it("renders child", () => {
     const wrapper = shallow(<Timeline {...props} />);
-    expect(wrapper.find("TimelineTabs").length).toEqual(1);
+    expect(wrapper.find("Tabs").length).toEqual(1);
   });
 
   it("sets props correctly", () => {
