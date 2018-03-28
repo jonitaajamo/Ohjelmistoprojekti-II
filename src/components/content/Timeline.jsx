@@ -18,13 +18,13 @@ export default class Timeline extends Component {
           onChange={this.props.onChange}
         />
         <span className="field has-addons has-addons-centered">
-          <a className="button left" onClick={this.props.onMonthButtonClick}>
+          <a className="button left" id="previous" onClick={this.props.onMonthButtonClick}>
             <span className="icon left">
               <i className="fas fa-arrow-left left" />
             </span>
             <span className="left">Previous month</span>
           </a>
-          <a className="button right" id="1" onClick={this.props.onMonthButtonClick}>
+          <a className="button right" id="next" onClick={this.props.onMonthButtonClick}>
             <span className="icon right">
               <i className="fas fa-arrow-right right" />
             </span>

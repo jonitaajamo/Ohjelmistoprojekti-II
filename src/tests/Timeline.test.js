@@ -29,4 +29,13 @@ describe("Timeline", () => {
     wrapper.find("input").simulate("change");
     expect(onChange).toHaveBeenCalledTimes(1);
   });
+
+  it("fires click handler when buttons are clicked", () => {
+    const onClick = jest.fn();
+    const wrapper = shallow(<Timeline {...props} onMonthButtonClick={onClick} />);
+    expect(wrapper.find("a.button").length).toBe(2);
+    wrapper.find("#previous").simulate("click");
+    wrapper.find("#next").simulate("click");
+    expect(onClick).toHaveBeenCalledTimes(2);
+  });
 });

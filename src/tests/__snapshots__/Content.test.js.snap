@@ -34,9 +34,11 @@ ShallowWrapper {
                     className="tile is-parent"
           >
                     <Timeline
+                              geographicalWeightData={Array []}
                               length={-1}
                               month={0}
                               onChange={[Function]}
+                              onMonthButtonClick={[Function]}
                     />
           </div>
           <div
@@ -82,9 +84,11 @@ ShallowWrapper {
               className="tile is-parent"
 >
               <Timeline
+                            geographicalWeightData={Array []}
                             length={-1}
                             month={0}
                             onChange={[Function]}
+                            onMonthButtonClick={[Function]}
               />
 </div>,
             <div
@@ -131,9 +135,11 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <Timeline
+                geographicalWeightData={Array []}
                 length={-1}
                 month={0}
                 onChange={[Function]}
+                onMonthButtonClick={[Function]}
 />,
               "className": "tile is-parent",
             },
@@ -143,9 +149,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "geographicalWeightData": Array [],
                 "length": -1,
                 "month": 0,
                 "onChange": [Function],
+                "onMonthButtonClick": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -237,9 +245,11 @@ ShallowWrapper {
                         className="tile is-parent"
             >
                         <Timeline
+                                    geographicalWeightData={Array []}
                                     length={-1}
                                     month={0}
                                     onChange={[Function]}
+                                    onMonthButtonClick={[Function]}
                         />
             </div>
             <div
@@ -285,9 +295,11 @@ ShallowWrapper {
                 className="tile is-parent"
 >
                 <Timeline
+                                geographicalWeightData={Array []}
                                 length={-1}
                                 month={0}
                                 onChange={[Function]}
+                                onMonthButtonClick={[Function]}
                 />
 </div>,
               <div
@@ -334,9 +346,11 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <Timeline
+                  geographicalWeightData={Array []}
                   length={-1}
                   month={0}
                   onChange={[Function]}
+                  onMonthButtonClick={[Function]}
 />,
                 "className": "tile is-parent",
               },
@@ -346,9 +360,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "geographicalWeightData": Array [],
                   "length": -1,
                   "month": 0,
                   "onChange": [Function],
+                  "onMonthButtonClick": [Function],
                 },
                 "ref": null,
                 "rendered": null,
