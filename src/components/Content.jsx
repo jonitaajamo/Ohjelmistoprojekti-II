@@ -66,6 +66,7 @@ export default class Content extends Component {
           <div className="tile is-parent">
             <Timeline
               length={weightDataLength}
+              geographicalWeightData={this.state.geographicalWeightData}
               onChange={this.changeMonth.bind(this)}
               month={this.state.selectedMonth}
             />

@@ -4,8 +4,10 @@ import TimelineTabs from "./TimelineTabs";
 export default class Timeline extends Component {
   render() {
     return (
-      <article className="tile is-child notification is-danger">
-        <TimelineTabs />
+      <article className="tile is-child notification">
+        <TimelineTabs
+          geographicalWeightData={this.props.geographicalWeightData}
+        />
         <input
           className="progress"
           type="range"
