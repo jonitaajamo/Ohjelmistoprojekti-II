@@ -27,6 +27,7 @@ ShallowWrapper {
                     <Map
                               disableOptimization={false}
                               geographicalWeightData={Array []}
+                              selectedAsset={0}
                               selectedMonth={0}
                     />
           </div>
@@ -37,6 +38,7 @@ ShallowWrapper {
                               geographicalWeightData={Array []}
                               length={-1}
                               month={0}
+                              onAssetChange={[Function]}
                               onChange={[Function]}
                               onMonthButtonClick={[Function]}
                     />
@@ -77,6 +79,7 @@ ShallowWrapper {
               <Map
                             disableOptimization={false}
                             geographicalWeightData={Array []}
+                            selectedAsset={0}
                             selectedMonth={0}
               />
 </div>,
@@ -87,6 +90,7 @@ ShallowWrapper {
                             geographicalWeightData={Array []}
                             length={-1}
                             month={0}
+                            onAssetChange={[Function]}
                             onChange={[Function]}
                             onMonthButtonClick={[Function]}
               />
@@ -109,6 +113,7 @@ ShallowWrapper {
               "children": <Map
                 disableOptimization={false}
                 geographicalWeightData={Array []}
+                selectedAsset={0}
                 selectedMonth={0}
 />,
               "className": "tile is-parent",
@@ -121,6 +126,7 @@ ShallowWrapper {
               "props": Object {
                 "disableOptimization": false,
                 "geographicalWeightData": Array [],
+                "selectedAsset": 0,
                 "selectedMonth": 0,
               },
               "ref": null,
@@ -138,6 +144,7 @@ ShallowWrapper {
                 geographicalWeightData={Array []}
                 length={-1}
                 month={0}
+                onAssetChange={[Function]}
                 onChange={[Function]}
                 onMonthButtonClick={[Function]}
 />,
@@ -152,6 +159,7 @@ ShallowWrapper {
                 "geographicalWeightData": Array [],
                 "length": -1,
                 "month": 0,
+                "onAssetChange": [Function],
                 "onChange": [Function],
                 "onMonthButtonClick": [Function],
               },
@@ -238,6 +246,7 @@ ShallowWrapper {
                         <Map
                                     disableOptimization={false}
                                     geographicalWeightData={Array []}
+                                    selectedAsset={0}
                                     selectedMonth={0}
                         />
             </div>
@@ -248,6 +257,7 @@ ShallowWrapper {
                                     geographicalWeightData={Array []}
                                     length={-1}
                                     month={0}
+                                    onAssetChange={[Function]}
                                     onChange={[Function]}
                                     onMonthButtonClick={[Function]}
                         />
@@ -288,6 +298,7 @@ ShallowWrapper {
                 <Map
                                 disableOptimization={false}
                                 geographicalWeightData={Array []}
+                                selectedAsset={0}
                                 selectedMonth={0}
                 />
 </div>,
@@ -298,6 +309,7 @@ ShallowWrapper {
                                 geographicalWeightData={Array []}
                                 length={-1}
                                 month={0}
+                                onAssetChange={[Function]}
                                 onChange={[Function]}
                                 onMonthButtonClick={[Function]}
                 />
@@ -320,6 +332,7 @@ ShallowWrapper {
                 "children": <Map
                   disableOptimization={false}
                   geographicalWeightData={Array []}
+                  selectedAsset={0}
                   selectedMonth={0}
 />,
                 "className": "tile is-parent",
@@ -332,6 +345,7 @@ ShallowWrapper {
                 "props": Object {
                   "disableOptimization": false,
                   "geographicalWeightData": Array [],
+                  "selectedAsset": 0,
                   "selectedMonth": 0,
                 },
                 "ref": null,
@@ -349,6 +363,7 @@ ShallowWrapper {
                   geographicalWeightData={Array []}
                   length={-1}
                   month={0}
+                  onAssetChange={[Function]}
                   onChange={[Function]}
                   onMonthButtonClick={[Function]}
 />,
@@ -363,6 +378,7 @@ ShallowWrapper {
                   "geographicalWeightData": Array [],
                   "length": -1,
                   "month": 0,
+                  "onAssetChange": [Function],
                   "onChange": [Function],
                   "onMonthButtonClick": [Function],
                 },

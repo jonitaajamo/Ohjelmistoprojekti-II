@@ -23,6 +23,7 @@ ShallowWrapper {
       "children": Array [
         <TimelineTabs
           geographicalWeightData={undefined}
+          onAssetChange={undefined}
 />,
         <input
           className="progress"
@@ -83,6 +84,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "geographicalWeightData": undefined,
+          "onAssetChange": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -294,6 +296,7 @@ ShallowWrapper {
         "children": Array [
           <TimelineTabs
             geographicalWeightData={undefined}
+            onAssetChange={undefined}
 />,
           <input
             className="progress"
@@ -354,6 +357,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "geographicalWeightData": undefined,
+            "onAssetChange": undefined,
           },
           "ref": null,
           "rendered": null,
