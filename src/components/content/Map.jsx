@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { feature } from "topojson-client";
 import Country from "./map/Country";
 import Loading from "./map/Loading";
 import Timeline from "./map/Timeline";
