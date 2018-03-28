@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { feature } from "topojson-client";
-import Country from "./Country";
-import Loading from "./Loading";
+import Country from "./map/Country";
+import Loading from "./map/Loading";
+import Timeline from "./map/Timeline";
 import { geoPath } from "d3-geo";
 import { geoTimes } from "d3-geo-projection";
 import {
@@ -263,6 +264,14 @@ class Map extends Component {
           Zoom out
         </button>
         <Country country={this.checkGeographyName()} />
+        <Timeline
+          length={this.props.length}
+          geographicalWeightData={this.props.geographicalWeightData}
+          onChange={this.props.onChange}
+          onAssetChange={this.props.onAssetChange}
+          month={this.props.month}
+          onMonthButtonClick={this.props.onMonthButtonClick}
+        />
       </article>
     );
   }

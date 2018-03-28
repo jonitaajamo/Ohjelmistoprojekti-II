@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Map from "./content/Map";
 import Assets from "./content/Assets";
 import Portfolio from "./content/Portfolio";
-import Timeline from "./content/Timeline";
 
 export default class Content extends Component {
   constructor(props) {
@@ -114,18 +113,14 @@ export default class Content extends Component {
               selectedMonth={this.state.selectedMonth}
               selectedAsset={this.state.selectedAsset}
               disableOptimization={this.state.disableOptimization}
-            />
-          </div>
-          <div className="tile is-parent">
-            <Timeline
               length={weightDataLength}
-              geographicalWeightData={this.state.geographicalWeightData}
               onChange={this.changeMonth.bind(this)}
               onAssetChange={this.changeAsset.bind(this)}
               month={this.state.selectedMonth}
               onMonthButtonClick={this.changeMonthOnClick.bind(this)}
             />
           </div>
+
           <div className="tile is-parent">
             <Portfolio />
           </div>

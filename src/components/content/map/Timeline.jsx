@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TimelineTabs from "./TimelineTabs";
+import Tabs from "./timeline/Tabs";
 
 export default class Timeline extends Component {
   render() {
@@ -7,11 +7,10 @@ export default class Timeline extends Component {
       alignItems: "center",
       justifyContent: "center"
     };
-    
 
     return (
       <article className="tile is-child notification">
-        <TimelineTabs
+        <Tabs
           geographicalWeightData={this.props.geographicalWeightData}
           onAssetChange={this.props.onAssetChange}
         />
@@ -23,11 +22,15 @@ export default class Timeline extends Component {
             max={this.props.length}
             value={this.props.month}
             onChange={this.props.onChange}
-            style={{outline: "none"}}
+            style={{ outline: "none" }}
           />
         </div>
         <span className="field has-addons has-addons-centered">
-          <a className="button left" id="previous" onClick={this.props.onMonthButtonClick}>
+          <a
+            className="button left"
+            id="previous"
+            onClick={this.props.onMonthButtonClick}
+          >
             <span className="icon left">
               <i className="fas fa-arrow-left left" />
             </span>
