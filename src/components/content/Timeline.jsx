@@ -16,11 +16,6 @@ export default class Timeline extends Component {
           onAssetChange={this.props.onAssetChange}
         />
         <div className="columns" style={timelineStyle}>
-          <a className="button left" style={{marginRight: 10}}>
-            <span className="icon left">
-              <i className="fas fa-play left" />
-            </span>
-          </a>
           <input
             className="progress"
             type="range"
@@ -37,6 +32,11 @@ export default class Timeline extends Component {
               <i className="fas fa-arrow-left left" />
             </span>
             <span className="left">Previous month</span>
+          </a>
+          <a className="button left">
+            <span className="icon left">
+              <i className="fas fa-play left" />
+            </span>
           </a>
           <a
             className="button right"
