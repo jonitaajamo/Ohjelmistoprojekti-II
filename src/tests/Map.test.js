@@ -2,26 +2,26 @@ import React from "react";
 import Map from "../components/content/Map";
 
 describe("Map", () => {
-  const mockData = [
-    {
-      month: "2012-01",
-      assetClasses: [
-        {
-          class: "all",
-          weights: [
-            { countryId: 840, weight: 0.7, marketValue: 14000000 },
-            { countryId: 246, weight: 0.2, marketValue: 4000000 },
-            { countryId: 826, weight: 0.05, marketValue: 1000000 },
-            { countryId: 643, weight: 0.05, marketValue: 1000000 }
-          ]
-        }
-      ]
-    }
-  ];
-
-  const initialState = {
+  const props = {
+    geographicalWeightData: [
+      {
+        month: "2012-01",
+        assetClasses: [
+          {
+            class: "all",
+            weights: [
+              { countryId: 840, weight: 0.7, marketValue: 14000000 },
+              { countryId: 246, weight: 0.2, marketValue: 4000000 },
+              { countryId: 826, weight: 0.05, marketValue: 1000000 },
+              { countryId: 643, weight: 0.05, marketValue: 1000000 }
+            ]
+          }
+        ]
+      }
+    ],
     geographyBorders: [1, 2],
-    geographyNames: ["Finland", "Sweden"]
+    geographyNames: ["Finland", "Sweden"],
+    selectedMonth: 0
   };
 
   it("renders without crashing", () => {
@@ -35,14 +35,17 @@ describe("Map", () => {
   });
 
   it("renders map when data is loaded", () => {
-    const wrapper = shallow(<Map geographicalWeightData={mockData} selectedMonth={0} />);
+    const wrapper = shallow(
+      <Map {...props} />
+    );
     expect(wrapper.find("ComposableMap").length).toEqual(1);
   });
 
   it("fires event handler when geography is clicked", () => {
-    const wrapper = mount(<Map geographicalWeightData={mockData} selectedMonth={0} />);
+    const wrapper = mount(
+      <Map {...props} />
+    );
     wrapper.instance().onGeographyClick = jest.fn();
-    wrapper.setState(initialState);
     wrapper.update();
     wrapper
       .find("Geography")
@@ -52,8 +55,9 @@ describe("Map", () => {
   });
 
   it("zooms in when geography is clicked", () => {
-    const wrapper = mount(<Map geographicalWeightData={mockData} selectedMonth={0} />);
-    wrapper.setState(initialState);
+    const wrapper = mount(
+      <Map {...props} />
+    );
     wrapper
       .find("Geography")
       .at(0)
@@ -62,7 +66,9 @@ describe("Map", () => {
   });
 
   it("zooms out when button is clicked", () => {
-    const wrapper = shallow(<Map geographicalWeightData={mockData} selectedMonth={0} />);
+    const wrapper = shallow(
+      <Map {...props} />
+    );
     wrapper.setState({ mapZoomValue: 3 });
     wrapper.find("button").simulate("click");
     expect(wrapper.state().mapZoomValue).toBe(1);
@@ -70,7 +76,9 @@ describe("Map", () => {
 
   it("sets weight values when map is rendered", () => {
     const spy = jest.spyOn(Map.prototype, "setWeightValuesForHeatmap");
-    const wrapper = mount(<Map geographicalWeightData={mockData} selectedMonth={0} />);
+    const wrapper = mount(
+      <Map {...props} />
+    );
     expect(spy).toHaveBeenCalledTimes(1);
   });
 });

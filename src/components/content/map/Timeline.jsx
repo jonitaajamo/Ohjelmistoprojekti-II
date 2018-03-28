@@ -43,7 +43,7 @@ export default class Timeline extends Component {
           </a>
           <a
             className="button right"
-            id="1"
+            id="next"
             onClick={this.props.onMonthButtonClick}
           >
             <span className="right">Next month</span>

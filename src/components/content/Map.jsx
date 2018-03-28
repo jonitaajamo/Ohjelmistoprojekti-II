@@ -16,8 +16,6 @@ class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      geographyBorders: [],
-      geographyNames: [],
       isGeographyHovered: false,
       hoveredGeographyName: "",
       isGeographyClicked: false,
@@ -29,39 +27,10 @@ class Map extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
-      .then(response => response.json())
-      .then(worldData =>
-        this.setState({
-          geographyBorders: feature(
-            worldData,
-            worldData.objects.countries
-          ).features.sort((a, b) => {
-            return a.id - b.id;
-          })
-        })
-      )
-      .catch(err => console.error(err));
-
-    fetch(
-      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json"
-    )
-      .then(response => response.json())
-      .then(names =>
-        this.setState({
-          geographyNames: names.countries.sort((a, b) => {
-            return a.id - b.id;
-          })
-        })
-      )
-      .catch(err => console.error(err));
-  }
-
   toggleHover(i) {
     this.setState({
       isGeographyHovered: !this.state.isGeographyHovered,
-      hoveredGeographyName: this.state.geographyNames[i].name
+      hoveredGeographyName: this.props.geographyNames[i].name
     });
   }
 
@@ -77,7 +46,7 @@ class Map extends Component {
     this.setState(
       {
         isGeographyClicked: true,
-        clickedGeographyName: this.state.geographyNames[i].name,
+        clickedGeographyName: this.props.geographyNames[i].name,
         mapZoomValue: 3,
         mapCenter: centroid,
         disableOptimization: true
@@ -89,7 +58,7 @@ class Map extends Component {
       }
     );
 
-    if (this.state.clickedGeographyName === this.state.geographyNames[i].name) {
+    if (this.state.clickedGeographyName === this.props.geographyNames[i].name) {
       this.setState({
         isGeographyClicked: false,
         clickedGeographyName: "",
@@ -119,11 +88,11 @@ class Map extends Component {
     const assetClasses = this.props.geographicalWeightData.length
       ? this.props.geographicalWeightData[month].assetClasses[asset].weights
       : [];
-    for (let i = 0; i < this.state.geographyNames.length; i++) {
+    for (let i = 0; i < this.props.geographyNames.length; i++) {
       for (let j = 0; j < assetClasses.length; j++) {
         let id = assetClasses[j].countryId;
         let weight = assetClasses[j].weight;
-        if (this.state.geographyNames[i].id === JSON.stringify(id)) {
+        if (this.props.geographyNames[i].id === JSON.stringify(id)) {
           weightDataForMap.push(weight);
         }
       }
@@ -171,7 +140,7 @@ class Map extends Component {
     const mapGeographies = (
       <Geographies
         disableOptimization={optimization}
-        geography={this.state.geographyBorders}
+        geography={this.props.geographyBorders}
       >
         {(geographies, projection) =>
           geographies.map((geography, i) => (
@@ -181,7 +150,7 @@ class Map extends Component {
                   fill:
                     this.state.isGeographyClicked &&
                     this.state.clickedGeographyName ===
-                      this.state.geographyNames[i].name
+                      this.props.geographyNames[i].name
                       ? "steelblue"
                       : weightData[i] === 0
                         ? "#fcfcfc"

@@ -16,7 +16,7 @@ describe("Content", () => {
   });
 
   it("fetches data when mounted", () => {
-    const spy = jest.spyOn(Content.prototype, "fetchGeographicalWeightData");
+    const spy = jest.spyOn(Content.prototype, "fetchDataForMap");
     const wrapper = shallow(<Content />);
     expect(spy).toHaveBeenCalledTimes(1);
   });
