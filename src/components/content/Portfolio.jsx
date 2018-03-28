@@ -1,7 +1,7 @@
 import React from "react";
 
 const Portfolio = () => (
-  <article className="tile is-child notification is-info">
+  <article className="tile is-child notification">
     <p className="title">Portfolio</p>
     <figure className="image is-4by3">
       <img

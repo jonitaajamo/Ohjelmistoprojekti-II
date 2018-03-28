@@ -3,20 +3,34 @@ import TimelineTabs from "./TimelineTabs";
 
 export default class Timeline extends Component {
   render() {
+    const timelineStyle = {
+      alignItems: "center",
+      justifyContent: "center"
+    };
+    
+
     return (
       <article className="tile is-child notification">
         <TimelineTabs
           geographicalWeightData={this.props.geographicalWeightData}
           onAssetChange={this.props.onAssetChange}
         />
-        <input
-          className="progress"
-          type="range"
-          min="0"
-          max={this.props.length}
-          value={this.props.month}
-          onChange={this.props.onChange}
-        />
+        <div className="columns" style={timelineStyle}>
+          <a className="button left" style={{marginRight: 10}}>
+            <span className="icon left">
+              <i className="fas fa-play left" />
+            </span>
+          </a>
+          <input
+            className="progress"
+            type="range"
+            min="0"
+            max={this.props.length}
+            value={this.props.month}
+            onChange={this.props.onChange}
+            style={{outline: "none"}}
+          />
+        </div>
         <span className="field has-addons has-addons-centered">
           <a className="button left" id="previous" onClick={this.props.onMonthButtonClick}>
             <span className="icon left">
@@ -24,11 +38,15 @@ export default class Timeline extends Component {
             </span>
             <span className="left">Previous month</span>
           </a>
-          <a className="button right" id="next" onClick={this.props.onMonthButtonClick}>
+          <a
+            className="button right"
+            id="1"
+            onClick={this.props.onMonthButtonClick}
+          >
+            <span className="right">Next month</span>
             <span className="icon right">
               <i className="fas fa-arrow-right right" />
             </span>
-            <span className="right">Next month</span>
           </a>
         </span>
       </article>
