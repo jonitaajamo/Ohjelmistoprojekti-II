@@ -1,27 +1,8 @@
 import React, { Component } from "react";
 
 export default class TabButton extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isTabButtonClicked: false,
-      isClicked: false
-    };
-  }
-
   clickHandler() {
-    console.log("Click!", this.props.asset);
-    if (this.state.isTabButtonClicked) {
-      this.setState({
-        isTabButtonClicked: false
-      });
-      this.props.tabButtonClickHandler(this.state.isTabButtonClicked);
-    } else {
-      this.setState({
-        isTabButtonClicked: true
-      });
-      this.props.tabButtonClickHandler(this.state.isTabButtonClicked);
-    }
+    this.props.onClickHandler();
   }
 
   capitalize(string) {
@@ -34,13 +15,7 @@ export default class TabButton extends Component {
     };
 
     return (
-      <li
-        className={
-          this.state.isTabButtonClicked && !this.props.isAllButtonClicked
-            ? "tab is-active"
-            : "tab"
-        }
-      >
+      <li className={this.props.isActive}>
         <a style={linkStyle} onClick={() => this.clickHandler()}>
           <span>{this.capitalize(this.props.asset)}</span>
         </a>
