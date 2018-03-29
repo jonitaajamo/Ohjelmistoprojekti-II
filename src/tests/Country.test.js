@@ -9,11 +9,11 @@ describe("Country", () => {
 
   it("displays default text when no country is selected", () => {
     const wrapper = shallow(<Country />);
-    expect(wrapper.find("p").text()).toEqual("Select a country");
+    expect(wrapper.find("span").text()).toEqual("Select a country");
   });
 
   it("displays country name", () => {
     const wrapper = shallow(<Country country="Finland" />);
-    expect(wrapper.find("p").text()).toEqual("Finland");
+    expect(wrapper.find("span").text()).toEqual("Finland");
   });
 });

@@ -22,7 +22,7 @@ ShallowWrapper {
       "children": <Loading
         color="tomato"
 />,
-      "className": "tile is-child notification is-paddingless",
+      "className": "is-child notification is-paddingless",
     },
     "ref": null,
     "rendered": Object {
@@ -47,7 +47,7 @@ ShallowWrapper {
         "children": <Loading
           color="tomato"
 />,
-        "className": "tile is-child notification is-paddingless",
+        "className": "is-child notification is-paddingless",
       },
       "ref": null,
       "rendered": Object {

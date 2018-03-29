@@ -17,18 +17,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="content"
+      "children": <span
+        className="tag is-larger is-dark"
 >
-        <p
-                className="title"
-        >
-                Select a country
-        </p>
-</div>,
-      "className": "tile is-child notification is-dark",
+        Select a country
+</span>,
+      "className": "content",
       "style": Object {
-        "opacity": 0.7,
+        "left": "0px",
+        "margin": "10px",
+        "opacity": 0.9,
+        "position": "absolute",
+        "top": "0px",
       },
     },
     "ref": null,
@@ -37,12 +37,34 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <p
-          className="title"
+        "children": "Select a country",
+        "className": "tag is-larger is-dark",
+      },
+      "ref": null,
+      "rendered": "Select a country",
+      "type": "span",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <span
+          className="tag is-larger is-dark"
 >
           Select a country
-</p>,
+</span>,
         "className": "content",
+        "style": Object {
+          "left": "0px",
+          "margin": "10px",
+          "opacity": 0.9,
+          "position": "absolute",
+          "top": "0px",
+        },
       },
       "ref": null,
       "rendered": Object {
@@ -51,65 +73,13 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Select a country",
-          "className": "title",
+          "className": "tag is-larger is-dark",
         },
         "ref": null,
         "rendered": "Select a country",
-        "type": "p",
+        "type": "span",
       },
       "type": "div",
-    },
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="content"
->
-          <p
-                    className="title"
-          >
-                    Select a country
-          </p>
-</div>,
-        "className": "tile is-child notification is-dark",
-        "style": Object {
-          "opacity": 0.7,
-        },
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <p
-            className="title"
->
-            Select a country
-</p>,
-          "className": "content",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Select a country",
-            "className": "title",
-          },
-          "ref": null,
-          "rendered": "Select a country",
-          "type": "p",
-        },
-        "type": "div",
-      },
-      "type": "article",
     },
   ],
   Symbol(enzyme.__options__): Object {
