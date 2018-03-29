@@ -1,15 +1,19 @@
 import React from "react";
 
 const style = {
-  opacity: 0.7
+  opacity: 0.9,
+  margin: "10px",
+  position: "absolute",
+  top: "0px",
+  left: "0px"
 };
 
 const Country = ({ country }) => (
-  <article className="tile is-child notification is-dark" style={style}>
-    <div className="content">
-      <p className="title">{country ? country : "Select a country"}</p>
-    </div>
-  </article>
+  <div className="content" style={style}>
+    <span className="tag is-larger is-dark">
+      {country ? country : "Select a country"}
+    </span>
+  </div>
 );
 
 export default Country;
