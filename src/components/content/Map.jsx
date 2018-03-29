@@ -185,57 +185,47 @@ class Map extends Component {
     );
 
     const errorStyle = {
-      position: "absolute",
-      top: "0",
-      left: "0",
-      width: "100%",
-      height: "100%",
-      zIndex: "10",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      color: "rgba(255, 255, 255, 1)",
-      display: this.state.touchError === false ? "none" : "flex",
-      margin: "0 auto",
-      alignItems: "center",
-      justifyContent: "center",
-      paddingBottom: "62px"
+      display: this.state.touchError === false ? "none" : "flex"
     };
 
     return (
-      <article
-        onTouchMove={this.touchWarning.bind(this)}
-        className="tile has-accent is-child notification is-paddingless"
-      >
-        <div style={errorStyle}>
-          <div>The map must be dragged with two fingers</div>
-        </div>
-        <ComposableMap
-          width={800}
-          height={450}
-          style={{
-            width: "100%",
-            height: "auto"
-          }}
-        >
-          <ZoomableGroup
-            center={this.state.mapCenter}
-            zoom={this.state.mapZoomValue}
+      <article className="tile has-accent is-child notification is-paddingless">
+        <div onTouchMove={this.touchWarning.bind(this)}>
+          <div className="is-error-overlay" style={errorStyle}>
+            <div>The map must be dragged with two fingers</div>
+          </div>
+          <ComposableMap
+            width={800}
+            height={450}
+            style={{
+              width: "100%",
+              height: "auto"
+            }}
           >
-            {mapGeographies}
-          </ZoomableGroup>
-        </ComposableMap>
-        <Country country={this.checkGeographyName()} />
-        <div
-          style={{
-            margin: "10px",
-            marginBottom: "158px",
-            position: "absolute",
-            bottom: "0px",
-            left: "0px"
-          }}
-        >
-          <button className="button" onClick={() => this.zoomOutOfGeography()}>
-            Zoom out
-          </button>
+            <ZoomableGroup
+              center={this.state.mapCenter}
+              zoom={this.state.mapZoomValue}
+            >
+              {mapGeographies}
+            </ZoomableGroup>
+          </ComposableMap>
+          <Country country={this.checkGeographyName()} />
+          <div
+            style={{
+              margin: "10px",
+              marginBottom: "173px",
+              position: "absolute",
+              bottom: "0px",
+              left: "0px"
+            }}
+          >
+            <button
+              className="button"
+              onClick={() => this.zoomOutOfGeography()}
+            >
+              Zoom out
+            </button>
+          </div>
         </div>
 
         <Timeline
