@@ -203,7 +203,7 @@ class Map extends Component {
     return (
       <article
         onTouchMove={this.touchWarning.bind(this)}
-        className="tile is-child notification is-paddingless"
+        className="tile has-accent is-child notification is-paddingless"
       >
         <div style={errorStyle}>
           <div>The map must be dragged with two fingers</div>
@@ -213,8 +213,7 @@ class Map extends Component {
           height={450}
           style={{
             width: "100%",
-            height: "auto",
-            marginBottom: "-62px"
+            height: "auto"
           }}
         >
           <ZoomableGroup
@@ -224,14 +223,21 @@ class Map extends Component {
             {mapGeographies}
           </ZoomableGroup>
         </ComposableMap>
-        <button
-          style={{ margin: "10px" }}
-          className="button"
-          onClick={() => this.zoomOutOfGeography()}
-        >
-          Zoom out
-        </button>
         <Country country={this.checkGeographyName()} />
+        <div
+          style={{
+            margin: "10px",
+            marginBottom: "158px",
+            position: "absolute",
+            bottom: "0px",
+            left: "0px"
+          }}
+        >
+          <button className="button" onClick={() => this.zoomOutOfGeography()}>
+            Zoom out
+          </button>
+        </div>
+
         <Timeline
           length={this.props.length}
           geographicalWeightData={this.props.geographicalWeightData}
@@ -246,7 +252,7 @@ class Map extends Component {
 
   renderLoading() {
     return (
-      <article className="tile is-child notification is-paddingless">
+      <article className="is-child notification is-paddingless">
         <Loading color="tomato" />
       </article>
     );

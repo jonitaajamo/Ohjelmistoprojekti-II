@@ -6,3 +6,11 @@ body {
 body {
   position: relative;
 }
+
+.has-accent {
+  border-left: solid 4px grey;
+}
+
+.is-larger {
+  font-size: 1.65rem !important;
+}
