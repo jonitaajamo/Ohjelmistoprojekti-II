@@ -41,19 +41,25 @@ export default class Assets extends Component {
             }
           });
 
-    console.log(this.props.isGeographyClicked);
-
     return (
       <article className="tile has-accent is-child notification">
+        <p className="title">Assets</p>
         <table className="table is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th>Asset Name</th>
+              <th>Class</th>
               <th>Value</th>
             </tr>
           </thead>
           <tbody>{assetTableData}</tbody>
         </table>
+        <p className="title">Top 10 Weights</p>
+        <figure className="image is-4by3">
+          <img
+            alt="Placeholder"
+            src="https://bulma.io/images/placeholders/640x480.png"
+          />
+        </figure>
       </article>
     );
   }

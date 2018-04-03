@@ -58,8 +58,6 @@ class Map extends Component {
       }
     );
 
-    console.log("in map before if", this.state.isGeographyClicked);
-
     if (
       this.state.clickedGeographyName === this.props.geographyNames[i].name &&
       this.state.isGeographyClicked
@@ -71,8 +69,6 @@ class Map extends Component {
         mapCenter: [0, 20]
       });
     }
-
-    console.log("in map after if", this.state.isGeographyClicked);
 
     this.props.fetchGeographyIdFromMap(
       geography.id,
@@ -160,27 +156,53 @@ class Map extends Component {
               style={{
                 default: {
                   fill:
+                    weightData[i] === 0
+                      ? "#fcfcfc"
+                      : `rgba(200,50,56, ${weightData[i] * 2})`,
+                  stroke:
                     this.state.isGeographyClicked &&
                     this.state.clickedGeographyName ===
                       this.props.geographyNames[i].name
                       ? "steelblue"
-                      : weightData[i] === 0
-                        ? "#fcfcfc"
-                        : `rgba(200,50,56, ${weightData[i] * 2})`,
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                      : "black",
+                  strokeWidth:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "1.4px"
+                      : "0.5px",
                   outline: "none"
                 },
                 hover: {
                   fill: "rgba(200, 50, 56, 0.5)",
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  stroke:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "steelblue"
+                      : "black",
+                  strokeWidth:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "1.4px"
+                      : "0.5px",
                   outline: "none"
                 },
                 pressed: {
-                  fill: "tomato",
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  fill: "steelblue",
+                  stroke:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "steelblue"
+                      : "black",
+                  strokeWidth:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "1.4px"
+                      : "0.5px",
                   outline: "none"
                 }
               }}
@@ -226,9 +248,9 @@ class Map extends Component {
           <div
             style={{
               margin: "10px",
-              marginBottom: "173px",
+              marginTop: "360px",
               position: "absolute",
-              bottom: "0px",
+              top: "0px",
               left: "0px"
             }}
           >

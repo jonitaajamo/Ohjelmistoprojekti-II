@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { feature } from "topojson-client";
 import Map from "./content/Map";
 import Assets from "./content/Assets";
-import Portfolio from "./content/Portfolio";
 
 export default class Content extends Component {
   constructor(props) {
@@ -161,9 +160,6 @@ export default class Content extends Component {
               onMonthButtonClick={this.changeMonthOnClick.bind(this)}
               fetchGeographyIdFromMap={this.fetchGeographyIdFromMap.bind(this)}
             />
-          </div>
-          <div className="tile is-parent">
-            <Portfolio />
           </div>
         </div>
         <div className="tile">
