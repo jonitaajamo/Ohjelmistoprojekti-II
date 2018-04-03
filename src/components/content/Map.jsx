@@ -17,7 +17,7 @@ class Map extends Component {
     this.state = {
       isGeographyHovered: false,
       hoveredGeographyName: "",
-      isGeographyClicked: false,
+      isGeographyClicked: true,
       clickedGeographyName: "",
       mapZoomValue: 1,
       mapCenter: [0, 20],
@@ -42,6 +42,7 @@ class Map extends Component {
   onGeographyClick(geography, i) {
     const path = geoPath().projection(this.mapProjection());
     const centroid = this.mapProjection().invert(path.centroid(geography));
+
     this.setState(
       {
         isGeographyClicked: true,
@@ -57,7 +58,10 @@ class Map extends Component {
       }
     );
 
-    if (this.state.clickedGeographyName === this.props.geographyNames[i].name) {
+    if (
+      this.state.clickedGeographyName === this.props.geographyNames[i].name &&
+      this.state.isGeographyClicked
+    ) {
       this.setState({
         isGeographyClicked: false,
         clickedGeographyName: "",
@@ -65,6 +69,11 @@ class Map extends Component {
         mapCenter: [0, 20]
       });
     }
+
+    this.props.fetchGeographyIdFromMap(
+      geography.id,
+      this.state.isGeographyClicked
+    );
   }
 
   checkGeographyName() {
@@ -147,27 +156,53 @@ class Map extends Component {
               style={{
                 default: {
                   fill:
+                    weightData[i] === 0
+                      ? "#fcfcfc"
+                      : `rgba(200,50,56, ${weightData[i] * 2})`,
+                  stroke:
                     this.state.isGeographyClicked &&
                     this.state.clickedGeographyName ===
                       this.props.geographyNames[i].name
                       ? "steelblue"
-                      : weightData[i] === 0
-                        ? "#fcfcfc"
-                        : `rgba(200,50,56, ${weightData[i] * 2})`,
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                      : "black",
+                  strokeWidth:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "1.4px"
+                      : "0.5px",
                   outline: "none"
                 },
                 hover: {
                   fill: "rgba(200, 50, 56, 0.5)",
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  stroke:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "steelblue"
+                      : "black",
+                  strokeWidth:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "1.4px"
+                      : "0.5px",
                   outline: "none"
                 },
                 pressed: {
-                  fill: "tomato",
-                  stroke: "black",
-                  strokeWidth: "0.5px",
+                  fill: "steelblue",
+                  stroke:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "steelblue"
+                      : "black",
+                  strokeWidth:
+                    this.state.isGeographyClicked &&
+                    this.state.clickedGeographyName ===
+                      this.props.geographyNames[i].name
+                      ? "1.4px"
+                      : "0.5px",
                   outline: "none"
                 }
               }}
@@ -213,10 +248,9 @@ class Map extends Component {
           <div
             style={{
               margin: "10px",
-              marginBottom: "173px",
               position: "absolute",
-              bottom: "0px",
-              left: "0px"
+              top: "0px",
+              right: "0px"
             }}
           >
             <button

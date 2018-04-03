@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { feature } from "topojson-client";
 import Map from "./content/Map";
 import Assets from "./content/Assets";
-import Portfolio from "./content/Portfolio";
 
 export default class Content extends Component {
   constructor(props) {
@@ -13,7 +12,9 @@ export default class Content extends Component {
       geographyNames: [],
       selectedMonth: 0,
       selectedAsset: 0,
-      disableOptimization: false
+      disableOptimization: false,
+      geographyId: "",
+      isGeographyClicked: false
     };
   }
 
@@ -29,7 +30,7 @@ export default class Content extends Component {
       )
       .catch(err => console.error(err));
 
-      fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
+    fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
       .then(response => response.json())
       .then(worldData =>
         this.setState({
@@ -126,6 +127,13 @@ export default class Content extends Component {
     }
   }
 
+  fetchGeographyIdFromMap(geographyId, isGeographyClicked) {
+    this.setState({
+      geographyId,
+      isGeographyClicked
+    });
+  }
+
   render() {
     const contentStyle = {
       width: "99%",
@@ -150,15 +158,18 @@ export default class Content extends Component {
               onAssetChange={this.changeAsset.bind(this)}
               month={this.state.selectedMonth}
               onMonthButtonClick={this.changeMonthOnClick.bind(this)}
+              fetchGeographyIdFromMap={this.fetchGeographyIdFromMap.bind(this)}
             />
-          </div>
-          <div className="tile is-parent">
-            <Portfolio />
           </div>
         </div>
         <div className="tile">
           <div className="tile is-parent is-vertical">
-            <Assets />
+            <Assets
+              geographyId={this.state.geographyId}
+              geographicalWeightData={this.state.geographicalWeightData}
+              month={this.state.selectedMonth}
+              isGeographyClicked={this.state.isGeographyClicked}
+            />
           </div>
         </div>
       </div>
