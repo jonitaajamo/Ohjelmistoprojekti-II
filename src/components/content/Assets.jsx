@@ -1,18 +1,31 @@
 import React, { Component } from "react";
 
 export default class Assets extends Component {
-  Loading() {
+  constructor() {
+    super();
+    this.state = {
+      currentMonth: ""
+    };
+  }
+
+  capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  Loading(what) {
     return (
       <tr>
-        <td>Loading...</td>
+        <td>Loading {what}...</td>
       </tr>
     );
   }
 
   render() {
+    console.log("geographicalweightdata", this.props);
+
     const assetTableData =
       this.props.geographicalWeightData.length === 0
-        ? this.Loading()
+        ? this.Loading("Assets")
         : this.props.geographicalWeightData.map((item, key) => {
             if (key === this.props.month) {
               const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
@@ -24,7 +37,7 @@ export default class Assets extends Component {
                     ) {
                       return (
                         <tr key={innerKey}>
-                          <td>{innerItem.class}</td>
+                          <td>{this.capitalize(innerItem.class)}</td>
                           <td>{innerInnerItem.marketValue}</td>
                         </tr>
                       );
@@ -44,14 +57,14 @@ export default class Assets extends Component {
     return (
       <article className="tile has-accent is-child notification">
         <p className="title">Assets</p>
+        <p className="subtitle">
+          World<br />
+          {this.props.geographicalWeightData.length === 0
+            ? this.Loading("Month")
+            : this.props.geographicalWeightData[this.props.month].month}
+        </p>
         <div className="centered-table">
           <table className="table is-fullwidth is-hoverable">
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Value</th>
-              </tr>
-            </thead>
             <tbody>{assetTableData}</tbody>
           </table>
         </div>
