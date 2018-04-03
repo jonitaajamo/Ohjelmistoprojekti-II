@@ -42,6 +42,8 @@ class Map extends Component {
   onGeographyClick(geography, i) {
     const path = geoPath().projection(this.mapProjection());
     const centroid = this.mapProjection().invert(path.centroid(geography));
+
+    this.props.fetchGeographyIdFromMap(geography.id);
     this.setState(
       {
         isGeographyClicked: true,

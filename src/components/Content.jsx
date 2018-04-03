@@ -13,7 +13,8 @@ export default class Content extends Component {
       geographyNames: [],
       selectedMonth: 0,
       selectedAsset: 0,
-      disableOptimization: false
+      disableOptimization: false,
+      geographyId: ""
     };
   }
 
@@ -29,7 +30,7 @@ export default class Content extends Component {
       )
       .catch(err => console.error(err));
 
-      fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
+    fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
       .then(response => response.json())
       .then(worldData =>
         this.setState({
@@ -126,6 +127,12 @@ export default class Content extends Component {
     }
   }
 
+  fetchGeographyIdFromMap(geographyId) {
+    this.setState({
+      geographyId
+    });
+  }
+
   render() {
     const contentStyle = {
       width: "99%",
@@ -150,6 +157,7 @@ export default class Content extends Component {
               onAssetChange={this.changeAsset.bind(this)}
               month={this.state.selectedMonth}
               onMonthButtonClick={this.changeMonthOnClick.bind(this)}
+              fetchGeographyIdFromMap={this.fetchGeographyIdFromMap.bind(this)}
             />
           </div>
           <div className="tile is-parent">
@@ -158,7 +166,11 @@ export default class Content extends Component {
         </div>
         <div className="tile">
           <div className="tile is-parent is-vertical">
-            <Assets />
+            <Assets
+              geographyId={this.state.geographyId}
+              geographicalWeightData={this.state.geographicalWeightData}
+              month={this.state.selectedMonth}
+            />
           </div>
         </div>
       </div>
