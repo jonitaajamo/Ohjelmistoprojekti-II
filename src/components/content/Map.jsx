@@ -248,10 +248,9 @@ class Map extends Component {
           <div
             style={{
               margin: "10px",
-              marginTop: "360px",
               position: "absolute",
               top: "0px",
-              left: "0px"
+              right: "0px"
             }}
           >
             <button

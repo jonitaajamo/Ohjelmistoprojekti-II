@@ -44,15 +44,17 @@ export default class Assets extends Component {
     return (
       <article className="tile has-accent is-child notification">
         <p className="title">Assets</p>
-        <table className="table is-fullwidth is-hoverable">
-          <thead>
-            <tr>
-              <th>Class</th>
-              <th>Value</th>
-            </tr>
-          </thead>
-          <tbody>{assetTableData}</tbody>
-        </table>
+        <div className="centered-table">
+          <table className="table is-fullwidth is-hoverable">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>{assetTableData}</tbody>
+          </table>
+        </div>
         <p className="title">Top 10 Weights</p>
         <figure className="image is-4by3">
           <img

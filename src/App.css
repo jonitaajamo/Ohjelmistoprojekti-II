@@ -31,6 +31,12 @@ body {
   font-size: 1.65rem !important;
 }
 
+.centered-table {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
 @media only screen and (max-width: 600px) {
   .is-larger {
     font-size: 1.25rem !important;
