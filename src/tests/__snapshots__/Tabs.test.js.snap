@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Tabs
+    geographicalWeightData={
+        Array [
+            Object {
+              "assetClasses": Array [
+                Object {
+                  "class": "all",
+                  "weights": Array [
+                    Object {
+                      "countryId": 840,
+                      "marketValue": 14000000,
+                      "weight": 0.7,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 4000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 1000000,
+                      "weight": 0.05,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 1000000,
+                      "weight": 0.05,
+                    },
+                  ],
+                },
+                Object {
+                  "class": "equity",
+                  "weights": Array [
+                    Object {
+                      "countryId": 276,
+                      "marketValue": 3000000,
+                      "weight": 0.1,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 27000000,
+                      "weight": 0.9,
+                    },
+                  ],
+                },
+                Object {
+                  "class": "bond",
+                  "weights": Array [
+                    Object {
+                      "countryId": 276,
+                      "marketValue": 2000000,
+                      "weight": 0.1,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 18000000,
+                      "weight": 0.9,
+                    },
+                  ],
+                },
+                Object {
+                  "class": "alternative",
+                  "weights": Array [
+                    Object {
+                      "countryId": 276,
+                      "marketValue": 5000000,
+                      "weight": 0.1,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 10000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 15000000,
+                      "weight": 0.3,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 20000000,
+                      "weight": 0.4,
+                    },
+                  ],
+                },
+                Object {
+                  "class": "property",
+                  "weights": Array [
+                    Object {
+                      "countryId": 276,
+                      "marketValue": 6000000,
+                      "weight": 0.1,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 12000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 18000000,
+                      "weight": 0.3,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 24000000,
+                      "weight": 0.4,
+                    },
+                  ],
+                },
+                Object {
+                  "class": "cash",
+                  "weights": Array [
+                    Object {
+                      "countryId": 276,
+                      "marketValue": 6000000,
+                      "weight": 0.1,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 12000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 18000000,
+                      "weight": 0.3,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 24000000,
+                      "weight": 0.4,
+                    },
+                  ],
+                },
+                Object {
+                  "class": "unknown",
+                  "weights": Array [
+                    Object {
+                      "countryId": 276,
+                      "marketValue": 6000000,
+                      "weight": 0.1,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 12000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 18000000,
+                      "weight": 0.3,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 24000000,
+                      "weight": 0.4,
+                    },
+                  ],
+                },
+              ],
+              "month": "2012-01",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Button
+          asset="all"
+          isActive="is-active"
+          onClickHandler={[Function]}
+/>,
+        <Button
+          asset="equity"
+          isActive=""
+          onClickHandler={[Function]}
+/>,
+        <Button
+          asset="bond"
+          isActive=""
+          onClickHandler={[Function]}
+/>,
+        <Button
+          asset="alternative"
+          isActive=""
+          onClickHandler={[Function]}
+/>,
+        <Button
+          asset="property"
+          isActive=""
+          onClickHandler={[Function]}
+/>,
+        <Button
+          asset="cash"
+          isActive=""
+          onClickHandler={[Function]}
+/>,
+        <Button
+          asset="unknown"
+          isActive=""
+          onClickHandler={[Function]}
+/>,
+      ],
+      "className": "tabs is-toggle is-toggle-rounded is-centered is-fullwidth",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "all",
+          "isActive": "is-active",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "equity",
+          "isActive": "",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "bond",
+          "isActive": "",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "alternative",
+          "isActive": "",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "property",
+          "isActive": "",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "cash",
+          "isActive": "",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "6",
+        "nodeType": "class",
+        "props": Object {
+          "asset": "unknown",
+          "isActive": "",
+          "onClickHandler": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Button
+            asset="all"
+            isActive="is-active"
+            onClickHandler={[Function]}
+/>,
+          <Button
+            asset="equity"
+            isActive=""
+            onClickHandler={[Function]}
+/>,
+          <Button
+            asset="bond"
+            isActive=""
+            onClickHandler={[Function]}
+/>,
+          <Button
+            asset="alternative"
+            isActive=""
+            onClickHandler={[Function]}
+/>,
+          <Button
+            asset="property"
+            isActive=""
+            onClickHandler={[Function]}
+/>,
+          <Button
+            asset="cash"
+            isActive=""
+            onClickHandler={[Function]}
+/>,
+          <Button
+            asset="unknown"
+            isActive=""
+            onClickHandler={[Function]}
+/>,
+        ],
+        "className": "tabs is-toggle is-toggle-rounded is-centered is-fullwidth",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "all",
+            "isActive": "is-active",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "equity",
+            "isActive": "",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "bond",
+            "isActive": "",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "alternative",
+            "isActive": "",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "property",
+            "isActive": "",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "cash",
+            "isActive": "",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "class",
+          "props": Object {
+            "asset": "unknown",
+            "isActive": "",
+            "onClickHandler": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

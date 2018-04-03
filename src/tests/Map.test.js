@@ -35,16 +35,12 @@ describe("Map", () => {
   });
 
   it("renders map when data is loaded", () => {
-    const wrapper = shallow(
-      <Map {...props} />
-    );
+    const wrapper = shallow(<Map {...props} />);
     expect(wrapper.find("ComposableMap").length).toEqual(1);
   });
 
   it("fires event handler when geography is clicked", () => {
-    const wrapper = mount(
-      <Map {...props} />
-    );
+    const wrapper = mount(<Map {...props} />);
     wrapper.instance().onGeographyClick = jest.fn();
     wrapper.update();
     wrapper
@@ -55,9 +51,7 @@ describe("Map", () => {
   });
 
   it("zooms in when geography is clicked", () => {
-    const wrapper = mount(
-      <Map {...props} />
-    );
+    const wrapper = mount(<Map {...props} />);
     wrapper
       .find("Geography")
       .at(0)
@@ -66,9 +60,7 @@ describe("Map", () => {
   });
 
   it("zooms out when button is clicked", () => {
-    const wrapper = shallow(
-      <Map {...props} />
-    );
+    const wrapper = shallow(<Map {...props} />);
     wrapper.setState({ mapZoomValue: 3 });
     wrapper.find("button").simulate("click");
     expect(wrapper.state().mapZoomValue).toBe(1);
@@ -76,9 +68,7 @@ describe("Map", () => {
 
   it("sets weight values when map is rendered", () => {
     const spy = jest.spyOn(Map.prototype, "setWeightValuesForHeatmap");
-    const wrapper = mount(
-      <Map {...props} />
-    );
+    const wrapper = mount(<Map {...props} />);
     expect(spy).toHaveBeenCalledTimes(1);
   });
 });

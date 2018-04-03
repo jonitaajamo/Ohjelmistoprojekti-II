@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class TabButton extends Component {
+export default class Button extends Component {
   clickHandler() {
     this.props.onClickHandler();
   }
