@@ -14,7 +14,8 @@ export default class Content extends Component {
       selectedMonth: 0,
       selectedAsset: 0,
       disableOptimization: false,
-      geographyId: ""
+      geographyId: "",
+      isGeographyClicked: false
     };
   }
 
@@ -127,9 +128,10 @@ export default class Content extends Component {
     }
   }
 
-  fetchGeographyIdFromMap(geographyId) {
+  fetchGeographyIdFromMap(geographyId, isGeographyClicked) {
     this.setState({
-      geographyId
+      geographyId,
+      isGeographyClicked
     });
   }
 
@@ -170,6 +172,7 @@ export default class Content extends Component {
               geographyId={this.state.geographyId}
               geographicalWeightData={this.state.geographicalWeightData}
               month={this.state.selectedMonth}
+              isGeographyClicked={this.state.isGeographyClicked}
             />
           </div>
         </div>

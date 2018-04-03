@@ -17,7 +17,7 @@ class Map extends Component {
     this.state = {
       isGeographyHovered: false,
       hoveredGeographyName: "",
-      isGeographyClicked: false,
+      isGeographyClicked: true,
       clickedGeographyName: "",
       mapZoomValue: 1,
       mapCenter: [0, 20],
@@ -43,7 +43,6 @@ class Map extends Component {
     const path = geoPath().projection(this.mapProjection());
     const centroid = this.mapProjection().invert(path.centroid(geography));
 
-    this.props.fetchGeographyIdFromMap(geography.id);
     this.setState(
       {
         isGeographyClicked: true,
@@ -59,7 +58,12 @@ class Map extends Component {
       }
     );
 
-    if (this.state.clickedGeographyName === this.props.geographyNames[i].name) {
+    console.log("in map before if", this.state.isGeographyClicked);
+
+    if (
+      this.state.clickedGeographyName === this.props.geographyNames[i].name &&
+      this.state.isGeographyClicked
+    ) {
       this.setState({
         isGeographyClicked: false,
         clickedGeographyName: "",
@@ -67,6 +71,13 @@ class Map extends Component {
         mapCenter: [0, 20]
       });
     }
+
+    console.log("in map after if", this.state.isGeographyClicked);
+
+    this.props.fetchGeographyIdFromMap(
+      geography.id,
+      this.state.isGeographyClicked
+    );
   }
 
   checkGeographyName() {

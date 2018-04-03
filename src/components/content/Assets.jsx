@@ -1,48 +1,47 @@
 import React, { Component } from "react";
 
 export default class Assets extends Component {
-  render() {
-    console.log(
-      "geographicalWeightData in assets",
-      this.props.geographicalWeightData
+  Loading() {
+    return (
+      <tr>
+        <td>Loading...</td>
+      </tr>
     );
+  }
 
+  render() {
     const assetTableData =
       this.props.geographicalWeightData.length === 0
-        ? "Loading..."
+        ? this.Loading()
         : this.props.geographicalWeightData.map((item, key) => {
             if (key === this.props.month) {
               const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
                 const innerInnerLoop = innerItem.weights.map(
                   (innerInnerItem, innerInnerKey) => {
-                    console.log(
-                      "countryid",
-                      innerInnerItem.countryId,
-                      "geographyid",
-                      Number(this.props.geographyId)
-                    );
                     if (
                       innerInnerItem.countryId ===
                       Number(this.props.geographyId)
                     ) {
-                      console.log("asd", innerInnerItem);
                       return (
                         <tr key={innerKey}>
                           <td>{innerItem.class}</td>
                           <td>{innerInnerItem.marketValue}</td>
                         </tr>
                       );
+                    } else {
+                      return null;
                     }
                   }
                 );
                 return innerInnerLoop;
               });
-              console.log("innerloop", innerLoop);
               return innerLoop;
+            } else {
+              return null;
             }
           });
 
-    console.log("assetatabasdofasdlö", assetTableData);
+    console.log(this.props.isGeographyClicked);
 
     return (
       <article className="tile has-accent is-child notification">
