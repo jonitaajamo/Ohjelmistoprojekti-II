@@ -24,7 +24,8 @@ export default class Content extends Component {
       .then(response => response.json())
       .then(weights =>
         this.setState({
-          geographicalWeightData: weights.monthlyWeights
+          geographicalWeightData: weights.monthlyWeights,
+          selectedMonth: weights.monthlyWeights.length - 1
         })
       )
       .catch(err => console.error(err));
