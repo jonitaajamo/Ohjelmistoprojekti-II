@@ -142,7 +142,7 @@ export default class Content extends Component {
     const weightDataLength = this.state.geographicalWeightData.length - 1;
 
     return (
-      <div style={contentStyle} className="tile is-ancestor">
+      <div style={contentStyle}>
         <Map
           geographicalWeightData={this.state.geographicalWeightData}
           geographyNames={this.state.geographyNames}
