@@ -1,5 +1,6 @@
 import React from "react";
 import Timeline from "../components/content/map/Timeline";
+import Content from "../components/Content";
 
 describe("Timeline", () => {
   const props = {
@@ -40,7 +41,7 @@ describe("Timeline", () => {
   });
 
   it("calls onChange when changed", () => {
-    const onChange = jest.fn();
+   const onChange = jest.fn();
     const wrapper = shallow(<Timeline {...props} onChange={onChange} />);
     wrapper.find("input").simulate("change");
     expect(onChange).toHaveBeenCalledTimes(1);

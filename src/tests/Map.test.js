@@ -19,6 +19,16 @@ describe("Map", () => {
         ]
       }
     ],
+    topInstruments: [
+      {
+        secId: 1236452364,
+        secName: "Woahtek Oyj",
+        weightInClass: 0.4,
+        marketValueInClass: 8000000,
+        classWeightInPortfolio: 0.08,
+        totalMarketValue: 8000000
+      }
+    ],
     geographyBorders: [1, 2],
     geographyNames: ["Finland", "Sweden"],
     selectedMonth: 0
@@ -42,7 +52,6 @@ describe("Map", () => {
   it("fires event handler when geography is clicked", () => {
     const wrapper = mount(<Map {...props} />);
     wrapper.instance().onGeographyClick = jest.fn();
-    wrapper.update();
     wrapper
       .find("Geography")
       .at(0)
