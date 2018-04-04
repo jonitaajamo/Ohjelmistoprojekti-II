@@ -59,6 +59,11 @@ export default class Assets extends Component {
           {this.props.clickedGeographyName.length === 0
             ? "World"
             : this.props.clickedGeographyName}
+
+          {!this.props.clickedGeographyName
+            ? ""
+            : " (" + this.props.currency + ")"}
+
           <br />
           {this.props.geographicalWeightData.length === 0
             ? this.Loading("Month")
@@ -78,7 +83,7 @@ export default class Assets extends Component {
             <tbody>{assetTableData}</tbody>
           </table>
         </div>
-        <p className="title">Top 10 Weights</p>
+        <p className="title">Top 10 Instruments</p>
         <figure className="image is-4by3">
           <img
             alt="Placeholder"

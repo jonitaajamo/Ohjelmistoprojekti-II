@@ -25,7 +25,8 @@ export default class Content extends Component {
       .then(weights =>
         this.setState({
           geographicalWeightData: weights.monthlyWeights,
-          selectedMonth: weights.monthlyWeights.length - 1
+          selectedMonth: weights.monthlyWeights.length - 1,
+          currency: weights.currency
         })
       )
       .catch(err => console.error(err));
@@ -145,6 +146,7 @@ export default class Content extends Component {
     return (
       <div style={contentStyle}>
         <Map
+          currency={this.state.currency}
           geographicalWeightData={this.state.geographicalWeightData}
           geographyNames={this.state.geographyNames}
           geographyBorders={this.state.geographyBorders}
