@@ -58,7 +58,10 @@ export default class Assets extends Component {
       <article className="tile has-accent is-child notification">
         <p className="title">Assets</p>
         <p className="subtitle">
-          World<br />
+          {this.props.clickedGeographyName.length === 0
+            ? "World"
+            : this.props.clickedGeographyName}
+          <br />
           {this.props.geographicalWeightData.length === 0
             ? this.Loading("Month")
             : this.props.geographicalWeightData[this.props.month].month}
