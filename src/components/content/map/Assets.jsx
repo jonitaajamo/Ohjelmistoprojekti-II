@@ -26,7 +26,7 @@ export default class Assets extends Component {
         <tr key={key}>
           <td>{key + 1}</td>
           <td>{item.secName}</td>
-          <td>{item.totalMarketValue}</td>
+          <td>{item.totalMarketValue + "€"}</td>
           <td>{item.weightInClass * 100 + "%"}</td>
         </tr>
       );
@@ -49,7 +49,7 @@ export default class Assets extends Component {
                       return (
                         <tr key={innerKey}>
                           <td>{this.capitalize(innerItem.class)}</td>
-                          <td>{innerInnerItem.marketValue}</td>
+                          <td>{innerInnerItem.marketValue + "€"}</td>
                         </tr>
                       );
                     } else {
