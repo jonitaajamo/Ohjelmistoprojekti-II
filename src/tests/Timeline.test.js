@@ -3,6 +3,22 @@ import Timeline from "../components/content/map/Timeline";
 
 describe("Timeline", () => {
   const props = {
+    geographicalWeightData: [
+      {
+        month: "2012-01",
+        assetClasses: [
+          {
+            class: "all",
+            weights: [
+              { countryId: 840, weight: 0.7, marketValue: 14000000 },
+              { countryId: 246, weight: 0.2, marketValue: 4000000 },
+              { countryId: 826, weight: 0.05, marketValue: 1000000 },
+              { countryId: 643, weight: 0.05, marketValue: 1000000 }
+            ]
+          }
+        ]
+      }
+    ],
     length: 76,
     month: 10
   };

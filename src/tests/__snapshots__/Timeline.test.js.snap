@@ -5,6 +5,40 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Timeline
+    geographicalWeightData={
+        Array [
+            Object {
+              "assetClasses": Array [
+                Object {
+                  "class": "all",
+                  "weights": Array [
+                    Object {
+                      "countryId": 840,
+                      "marketValue": 14000000,
+                      "weight": 0.7,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 4000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 1000000,
+                      "weight": 0.05,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 1000000,
+                      "weight": 0.05,
+                    },
+                  ],
+                },
+              ],
+              "month": "2012-01",
+            },
+          ]
+    }
     length={76}
     month={10}
 />,
@@ -22,7 +56,40 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Tabs
-          geographicalWeightData={undefined}
+          geographicalWeightData={
+                    Array [
+                              Object {
+                                "assetClasses": Array [
+                                  Object {
+                                    "class": "all",
+                                    "weights": Array [
+                                      Object {
+                                        "countryId": 840,
+                                        "marketValue": 14000000,
+                                        "weight": 0.7,
+                                      },
+                                      Object {
+                                        "countryId": 246,
+                                        "marketValue": 4000000,
+                                        "weight": 0.2,
+                                      },
+                                      Object {
+                                        "countryId": 826,
+                                        "marketValue": 1000000,
+                                        "weight": 0.05,
+                                      },
+                                      Object {
+                                        "countryId": 643,
+                                        "marketValue": 1000000,
+                                        "weight": 0.05,
+                                      },
+                                    ],
+                                  },
+                                ],
+                                "month": "2012-01",
+                              },
+                            ]
+          }
           onAssetChange={undefined}
 />,
         <div
@@ -35,7 +102,8 @@ ShallowWrapper {
           }
 >
           <input
-                    className="progress"
+                    className="slider"
+                    list="tickmarks"
                     max={76}
                     min="0"
                     onChange={undefined}
@@ -47,6 +115,14 @@ ShallowWrapper {
                     type="range"
                     value={10}
           />
+          <datalist
+                    id="tickmarks"
+          >
+                    <option
+                              label="2012-01"
+                              value={0}
+                    />
+          </datalist>
 </div>,
         <span
           className="field has-addons has-addons-centered"
@@ -109,7 +185,38 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "geographicalWeightData": undefined,
+          "geographicalWeightData": Array [
+            Object {
+              "assetClasses": Array [
+                Object {
+                  "class": "all",
+                  "weights": Array [
+                    Object {
+                      "countryId": 840,
+                      "marketValue": 14000000,
+                      "weight": 0.7,
+                    },
+                    Object {
+                      "countryId": 246,
+                      "marketValue": 4000000,
+                      "weight": 0.2,
+                    },
+                    Object {
+                      "countryId": 826,
+                      "marketValue": 1000000,
+                      "weight": 0.05,
+                    },
+                    Object {
+                      "countryId": 643,
+                      "marketValue": 1000000,
+                      "weight": 0.05,
+                    },
+                  ],
+                },
+              ],
+              "month": "2012-01",
+            },
+          ],
           "onAssetChange": undefined,
         },
         "ref": null,
@@ -121,19 +228,30 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <input
-            className="progress"
-            max={76}
-            min="0"
-            onChange={undefined}
-            style={
-                        Object {
-                                    "outline": "none",
-                                  }
-            }
-            type="range"
-            value={10}
+          "children": Array [
+            <input
+              className="slider"
+              list="tickmarks"
+              max={76}
+              min="0"
+              onChange={undefined}
+              style={
+                            Object {
+                                          "outline": "none",
+                                        }
+              }
+              type="range"
+              value={10}
 />,
+            <datalist
+              id="tickmarks"
+>
+              <option
+                            label="2012-01"
+                            value={0}
+              />
+</datalist>,
+          ],
           "className": "columns",
           "style": Object {
             "alignItems": "center",
@@ -141,25 +259,58 @@ ShallowWrapper {
           },
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "progress",
-            "max": 76,
-            "min": "0",
-            "onChange": undefined,
-            "style": Object {
-              "outline": "none",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "slider",
+              "list": "tickmarks",
+              "max": 76,
+              "min": "0",
+              "onChange": undefined,
+              "style": Object {
+                "outline": "none",
+              },
+              "type": "range",
+              "value": 10,
             },
-            "type": "range",
-            "value": 10,
+            "ref": null,
+            "rendered": null,
+            "type": "input",
           },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  label="2012-01"
+                  value={0}
+/>,
+              ],
+              "id": "tickmarks",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "label": "2012-01",
+                  "value": 0,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "option",
+              },
+            ],
+            "type": "datalist",
+          },
+        ],
         "type": "div",
       },
       Object {
@@ -403,7 +554,40 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Tabs
-            geographicalWeightData={undefined}
+            geographicalWeightData={
+                        Array [
+                                    Object {
+                                      "assetClasses": Array [
+                                        Object {
+                                          "class": "all",
+                                          "weights": Array [
+                                            Object {
+                                              "countryId": 840,
+                                              "marketValue": 14000000,
+                                              "weight": 0.7,
+                                            },
+                                            Object {
+                                              "countryId": 246,
+                                              "marketValue": 4000000,
+                                              "weight": 0.2,
+                                            },
+                                            Object {
+                                              "countryId": 826,
+                                              "marketValue": 1000000,
+                                              "weight": 0.05,
+                                            },
+                                            Object {
+                                              "countryId": 643,
+                                              "marketValue": 1000000,
+                                              "weight": 0.05,
+                                            },
+                                          ],
+                                        },
+                                      ],
+                                      "month": "2012-01",
+                                    },
+                                  ]
+            }
             onAssetChange={undefined}
 />,
           <div
@@ -416,7 +600,8 @@ ShallowWrapper {
             }
 >
             <input
-                        className="progress"
+                        className="slider"
+                        list="tickmarks"
                         max={76}
                         min="0"
                         onChange={undefined}
@@ -428,6 +613,14 @@ ShallowWrapper {
                         type="range"
                         value={10}
             />
+            <datalist
+                        id="tickmarks"
+            >
+                        <option
+                                    label="2012-01"
+                                    value={0}
+                        />
+            </datalist>
 </div>,
           <span
             className="field has-addons has-addons-centered"
@@ -490,7 +683,38 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "geographicalWeightData": undefined,
+            "geographicalWeightData": Array [
+              Object {
+                "assetClasses": Array [
+                  Object {
+                    "class": "all",
+                    "weights": Array [
+                      Object {
+                        "countryId": 840,
+                        "marketValue": 14000000,
+                        "weight": 0.7,
+                      },
+                      Object {
+                        "countryId": 246,
+                        "marketValue": 4000000,
+                        "weight": 0.2,
+                      },
+                      Object {
+                        "countryId": 826,
+                        "marketValue": 1000000,
+                        "weight": 0.05,
+                      },
+                      Object {
+                        "countryId": 643,
+                        "marketValue": 1000000,
+                        "weight": 0.05,
+                      },
+                    ],
+                  },
+                ],
+                "month": "2012-01",
+              },
+            ],
             "onAssetChange": undefined,
           },
           "ref": null,
@@ -502,19 +726,30 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <input
-              className="progress"
-              max={76}
-              min="0"
-              onChange={undefined}
-              style={
-                            Object {
-                                          "outline": "none",
-                                        }
-              }
-              type="range"
-              value={10}
+            "children": Array [
+              <input
+                className="slider"
+                list="tickmarks"
+                max={76}
+                min="0"
+                onChange={undefined}
+                style={
+                                Object {
+                                                "outline": "none",
+                                              }
+                }
+                type="range"
+                value={10}
 />,
+              <datalist
+                id="tickmarks"
+>
+                <option
+                                label="2012-01"
+                                value={0}
+                />
+</datalist>,
+            ],
             "className": "columns",
             "style": Object {
               "alignItems": "center",
@@ -522,25 +757,58 @@ ShallowWrapper {
             },
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "progress",
-              "max": 76,
-              "min": "0",
-              "onChange": undefined,
-              "style": Object {
-                "outline": "none",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "slider",
+                "list": "tickmarks",
+                "max": 76,
+                "min": "0",
+                "onChange": undefined,
+                "style": Object {
+                  "outline": "none",
+                },
+                "type": "range",
+                "value": 10,
               },
-              "type": "range",
-              "value": 10,
+              "ref": null,
+              "rendered": null,
+              "type": "input",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    label="2012-01"
+                    value={0}
+/>,
+                ],
+                "id": "tickmarks",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "label": "2012-01",
+                    "value": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "option",
+                },
+              ],
+              "type": "datalist",
+            },
+          ],
           "type": "div",
         },
         Object {

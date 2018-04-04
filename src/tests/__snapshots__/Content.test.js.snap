@@ -36,6 +36,8 @@ ShallowWrapper {
 />,
       "style": Object {
         "margin": "auto",
+        "marginBottom": "10px",
+        "marginTop": "10px",
         "width": "99%",
       },
     },
@@ -92,6 +94,8 @@ ShallowWrapper {
 />,
         "style": Object {
           "margin": "auto",
+          "marginBottom": "10px",
+          "marginTop": "10px",
           "width": "99%",
         },
       },
