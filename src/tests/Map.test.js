@@ -49,6 +49,13 @@ describe("Map", () => {
     expect(wrapper.find("ComposableMap").length).toEqual(1);
   });
 
+  it("renders children", () => {
+    const wrapper = shallow(<Map {...props} />);
+    expect(wrapper.find("Country").length).toBe(1);
+    expect(wrapper.find("Timeline").length).toBe(1);
+    expect(wrapper.find("Assets").length).toBe(1);
+  });
+
   it("fires event handler when geography is clicked", () => {
     const wrapper = mount(<Map {...props} />);
     wrapper.instance().onGeographyClick = jest.fn();

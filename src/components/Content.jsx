@@ -9,6 +9,8 @@ export default class Content extends Component {
       geographicalWeightData: [],
       geographyBorders: [],
       geographyNames: [],
+      topInstruments: [],
+      currency: "",
       selectedMonth: 0,
       selectedAsset: 0,
       disableOptimization: false,

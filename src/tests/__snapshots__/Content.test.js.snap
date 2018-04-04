@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Map
-        currency={undefined}
+        currency=""
         disableOptimization={false}
         fetchGeographyIdFromMap={[Function]}
         geographicalWeightData={Array []}
@@ -48,7 +48,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "currency": undefined,
+        "currency": "",
         "disableOptimization": false,
         "fetchGeographyIdFromMap": [Function],
         "geographicalWeightData": Array [],
@@ -78,7 +78,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Map
-          currency={undefined}
+          currency=""
           disableOptimization={false}
           fetchGeographyIdFromMap={[Function]}
           geographicalWeightData={Array []}
@@ -108,7 +108,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "currency": undefined,
+          "currency": "",
           "disableOptimization": false,
           "fetchGeographyIdFromMap": [Function],
           "geographicalWeightData": Array [],

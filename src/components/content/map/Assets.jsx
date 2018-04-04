@@ -72,7 +72,7 @@ export default class Assets extends Component {
       <article className="tile has-accent is-child notification">
         <p className="title">Assets</p>
         <p className="subtitle">
-          {this.props.clickedGeographyName.length === 0
+          {!this.props.clickedGeographyName
             ? "World"
             : this.props.clickedGeographyName}
 
@@ -81,7 +81,7 @@ export default class Assets extends Component {
             : " (" + this.props.currency + ")"}
 
           <br />
-          {this.props.geographicalWeightData.length === 0
+          {!this.props.geographicalWeightData.length
             ? this.Loading("Month")
             : this.props.geographicalWeightData[this.props.month].month}
         </p>
