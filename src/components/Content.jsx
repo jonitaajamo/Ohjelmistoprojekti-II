@@ -137,7 +137,9 @@ export default class Content extends Component {
   render() {
     const contentStyle = {
       width: "99%",
-      margin: "auto"
+      margin: "auto",
+      marginTop: "10px",
+      marginBottom: "10px"
     };
 
     const weightDataLength = this.state.geographicalWeightData.length - 1;

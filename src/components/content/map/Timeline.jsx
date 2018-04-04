@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import Tabs from "./timeline/Tabs";
 
 export default class Timeline extends Component {
+  renderDatalist() {
+    return this.props.geographicalWeightData.map((item, key) => {
+      return <option key={key} value={key * 10} label={item.month} />;
+    });
+  }
+
   render() {
     const timelineStyle = {
       alignItems: "center",
@@ -16,14 +22,16 @@ export default class Timeline extends Component {
         />
         <div className="columns" style={timelineStyle}>
           <input
-            className="progress"
+            className="slider"
             type="range"
             min="0"
             max={this.props.length}
             value={this.props.month}
             onChange={this.props.onChange}
             style={{ outline: "none" }}
+            list="tickmarks"
           />
+          <datalist id="tickmarks">{this.renderDatalist()}</datalist>
         </div>
         <span className="field has-addons has-addons-centered">
           <a
