@@ -26,6 +26,7 @@ ShallowWrapper {
           >
                     <Map
                               disableOptimization={false}
+                              fetchGeographyIdFromMap={[Function]}
                               geographicalWeightData={Array []}
                               geographyBorders={Array []}
                               geographyNames={Array []}
@@ -38,11 +39,6 @@ ShallowWrapper {
                               selectedMonth={0}
                     />
           </div>
-          <div
-                    className="tile is-parent"
-          >
-                    <Portfolio />
-          </div>
 </div>,
         <div
           className="tile"
@@ -50,7 +46,12 @@ ShallowWrapper {
           <div
                     className="tile is-parent is-vertical"
           >
-                    <Assets />
+                    <Assets
+                              geographicalWeightData={Array []}
+                              geographyId=""
+                              isGeographyClicked={false}
+                              month={0}
+                    />
           </div>
 </div>,
       ],
@@ -67,99 +68,73 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <div
-              className="tile is-parent"
+          "children": <div
+            className="tile is-parent"
 >
-              <Map
-                            disableOptimization={false}
-                            geographicalWeightData={Array []}
-                            geographyBorders={Array []}
-                            geographyNames={Array []}
-                            length={-1}
-                            month={0}
-                            onAssetChange={[Function]}
-                            onChange={[Function]}
-                            onMonthButtonClick={[Function]}
-                            selectedAsset={0}
-                            selectedMonth={0}
-              />
+            <Map
+                        disableOptimization={false}
+                        fetchGeographyIdFromMap={[Function]}
+                        geographicalWeightData={Array []}
+                        geographyBorders={Array []}
+                        geographyNames={Array []}
+                        length={-1}
+                        month={0}
+                        onAssetChange={[Function]}
+                        onChange={[Function]}
+                        onMonthButtonClick={[Function]}
+                        selectedAsset={0}
+                        selectedMonth={0}
+            />
 </div>,
-            <div
-              className="tile is-parent"
->
-              <Portfolio />
-</div>,
-          ],
           "className": "tile is-vertical is-8",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <Map
-                disableOptimization={false}
-                geographicalWeightData={Array []}
-                geographyBorders={Array []}
-                geographyNames={Array []}
-                length={-1}
-                month={0}
-                onAssetChange={[Function]}
-                onChange={[Function]}
-                onMonthButtonClick={[Function]}
-                selectedAsset={0}
-                selectedMonth={0}
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Map
+              disableOptimization={false}
+              fetchGeographyIdFromMap={[Function]}
+              geographicalWeightData={Array []}
+              geographyBorders={Array []}
+              geographyNames={Array []}
+              length={-1}
+              month={0}
+              onAssetChange={[Function]}
+              onChange={[Function]}
+              onMonthButtonClick={[Function]}
+              selectedAsset={0}
+              selectedMonth={0}
 />,
-              "className": "tile is-parent",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "disableOptimization": false,
-                "geographicalWeightData": Array [],
-                "geographyBorders": Array [],
-                "geographyNames": Array [],
-                "length": -1,
-                "month": 0,
-                "onAssetChange": [Function],
-                "onChange": [Function],
-                "onMonthButtonClick": [Function],
-                "selectedAsset": 0,
-                "selectedMonth": 0,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
+            "className": "tile is-parent",
           },
-          Object {
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": <Portfolio />,
-              "className": "tile is-parent",
+              "disableOptimization": false,
+              "fetchGeographyIdFromMap": [Function],
+              "geographicalWeightData": Array [],
+              "geographyBorders": Array [],
+              "geographyNames": Array [],
+              "length": -1,
+              "month": 0,
+              "onAssetChange": [Function],
+              "onChange": [Function],
+              "onMonthButtonClick": [Function],
+              "selectedAsset": 0,
+              "selectedMonth": 0,
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
+            "rendered": null,
+            "type": [Function],
           },
-        ],
+          "type": "div",
+        },
         "type": "div",
       },
       Object {
@@ -170,7 +145,12 @@ ShallowWrapper {
           "children": <div
             className="tile is-parent is-vertical"
 >
-            <Assets />
+            <Assets
+                        geographicalWeightData={Array []}
+                        geographyId=""
+                        isGeographyClicked={false}
+                        month={0}
+            />
 </div>,
           "className": "tile",
         },
@@ -180,15 +160,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Assets />,
+            "children": <Assets
+              geographicalWeightData={Array []}
+              geographyId=""
+              isGeographyClicked={false}
+              month={0}
+/>,
             "className": "tile is-parent is-vertical",
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
+            "nodeType": "class",
+            "props": Object {
+              "geographicalWeightData": Array [],
+              "geographyId": "",
+              "isGeographyClicked": false,
+              "month": 0,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -215,6 +205,7 @@ ShallowWrapper {
             >
                         <Map
                                     disableOptimization={false}
+                                    fetchGeographyIdFromMap={[Function]}
                                     geographicalWeightData={Array []}
                                     geographyBorders={Array []}
                                     geographyNames={Array []}
@@ -227,11 +218,6 @@ ShallowWrapper {
                                     selectedMonth={0}
                         />
             </div>
-            <div
-                        className="tile is-parent"
-            >
-                        <Portfolio />
-            </div>
 </div>,
           <div
             className="tile"
@@ -239,7 +225,12 @@ ShallowWrapper {
             <div
                         className="tile is-parent is-vertical"
             >
-                        <Assets />
+                        <Assets
+                                    geographicalWeightData={Array []}
+                                    geographyId=""
+                                    isGeographyClicked={false}
+                                    month={0}
+                        />
             </div>
 </div>,
         ],
@@ -256,99 +247,73 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <div
-                className="tile is-parent"
+            "children": <div
+              className="tile is-parent"
 >
-                <Map
-                                disableOptimization={false}
-                                geographicalWeightData={Array []}
-                                geographyBorders={Array []}
-                                geographyNames={Array []}
-                                length={-1}
-                                month={0}
-                                onAssetChange={[Function]}
-                                onChange={[Function]}
-                                onMonthButtonClick={[Function]}
-                                selectedAsset={0}
-                                selectedMonth={0}
-                />
+              <Map
+                            disableOptimization={false}
+                            fetchGeographyIdFromMap={[Function]}
+                            geographicalWeightData={Array []}
+                            geographyBorders={Array []}
+                            geographyNames={Array []}
+                            length={-1}
+                            month={0}
+                            onAssetChange={[Function]}
+                            onChange={[Function]}
+                            onMonthButtonClick={[Function]}
+                            selectedAsset={0}
+                            selectedMonth={0}
+              />
 </div>,
-              <div
-                className="tile is-parent"
->
-                <Portfolio />
-</div>,
-            ],
             "className": "tile is-vertical is-8",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <Map
-                  disableOptimization={false}
-                  geographicalWeightData={Array []}
-                  geographyBorders={Array []}
-                  geographyNames={Array []}
-                  length={-1}
-                  month={0}
-                  onAssetChange={[Function]}
-                  onChange={[Function]}
-                  onMonthButtonClick={[Function]}
-                  selectedAsset={0}
-                  selectedMonth={0}
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Map
+                disableOptimization={false}
+                fetchGeographyIdFromMap={[Function]}
+                geographicalWeightData={Array []}
+                geographyBorders={Array []}
+                geographyNames={Array []}
+                length={-1}
+                month={0}
+                onAssetChange={[Function]}
+                onChange={[Function]}
+                onMonthButtonClick={[Function]}
+                selectedAsset={0}
+                selectedMonth={0}
 />,
-                "className": "tile is-parent",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "disableOptimization": false,
-                  "geographicalWeightData": Array [],
-                  "geographyBorders": Array [],
-                  "geographyNames": Array [],
-                  "length": -1,
-                  "month": 0,
-                  "onAssetChange": [Function],
-                  "onChange": [Function],
-                  "onMonthButtonClick": [Function],
-                  "selectedAsset": 0,
-                  "selectedMonth": 0,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
+              "className": "tile is-parent",
             },
-            Object {
+            "ref": null,
+            "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": <Portfolio />,
-                "className": "tile is-parent",
+                "disableOptimization": false,
+                "fetchGeographyIdFromMap": [Function],
+                "geographicalWeightData": Array [],
+                "geographyBorders": Array [],
+                "geographyNames": Array [],
+                "length": -1,
+                "month": 0,
+                "onAssetChange": [Function],
+                "onChange": [Function],
+                "onMonthButtonClick": [Function],
+                "selectedAsset": 0,
+                "selectedMonth": 0,
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {},
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
+              "rendered": null,
+              "type": [Function],
             },
-          ],
+            "type": "div",
+          },
           "type": "div",
         },
         Object {
@@ -359,7 +324,12 @@ ShallowWrapper {
             "children": <div
               className="tile is-parent is-vertical"
 >
-              <Assets />
+              <Assets
+                            geographicalWeightData={Array []}
+                            geographyId=""
+                            isGeographyClicked={false}
+                            month={0}
+              />
 </div>,
             "className": "tile",
           },
@@ -369,15 +339,25 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <Assets />,
+              "children": <Assets
+                geographicalWeightData={Array []}
+                geographyId=""
+                isGeographyClicked={false}
+                month={0}
+/>,
               "className": "tile is-parent is-vertical",
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
-              "props": Object {},
+              "nodeType": "class",
+              "props": Object {
+                "geographicalWeightData": Array [],
+                "geographyId": "",
+                "isGeographyClicked": false,
+                "month": 0,
+              },
               "ref": null,
               "rendered": null,
               "type": [Function],

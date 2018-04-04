@@ -51,7 +51,8 @@ describe("Map", () => {
   });
 
   it("zooms in when geography is clicked", () => {
-    const wrapper = mount(<Map {...props} />);
+    const mock = jest.fn();
+    const wrapper = mount(<Map {...props} fetchGeographyIdFromMap={mock} />);
     wrapper
       .find("Geography")
       .at(0)
