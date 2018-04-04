@@ -51,6 +51,9 @@ export default class Assets extends Component {
               return null;
             }
           });
+    const assetTableStyle = {
+      display: !this.props.clickedGeographyName ? "none" : "block"
+    };
 
     return (
       <article className="tile has-accent is-child notification">
@@ -69,16 +72,13 @@ export default class Assets extends Component {
             ? this.Loading("Month")
             : this.props.geographicalWeightData[this.props.month].month}
         </p>
-        <div
-          className="centered-table"
-          style={{
-            display: assetTableData === null ? "none" : "block"
-          }}
-        >
+        <div className="centered-table" style={assetTableStyle}>
           <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
             <thead>
-              <th>Asset name</th>
-              <th>Value</th>
+              <tr>
+                <th>Asset name</th>
+                <th>Value</th>
+              </tr>
             </thead>
             <tbody>{assetTableData}</tbody>
           </table>
