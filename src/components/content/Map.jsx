@@ -284,6 +284,7 @@ class Map extends Component {
               geographicalWeightData={this.props.geographicalWeightData}
               month={this.props.selectedMonth}
               isGeographyClicked={this.props.isGeographyClicked}
+              clickedGeographyName={this.state.clickedGeographyName}
             />
           </div>
         </div>
