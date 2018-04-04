@@ -21,8 +21,6 @@ export default class Assets extends Component {
   }
 
   render() {
-    console.log("geographicalweightdata", this.props);
-
     const assetTableData =
       this.props.geographicalWeightData.length === 0
         ? this.Loading("Assets")
@@ -66,8 +64,17 @@ export default class Assets extends Component {
             ? this.Loading("Month")
             : this.props.geographicalWeightData[this.props.month].month}
         </p>
-        <div className="centered-table">
-          <table className="table is-fullwidth is-hoverable">
+        <div
+          className="centered-table"
+          style={{
+            display: assetTableData === null ? "none" : "block"
+          }}
+        >
+          <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
+            <thead>
+              <th>Asset name</th>
+              <th>Value</th>
+            </thead>
             <tbody>{assetTableData}</tbody>
           </table>
         </div>
