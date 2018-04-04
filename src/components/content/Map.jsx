@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Country from "./map/Country";
 import Loading from "./map/Loading";
 import Timeline from "./map/Timeline";
+import Assets from "./map/Assets";
 import { geoPath } from "d3-geo";
 import { geoTimes } from "d3-geo-projection";
 import {
@@ -224,53 +225,69 @@ class Map extends Component {
     };
 
     return (
-      <article className="tile has-accent is-child notification is-paddingless">
-        <div onTouchMove={this.touchWarning.bind(this)}>
-          <div className="is-error-overlay" style={errorStyle}>
-            <div>The map must be dragged with two fingers</div>
-          </div>
-          <ComposableMap
-            width={800}
-            height={450}
-            style={{
-              width: "100%",
-              height: "auto"
-            }}
-          >
-            <ZoomableGroup
-              center={this.state.mapCenter}
-              zoom={this.state.mapZoomValue}
-            >
-              {mapGeographies}
-            </ZoomableGroup>
-          </ComposableMap>
-          <Country country={this.checkGeographyName()} />
-          <div
-            style={{
-              margin: "10px",
-              position: "absolute",
-              top: "0px",
-              right: "0px"
-            }}
-          >
-            <button
-              className="button"
-              onClick={() => this.zoomOutOfGeography()}
-            >
-              Zoom out
-            </button>
+      <div className="tile is-ancestor">
+        <div className="tile is-vertical is-8">
+          <div className="tile is-parent">
+            <article className="tile has-accent is-child notification is-paddingless">
+              <div onTouchMove={this.touchWarning.bind(this)}>
+                <div className="is-error-overlay" style={errorStyle}>
+                  <div>The map must be dragged with two fingers</div>
+                </div>
+                <ComposableMap
+                  width={800}
+                  height={450}
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }}
+                >
+                  <ZoomableGroup
+                    center={this.state.mapCenter}
+                    zoom={this.state.mapZoomValue}
+                  >
+                    {mapGeographies}
+                  </ZoomableGroup>
+                </ComposableMap>
+                <Country country={this.checkGeographyName()} />
+                <div
+                  style={{
+                    margin: "10px",
+                    position: "absolute",
+                    top: "0px",
+                    right: "0px"
+                  }}
+                >
+                  <button
+                    className="button"
+                    onClick={() => this.zoomOutOfGeography()}
+                  >
+                    Zoom out
+                  </button>
+                </div>
+              </div>
+
+              <Timeline
+                length={this.props.length}
+                geographicalWeightData={this.props.geographicalWeightData}
+                onChange={this.props.onChange}
+                onAssetChange={this.props.onAssetChange}
+                month={this.props.month}
+                onMonthButtonClick={this.props.onMonthButtonClick}
+              />
+            </article>
           </div>
         </div>
-
-        <Timeline
-          length={this.props.length}
-          geographicalWeightData={this.props.geographicalWeightData}
-          onChange={this.props.onChange}
-          onAssetChange={this.props.onAssetChange}
-          month={this.props.month}
-          onMonthButtonClick={this.props.onMonthButtonClick}
-        />
-      </article>
+        <div className="tile">
+          <div className="tile is-parent is-vertical">
+            <Assets
+              geographyId={this.props.geographyId}
+              geographicalWeightData={this.props.geographicalWeightData}
+              month={this.props.selectedMonth}
+              isGeographyClicked={this.props.isGeographyClicked}
+            />
+          </div>
+        </div>
+      </div>
     );
   }
 

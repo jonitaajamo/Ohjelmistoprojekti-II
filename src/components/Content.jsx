@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { feature } from "topojson-client";
 import Map from "./content/Map";
-import Assets from "./content/Assets";
 
 export default class Content extends Component {
   constructor(props) {
@@ -144,34 +143,22 @@ export default class Content extends Component {
 
     return (
       <div style={contentStyle} className="tile is-ancestor">
-        <div className="tile is-vertical is-8">
-          <div className="tile is-parent">
-            <Map
-              geographicalWeightData={this.state.geographicalWeightData}
-              geographyNames={this.state.geographyNames}
-              geographyBorders={this.state.geographyBorders}
-              selectedMonth={this.state.selectedMonth}
-              selectedAsset={this.state.selectedAsset}
-              disableOptimization={this.state.disableOptimization}
-              length={weightDataLength}
-              onChange={this.changeMonth.bind(this)}
-              onAssetChange={this.changeAsset.bind(this)}
-              month={this.state.selectedMonth}
-              onMonthButtonClick={this.changeMonthOnClick.bind(this)}
-              fetchGeographyIdFromMap={this.fetchGeographyIdFromMap.bind(this)}
-            />
-          </div>
-        </div>
-        <div className="tile">
-          <div className="tile is-parent is-vertical">
-            <Assets
-              geographyId={this.state.geographyId}
-              geographicalWeightData={this.state.geographicalWeightData}
-              month={this.state.selectedMonth}
-              isGeographyClicked={this.state.isGeographyClicked}
-            />
-          </div>
-        </div>
+        <Map
+          geographicalWeightData={this.state.geographicalWeightData}
+          geographyNames={this.state.geographyNames}
+          geographyBorders={this.state.geographyBorders}
+          selectedMonth={this.state.selectedMonth}
+          selectedAsset={this.state.selectedAsset}
+          disableOptimization={this.state.disableOptimization}
+          length={weightDataLength}
+          onChange={this.changeMonth.bind(this)}
+          onAssetChange={this.changeAsset.bind(this)}
+          month={this.state.selectedMonth}
+          onMonthButtonClick={this.changeMonthOnClick.bind(this)}
+          fetchGeographyIdFromMap={this.fetchGeographyIdFromMap.bind(this)}
+          geographyId={this.state.geographyId}
+          isGeographyClicked={this.state.isGeographyClicked}
+        />
       </div>
     );
   }
