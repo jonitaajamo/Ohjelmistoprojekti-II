@@ -221,7 +221,14 @@ class Map extends Component {
     );
 
     const errorStyle = {
-      display: this.state.touchError === false ? "none" : "flex"
+      display: !this.state.touchError ? "none" : "flex"
+    };
+
+    const zoomButtonStyle = {
+      margin: "10px",
+      position: "absolute",
+      top: "0px",
+      right: "0px"
     };
 
     return (
@@ -249,14 +256,7 @@ class Map extends Component {
                   </ZoomableGroup>
                 </ComposableMap>
                 <Country country={this.checkGeographyName()} />
-                <div
-                  style={{
-                    margin: "10px",
-                    position: "absolute",
-                    top: "0px",
-                    right: "0px"
-                  }}
-                >
+                <div style={zoomButtonStyle}>
                   <button
                     className="button"
                     onClick={() => this.zoomOutOfGeography()}
