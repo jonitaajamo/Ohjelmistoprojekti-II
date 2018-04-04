@@ -286,6 +286,7 @@ class Map extends Component {
               isGeographyClicked={this.props.isGeographyClicked}
               clickedGeographyName={this.state.clickedGeographyName}
               currency={this.props.currency}
+              topInstruments={this.props.topInstruments}
             />
           </div>
         </div>

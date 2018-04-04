@@ -31,6 +31,17 @@ export default class Content extends Component {
       )
       .catch(err => console.error(err));
 
+    fetch(
+      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/getTopInstruments-mock.json"
+    )
+      .then(response => response.json())
+      .then(instruments =>
+        this.setState({
+          topInstruments: instruments.instruments
+        })
+      )
+      .catch(err => console.error(err));
+
     fetch("https://unpkg.com/world-atlas@1.1.4/world/110m.json")
       .then(response => response.json())
       .then(worldData =>
@@ -148,6 +159,7 @@ export default class Content extends Component {
     return (
       <div style={contentStyle}>
         <Map
+          topInstruments={this.state.topInstruments}
           currency={this.state.currency}
           geographicalWeightData={this.state.geographicalWeightData}
           geographyNames={this.state.geographyNames}

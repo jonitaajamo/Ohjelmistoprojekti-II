@@ -20,6 +20,19 @@ export default class Assets extends Component {
     );
   }
 
+  renderTopInstruments() {
+    return this.props.topInstruments.map((item, key) => {
+      return (
+        <tr key={key}>
+          <td>{key + 1}</td>
+          <td>{item.secName}</td>
+          <td>{item.totalMarketValue}</td>
+          <td>{item.weightInClass * 100 + "%"}</td>
+        </tr>
+      );
+    });
+  }
+
   render() {
     const assetTableData =
       this.props.geographicalWeightData.length === 0
@@ -83,13 +96,19 @@ export default class Assets extends Component {
             <tbody>{assetTableData}</tbody>
           </table>
         </div>
+
         <p className="title">Top 10 Instruments</p>
-        <figure className="image is-4by3">
-          <img
-            alt="Placeholder"
-            src="https://bulma.io/images/placeholders/640x480.png"
-          />
-        </figure>
+        <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
+          <thead>
+            <tr>
+              <th />
+              <th>Instrument name</th>
+              <th>Value</th>
+              <th>Weight in class</th>
+            </tr>
+          </thead>
+          <tbody>{this.renderTopInstruments()}</tbody>
+        </table>
       </article>
     );
   }
