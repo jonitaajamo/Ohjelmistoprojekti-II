@@ -79,7 +79,7 @@ export default class Content extends Component {
   changeMonth(event) {
     this.setState(
       {
-        selectedMonth: JSON.parse(event.target.value),
+        selectedMonth: event,
         disableOptimization: true
       },
       () => {

@@ -58,7 +58,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
-  background: #ffffff;
+  background: #3273dc;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -14px;
@@ -79,7 +79,7 @@ input[type="range"]::-moz-range-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
-  background: #ffffff;
+  background: #3273dc;
   cursor: pointer;
 }
 input[type="range"]::-ms-track {
@@ -102,7 +102,7 @@ input[type="range"]::-ms-fill-upper {
   border-radius: 2.6px;
 }
 input[type="range"]::-ms-thumb {
-  border: 1px solid #dbdbdb;
+  border: 1px solid #3273dc;
   height: 36px;
   width: 16px;
   border-radius: 3px;
@@ -125,4 +125,30 @@ input[type="range"]:focus::-ms-fill-upper {
   .is-larger {
     font-size: 1.25rem !important;
   }
+}
+
+.tickmarks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.tickmarks li {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  display: table-cell;
+  width: 8%;
+}
+
+.tickmarks li::before {
+  position: absolute;
+  top: -13px;
+  left: -7.6px;
+  content: "";
+  margin: 0 auto;
+  width: 9px;
+  height: 9px;
+  background: #b2b2b2;
+  border-radius: 50%;
 }
