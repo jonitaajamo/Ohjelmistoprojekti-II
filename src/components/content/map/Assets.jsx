@@ -33,6 +33,24 @@ export default class Assets extends Component {
     });
   }
 
+  checkCurrency() {
+    const geographyIdArray = this.props.geographicalWeightData.length
+      ? this.props.geographicalWeightData[this.props.month].assetClasses[
+          this.props.selectedAsset
+        ].weights
+      : [];
+
+    const currency = geographyIdArray.some(
+      item => JSON.stringify(item.countryId) === this.props.geographyId
+    )
+      ? " (" + this.props.currency + ")"
+      : " ";
+
+    console.log(currency);
+
+    return currency;
+  }
+
   render() {
     const assetTableData =
       this.props.geographicalWeightData.length === 0
@@ -68,6 +86,8 @@ export default class Assets extends Component {
       display: !this.props.clickedGeographyName ? "none" : "block"
     };
 
+    const currency = this.checkCurrency();
+
     return (
       <div className="tile is-vertical">
         <article className="box tile is-child notification has-accent notification">
@@ -77,9 +97,7 @@ export default class Assets extends Component {
               ? "World"
               : this.props.clickedGeographyName}
 
-            {!this.props.clickedGeographyName
-              ? ""
-              : " (" + this.props.currency + ")"}
+            {!this.props.clickedGeographyName ? "" : currency}
 
             <br />
             {!this.props.geographicalWeightData.length
