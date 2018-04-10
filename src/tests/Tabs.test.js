@@ -74,7 +74,30 @@ describe("Tabs", () => {
       <Tabs geographicalWeightData={geographicalWeightData} />
     );
     expect(tabs).toMatchSnapshot();
-    expect(tabs.find("Button").length).toBe(7);
+    const buttons = tabs.find("Button");
+    expect(buttons.length).toBe(7);
+  });
+
+  it("sets asset names correctly", () => {
+    const tabs = shallow(
+      <Tabs geographicalWeightData={geographicalWeightData} />
+    );
+    const buttons = tabs.find("Button");
+    const texts = buttons.map(node =>
+      node
+        .dive()
+        .find("span")
+        .text()
+    );
+    expect(texts).toEqual([
+      "All",
+      "Equity",
+      "Bond",
+      "Alternative",
+      "Property",
+      "Cash",
+      "Unknown"
+    ]);
   });
 
   it("initially sets 'All' as active tab", () => {
