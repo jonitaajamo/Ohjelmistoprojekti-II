@@ -54,7 +54,7 @@ describe("Timeline", () => {
     const timeline = shallow(
       <Timeline {...props} onMonthButtonClick={onClick} />
     );
-    expect(timeline.find("a.button").length).toBe(3);
+    expect(timeline.find("a.button").length).toBe(2);
     timeline.find("#previous").simulate("click");
     timeline.find("#next").simulate("click");
     expect(onClick).toHaveBeenCalledTimes(2);

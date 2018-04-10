@@ -67,86 +67,94 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p
-          className="title"
+        <article
+          className="box tile is-child notification has-accent notification"
 >
-          Assets
-</p>,
-        <p
-          className="subtitle"
+          <p
+                    className="title"
+          >
+                    Assets
+          </p>
+          <p
+                    className="subtitle"
+          >
+                    World
+                    
+                    <br />
+                    2012-01
+          </p>
+          <div
+                    className="centered-table"
+                    style={
+                              Object {
+                                        "display": "none",
+                                      }
+                    }
+          >
+                    <table
+                              className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+                    >
+                              <thead>
+                                        <tr>
+                                                  <th>
+                                                            Asset name
+                                                  </th>
+                                                  <th>
+                                                            Value
+                                                  </th>
+                                        </tr>
+                              </thead>
+                              <tbody>
+                                        
+                              </tbody>
+                    </table>
+          </div>
+</article>,
+        <article
+          className="box tile is-child notification has-accent notification"
 >
-          World
-          
-          <br />
-          2012-01
-</p>,
-        <div
-          className="centered-table"
-          style={
-                    Object {
-                              "display": "none",
-                            }
-          }
->
+          <p
+                    className="title"
+          >
+                    Top 10 Instruments
+          </p>
           <table
                     className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
           >
                     <thead>
                               <tr>
+                                        <th />
                                         <th>
-                                                  Asset name
+                                                  Instrument name
                                         </th>
                                         <th>
                                                   Value
                                         </th>
+                                        <th>
+                                                  Weight
+                                        </th>
                               </tr>
                     </thead>
                     <tbody>
-                              
+                              <tr>
+                                        <td>
+                                                  1
+                                        </td>
+                                        <td>
+                                                  Woahtek
+                                        </td>
+                                        <td>
+                                                  8000000
+                                        </td>
+                                        <td>
+                                                  40%
+                                        </td>
+                              </tr>
                     </tbody>
           </table>
-</div>,
-        <p
-          className="title"
->
-          Top 10 Instruments
-</p>,
-        <table
-          className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
->
-          <thead>
-                    <tr>
-                              <th />
-                              <th>
-                                        Instrument name
-                              </th>
-                              <th>
-                                        Value
-                              </th>
-                              <th>
-                                        Weight in class
-                              </th>
-                    </tr>
-          </thead>
-          <tbody>
-                    <tr>
-                              <td>
-                                        1
-                              </td>
-                              <td>
-                                        Woahtek
-                              </td>
-                              <td>
-                                        8000000€
-                              </td>
-                              <td>
-                                        40%
-                              </td>
-                    </tr>
-          </tbody>
-</table>,
+</article>,
       ],
-      "className": "tile has-accent is-child notification",
+      "className": "tile is-vertical",
     },
     "ref": null,
     "rendered": Array [
@@ -155,233 +163,48 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Assets",
-          "className": "title",
-        },
-        "ref": null,
-        "rendered": "Assets",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": Array [
-            "World",
-            "",
-            <br />,
-            "2012-01",
-          ],
-          "className": "subtitle",
-        },
-        "ref": null,
-        "rendered": Array [
-          "World",
-          "",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          "2012-01",
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <table
-            className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+            <p
+              className="title"
 >
-            <thead>
-                        <tr>
-                                    <th>
-                                                Asset name
-                                    </th>
-                                    <th>
-                                                Value
-                                    </th>
-                        </tr>
-            </thead>
-            <tbody>
-                        
-            </tbody>
-</table>,
-          "className": "centered-table",
-          "style": Object {
-            "display": "none",
-          },
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <thead>
-                <tr>
-                                <th>
-                                                Asset name
-                                </th>
-                                <th>
-                                                Value
-                                </th>
-                </tr>
-</thead>,
-              <tbody>
-                
-</tbody>,
-            ],
-            "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <tr>
-                  <th>
-                                    Asset name
-                  </th>
-                  <th>
-                                    Value
-                  </th>
-</tr>,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <th>
-                      Asset name
-</th>,
-                    <th>
-                      Value
-</th>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Asset name",
-                    },
-                    "ref": null,
-                    "rendered": "Asset name",
-                    "type": "th",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Value",
-                    },
-                    "ref": null,
-                    "rendered": "Value",
-                    "type": "th",
-                  },
-                ],
-                "type": "tr",
-              },
-              "type": "thead",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  Array [
-                    Array [
-                      null,
-                      null,
-                      null,
-                      null,
-                    ],
-                  ],
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                null,
-                null,
-                null,
-                null,
-              ],
-              "type": "tbody",
-            },
+              Assets
+</p>,
+            <p
+              className="subtitle"
+>
+              World
+              
+              <br />
+              2012-01
+</p>,
+            <div
+              className="centered-table"
+              style={
+                            Object {
+                                          "display": "none",
+                                        }
+              }
+>
+              <table
+                            className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+              >
+                            <thead>
+                                          <tr>
+                                                        <th>
+                                                                      Asset name
+                                                        </th>
+                                                        <th>
+                                                                      Value
+                                                        </th>
+                                          </tr>
+                            </thead>
+                            <tbody>
+                                          
+                            </tbody>
+              </table>
+</div>,
           ],
-          "type": "table",
-        },
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Top 10 Instruments",
-          "className": "title",
-        },
-        "ref": null,
-        "rendered": "Top 10 Instruments",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <thead>
-              <tr>
-                            <th />
-                            <th>
-                                          Instrument name
-                            </th>
-                            <th>
-                                          Value
-                            </th>
-                            <th>
-                                          Weight in class
-                            </th>
-              </tr>
-</thead>,
-            <tbody>
-              <tr>
-                            <td>
-                                          1
-                            </td>
-                            <td>
-                                          Woahtek
-                            </td>
-                            <td>
-                                          8000000€
-                            </td>
-                            <td>
-                                          40%
-                            </td>
-              </tr>
-</tbody>,
-          ],
-          "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
+          "className": "box tile is-child notification has-accent notification",
         },
         "ref": null,
         "rendered": Array [
@@ -390,18 +213,69 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <tr>
-                <th />
-                <th>
-                                Instrument name
-                </th>
-                <th>
-                                Value
-                </th>
-                <th>
-                                Weight in class
-                </th>
-</tr>,
+              "children": "Assets",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "Assets",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "World",
+                "",
+                <br />,
+                "2012-01",
+              ],
+              "className": "subtitle",
+            },
+            "ref": null,
+            "rendered": Array [
+              "World",
+              "",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "2012-01",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <table
+                className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+>
+                <thead>
+                                <tr>
+                                                <th>
+                                                                Asset name
+                                                </th>
+                                                <th>
+                                                                Value
+                                                </th>
+                                </tr>
+                </thead>
+                <tbody>
+                                
+                </tbody>
+</table>,
+              "className": "centered-table",
+              "style": Object {
+                "display": "none",
+              },
             },
             "ref": null,
             "rendered": Object {
@@ -410,17 +284,21 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <th />,
-                  <th>
-                    Instrument name
-</th>,
-                  <th>
-                    Value
-</th>,
-                  <th>
-                    Weight in class
-</th>,
+                  <thead>
+                    <tr>
+                                        <th>
+                                                            Asset name
+                                        </th>
+                                        <th>
+                                                            Value
+                                        </th>
+                    </tr>
+</thead>,
+                  <tbody>
+                    
+</tbody>,
                 ],
+                "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
               },
               "ref": null,
               "rendered": Array [
@@ -428,48 +306,154 @@ ShallowWrapper {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
-                  "props": Object {},
+                  "props": Object {
+                    "children": <tr>
+                      <th>
+                                            Asset name
+                      </th>
+                      <th>
+                                            Value
+                      </th>
+</tr>,
+                  },
                   "ref": null,
-                  "rendered": null,
-                  "type": "th",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <th>
+                          Asset name
+</th>,
+                        <th>
+                          Value
+</th>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Asset name",
+                        },
+                        "ref": null,
+                        "rendered": "Asset name",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Value",
+                        },
+                        "ref": null,
+                        "rendered": "Value",
+                        "type": "th",
+                      },
+                    ],
+                    "type": "tr",
+                  },
+                  "type": "thead",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Instrument name",
+                    "children": Array [
+                      Array [
+                        Array [
+                          null,
+                          null,
+                          null,
+                          null,
+                        ],
+                      ],
+                    ],
                   },
                   "ref": null,
-                  "rendered": "Instrument name",
-                  "type": "th",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Value",
-                  },
-                  "ref": null,
-                  "rendered": "Value",
-                  "type": "th",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Weight in class",
-                  },
-                  "ref": null,
-                  "rendered": "Weight in class",
-                  "type": "th",
+                  "rendered": Array [
+                    null,
+                    null,
+                    null,
+                    null,
+                  ],
+                  "type": "tbody",
                 },
               ],
-              "type": "tr",
+              "type": "table",
             },
-            "type": "thead",
+            "type": "div",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="title"
+>
+              Top 10 Instruments
+</p>,
+            <table
+              className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+>
+              <thead>
+                            <tr>
+                                          <th />
+                                          <th>
+                                                        Instrument name
+                                          </th>
+                                          <th>
+                                                        Value
+                                          </th>
+                                          <th>
+                                                        Weight
+                                          </th>
+                            </tr>
+              </thead>
+              <tbody>
+                            <tr>
+                                          <td>
+                                                        1
+                                          </td>
+                                          <td>
+                                                        Woahtek
+                                          </td>
+                                          <td>
+                                                        8000000
+                                          </td>
+                                          <td>
+                                                        40%
+                                          </td>
+                            </tr>
+              </tbody>
+</table>,
+          ],
+          "className": "box tile is-child notification has-accent notification",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Top 10 Instruments",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "Top 10 Instruments",
+            "type": "p",
           },
           Object {
             "instance": null,
@@ -477,280 +461,35 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <tr>
-                  <td>
-                                    1
-                  </td>
-                  <td>
-                                    Woahtek
-                  </td>
-                  <td>
-                                    8000000€
-                  </td>
-                  <td>
-                                    40%
-                  </td>
-</tr>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "0",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <td>
-                      1
-</td>,
-                    <td>
-                      Woahtek
-</td>,
-                    <td>
-                      8000000€
-</td>,
-                    <td>
-                      40%
-</td>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": 1,
-                    },
-                    "ref": null,
-                    "rendered": 1,
-                    "type": "td",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Woahtek",
-                    },
-                    "ref": null,
-                    "rendered": "Woahtek",
-                    "type": "td",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "8000000€",
-                    },
-                    "ref": null,
-                    "rendered": "8000000€",
-                    "type": "td",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "40%",
-                    },
-                    "ref": null,
-                    "rendered": "40%",
-                    "type": "td",
-                  },
-                ],
-                "type": "tr",
-              },
-            ],
-            "type": "tbody",
-          },
-        ],
-        "type": "table",
-      },
-    ],
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <p
-            className="title"
->
-            Assets
-</p>,
-          <p
-            className="subtitle"
->
-            World
-            
-            <br />
-            2012-01
-</p>,
-          <div
-            className="centered-table"
-            style={
-                        Object {
-                                    "display": "none",
-                                  }
-            }
->
-            <table
-                        className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
-            >
-                        <thead>
-                                    <tr>
-                                                <th>
-                                                            Asset name
-                                                </th>
-                                                <th>
-                                                            Value
-                                                </th>
-                                    </tr>
-                        </thead>
-                        <tbody>
-                                    
-                        </tbody>
-            </table>
-</div>,
-          <p
-            className="title"
->
-            Top 10 Instruments
-</p>,
-          <table
-            className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
->
-            <thead>
-                        <tr>
-                                    <th />
-                                    <th>
-                                                Instrument name
-                                    </th>
-                                    <th>
-                                                Value
-                                    </th>
-                                    <th>
-                                                Weight in class
-                                    </th>
-                        </tr>
-            </thead>
-            <tbody>
-                        <tr>
-                                    <td>
-                                                1
-                                    </td>
-                                    <td>
-                                                Woahtek
-                                    </td>
-                                    <td>
-                                                8000000€
-                                    </td>
-                                    <td>
-                                                40%
-                                    </td>
-                        </tr>
-            </tbody>
-</table>,
-        ],
-        "className": "tile has-accent is-child notification",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Assets",
-            "className": "title",
-          },
-          "ref": null,
-          "rendered": "Assets",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "World",
-              "",
-              <br />,
-              "2012-01",
-            ],
-            "className": "subtitle",
-          },
-          "ref": null,
-          "rendered": Array [
-            "World",
-            "",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            "2012-01",
-          ],
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <table
-              className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
->
-              <thead>
-                            <tr>
-                                          <th>
-                                                        Asset name
-                                          </th>
-                                          <th>
-                                                        Value
-                                          </th>
-                            </tr>
-              </thead>
-              <tbody>
-                            
-              </tbody>
-</table>,
-            "className": "centered-table",
-            "style": Object {
-              "display": "none",
-            },
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
                 <thead>
                   <tr>
+                                    <th />
                                     <th>
-                                                      Asset name
+                                                      Instrument name
                                     </th>
                                     <th>
                                                       Value
                                     </th>
+                                    <th>
+                                                      Weight
+                                    </th>
                   </tr>
 </thead>,
                 <tbody>
-                  
+                  <tr>
+                                    <td>
+                                                      1
+                                    </td>
+                                    <td>
+                                                      Woahtek
+                                    </td>
+                                    <td>
+                                                      8000000
+                                    </td>
+                                    <td>
+                                                      40%
+                                    </td>
+                  </tr>
 </tbody>,
               ],
               "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
@@ -763,11 +502,15 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <tr>
+                    <th />
                     <th>
-                                        Asset name
+                                        Instrument name
                     </th>
                     <th>
                                         Value
+                    </th>
+                    <th>
+                                        Weight
                     </th>
 </tr>,
                 },
@@ -778,11 +521,15 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
+                      <th />,
                       <th>
-                        Asset name
+                        Instrument name
 </th>,
                       <th>
                         Value
+</th>,
+                      <th>
+                        Weight
 </th>,
                     ],
                   },
@@ -792,11 +539,20 @@ ShallowWrapper {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "th",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
                       "props": Object {
-                        "children": "Asset name",
+                        "children": "Instrument name",
                       },
                       "ref": null,
-                      "rendered": "Asset name",
+                      "rendered": "Instrument name",
                       "type": "th",
                     },
                     Object {
@@ -810,6 +566,17 @@ ShallowWrapper {
                       "rendered": "Value",
                       "type": "th",
                     },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Weight",
+                      },
+                      "ref": null,
+                      "rendered": "Weight",
+                      "type": "th",
+                    },
                   ],
                   "type": "tr",
                 },
@@ -821,80 +588,250 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    Array [
-                      Array [
-                        null,
-                        null,
-                        null,
-                        null,
-                      ],
-                    ],
+                    <tr>
+                      <td>
+                                            1
+                      </td>
+                      <td>
+                                            Woahtek
+                      </td>
+                      <td>
+                                            8000000
+                      </td>
+                      <td>
+                                            40%
+                      </td>
+</tr>,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  null,
-                  null,
-                  null,
-                  null,
+                  Object {
+                    "instance": null,
+                    "key": "0",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <td>
+                          1
+</td>,
+                        <td>
+                          Woahtek
+</td>,
+                        <td>
+                          8000000
+</td>,
+                        <td>
+                          40%
+</td>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 1,
+                        },
+                        "ref": null,
+                        "rendered": 1,
+                        "type": "td",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Woahtek",
+                        },
+                        "ref": null,
+                        "rendered": "Woahtek",
+                        "type": "td",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 8000000,
+                        },
+                        "ref": null,
+                        "rendered": 8000000,
+                        "type": "td",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "40%",
+                        },
+                        "ref": null,
+                        "rendered": "40%",
+                        "type": "td",
+                      },
+                    ],
+                    "type": "tr",
+                  },
                 ],
                 "type": "tbody",
               },
             ],
             "type": "table",
           },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Top 10 Instruments",
-            "className": "title",
-          },
-          "ref": null,
-          "rendered": "Top 10 Instruments",
-          "type": "p",
-        },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <article
+            className="box tile is-child notification has-accent notification"
+>
+            <p
+                        className="title"
+            >
+                        Assets
+            </p>
+            <p
+                        className="subtitle"
+            >
+                        World
+                        
+                        <br />
+                        2012-01
+            </p>
+            <div
+                        className="centered-table"
+                        style={
+                                    Object {
+                                                "display": "none",
+                                              }
+                        }
+            >
+                        <table
+                                    className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+                        >
+                                    <thead>
+                                                <tr>
+                                                            <th>
+                                                                        Asset name
+                                                            </th>
+                                                            <th>
+                                                                        Value
+                                                            </th>
+                                                </tr>
+                                    </thead>
+                                    <tbody>
+                                                
+                                    </tbody>
+                        </table>
+            </div>
+</article>,
+          <article
+            className="box tile is-child notification has-accent notification"
+>
+            <p
+                        className="title"
+            >
+                        Top 10 Instruments
+            </p>
+            <table
+                        className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+            >
+                        <thead>
+                                    <tr>
+                                                <th />
+                                                <th>
+                                                            Instrument name
+                                                </th>
+                                                <th>
+                                                            Value
+                                                </th>
+                                                <th>
+                                                            Weight
+                                                </th>
+                                    </tr>
+                        </thead>
+                        <tbody>
+                                    <tr>
+                                                <td>
+                                                            1
+                                                </td>
+                                                <td>
+                                                            Woahtek
+                                                </td>
+                                                <td>
+                                                            8000000
+                                                </td>
+                                                <td>
+                                                            40%
+                                                </td>
+                                    </tr>
+                        </tbody>
+            </table>
+</article>,
+        ],
+        "className": "tile is-vertical",
+      },
+      "ref": null,
+      "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <thead>
-                <tr>
-                                <th />
-                                <th>
-                                                Instrument name
-                                </th>
-                                <th>
-                                                Value
-                                </th>
-                                <th>
-                                                Weight in class
-                                </th>
-                </tr>
-</thead>,
-              <tbody>
-                <tr>
-                                <td>
-                                                1
-                                </td>
-                                <td>
-                                                Woahtek
-                                </td>
-                                <td>
-                                                8000000€
-                                </td>
-                                <td>
-                                                40%
-                                </td>
-                </tr>
-</tbody>,
+              <p
+                className="title"
+>
+                Assets
+</p>,
+              <p
+                className="subtitle"
+>
+                World
+                
+                <br />
+                2012-01
+</p>,
+              <div
+                className="centered-table"
+                style={
+                                Object {
+                                                "display": "none",
+                                              }
+                }
+>
+                <table
+                                className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+                >
+                                <thead>
+                                                <tr>
+                                                                <th>
+                                                                                Asset name
+                                                                </th>
+                                                                <th>
+                                                                                Value
+                                                                </th>
+                                                </tr>
+                                </thead>
+                                <tbody>
+                                                
+                                </tbody>
+                </table>
+</div>,
             ],
-            "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
+            "className": "box tile is-child notification has-accent notification",
           },
           "ref": null,
           "rendered": Array [
@@ -903,18 +840,69 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <tr>
-                  <th />
-                  <th>
-                                    Instrument name
-                  </th>
-                  <th>
-                                    Value
-                  </th>
-                  <th>
-                                    Weight in class
-                  </th>
-</tr>,
+                "children": "Assets",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Assets",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "World",
+                  "",
+                  <br />,
+                  "2012-01",
+                ],
+                "className": "subtitle",
+              },
+              "ref": null,
+              "rendered": Array [
+                "World",
+                "",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                "2012-01",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <table
+                  className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+>
+                  <thead>
+                                    <tr>
+                                                      <th>
+                                                                        Asset name
+                                                      </th>
+                                                      <th>
+                                                                        Value
+                                                      </th>
+                                    </tr>
+                  </thead>
+                  <tbody>
+                                    
+                  </tbody>
+</table>,
+                "className": "centered-table",
+                "style": Object {
+                  "display": "none",
+                },
               },
               "ref": null,
               "rendered": Object {
@@ -923,17 +911,21 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <th />,
-                    <th>
-                      Instrument name
-</th>,
-                    <th>
-                      Value
-</th>,
-                    <th>
-                      Weight in class
-</th>,
+                    <thead>
+                      <tr>
+                                            <th>
+                                                                  Asset name
+                                            </th>
+                                            <th>
+                                                                  Value
+                                            </th>
+                      </tr>
+</thead>,
+                    <tbody>
+                      
+</tbody>,
                   ],
+                  "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -941,48 +933,154 @@ ShallowWrapper {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
-                    "props": Object {},
+                    "props": Object {
+                      "children": <tr>
+                        <th>
+                                                Asset name
+                        </th>
+                        <th>
+                                                Value
+                        </th>
+</tr>,
+                    },
                     "ref": null,
-                    "rendered": null,
-                    "type": "th",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <th>
+                            Asset name
+</th>,
+                          <th>
+                            Value
+</th>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Asset name",
+                          },
+                          "ref": null,
+                          "rendered": "Asset name",
+                          "type": "th",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Value",
+                          },
+                          "ref": null,
+                          "rendered": "Value",
+                          "type": "th",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    "type": "thead",
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Instrument name",
+                      "children": Array [
+                        Array [
+                          Array [
+                            null,
+                            null,
+                            null,
+                            null,
+                          ],
+                        ],
+                      ],
                     },
                     "ref": null,
-                    "rendered": "Instrument name",
-                    "type": "th",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Value",
-                    },
-                    "ref": null,
-                    "rendered": "Value",
-                    "type": "th",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Weight in class",
-                    },
-                    "ref": null,
-                    "rendered": "Weight in class",
-                    "type": "th",
+                    "rendered": Array [
+                      null,
+                      null,
+                      null,
+                      null,
+                    ],
+                    "type": "tbody",
                   },
                 ],
-                "type": "tr",
+                "type": "table",
               },
-              "type": "thead",
+              "type": "div",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="title"
+>
+                Top 10 Instruments
+</p>,
+              <table
+                className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
+>
+                <thead>
+                                <tr>
+                                                <th />
+                                                <th>
+                                                                Instrument name
+                                                </th>
+                                                <th>
+                                                                Value
+                                                </th>
+                                                <th>
+                                                                Weight
+                                                </th>
+                                </tr>
+                </thead>
+                <tbody>
+                                <tr>
+                                                <td>
+                                                                1
+                                                </td>
+                                                <td>
+                                                                Woahtek
+                                                </td>
+                                                <td>
+                                                                8000000
+                                                </td>
+                                                <td>
+                                                                40%
+                                                </td>
+                                </tr>
+                </tbody>
+</table>,
+            ],
+            "className": "box tile is-child notification has-accent notification",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Top 10 Instruments",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Top 10 Instruments",
+              "type": "p",
             },
             Object {
               "instance": null,
@@ -990,101 +1088,231 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <tr>
-                    <td>
-                                        1
-                    </td>
-                    <td>
-                                        Woahtek
-                    </td>
-                    <td>
-                                        8000000€
-                    </td>
-                    <td>
-                                        40%
-                    </td>
-</tr>,
+                  <thead>
+                    <tr>
+                                        <th />
+                                        <th>
+                                                            Instrument name
+                                        </th>
+                                        <th>
+                                                            Value
+                                        </th>
+                                        <th>
+                                                            Weight
+                                        </th>
+                    </tr>
+</thead>,
+                  <tbody>
+                    <tr>
+                                        <td>
+                                                            1
+                                        </td>
+                                        <td>
+                                                            Woahtek
+                                        </td>
+                                        <td>
+                                                            8000000
+                                        </td>
+                                        <td>
+                                                            40%
+                                        </td>
+                    </tr>
+</tbody>,
                 ],
+                "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
               },
               "ref": null,
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": "0",
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <tr>
+                      <th />
+                      <th>
+                                            Instrument name
+                      </th>
+                      <th>
+                                            Value
+                      </th>
+                      <th>
+                                            Weight
+                      </th>
+</tr>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <th />,
+                        <th>
+                          Instrument name
+</th>,
+                        <th>
+                          Value
+</th>,
+                        <th>
+                          Weight
+</th>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Instrument name",
+                        },
+                        "ref": null,
+                        "rendered": "Instrument name",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Value",
+                        },
+                        "ref": null,
+                        "rendered": "Value",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Weight",
+                        },
+                        "ref": null,
+                        "rendered": "Weight",
+                        "type": "th",
+                      },
+                    ],
+                    "type": "tr",
+                  },
+                  "type": "thead",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <td>
-                        1
-</td>,
-                      <td>
-                        Woahtek
-</td>,
-                      <td>
-                        8000000€
-</td>,
-                      <td>
-                        40%
-</td>,
+                      <tr>
+                        <td>
+                                                1
+                        </td>
+                        <td>
+                                                Woahtek
+                        </td>
+                        <td>
+                                                8000000
+                        </td>
+                        <td>
+                                                40%
+                        </td>
+</tr>,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     Object {
                       "instance": null,
-                      "key": undefined,
+                      "key": "0",
                       "nodeType": "host",
                       "props": Object {
-                        "children": 1,
+                        "children": Array [
+                          <td>
+                            1
+</td>,
+                          <td>
+                            Woahtek
+</td>,
+                          <td>
+                            8000000
+</td>,
+                          <td>
+                            40%
+</td>,
+                        ],
                       },
                       "ref": null,
-                      "rendered": 1,
-                      "type": "td",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Woahtek",
-                      },
-                      "ref": null,
-                      "rendered": "Woahtek",
-                      "type": "td",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "8000000€",
-                      },
-                      "ref": null,
-                      "rendered": "8000000€",
-                      "type": "td",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "40%",
-                      },
-                      "ref": null,
-                      "rendered": "40%",
-                      "type": "td",
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 1,
+                          },
+                          "ref": null,
+                          "rendered": 1,
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Woahtek",
+                          },
+                          "ref": null,
+                          "rendered": "Woahtek",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 8000000,
+                          },
+                          "ref": null,
+                          "rendered": 8000000,
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "40%",
+                          },
+                          "ref": null,
+                          "rendered": "40%",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
                     },
                   ],
-                  "type": "tr",
+                  "type": "tbody",
                 },
               ],
-              "type": "tbody",
+              "type": "table",
             },
           ],
-          "type": "table",
+          "type": "article",
         },
       ],
-      "type": "article",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
