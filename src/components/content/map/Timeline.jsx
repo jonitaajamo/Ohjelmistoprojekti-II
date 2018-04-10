@@ -1,11 +1,21 @@
 import React, { Component } from "react";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 import Tabs from "./timeline/Tabs";
 
 export default class Timeline extends Component {
   renderDatalist() {
-    return this.props.geographicalWeightData.map((item, key) => {
-      return <option key={key} value={key * 10} label={item.month} />;
-    });
+    const marksObject = {};
+    for (
+      let index = 0;
+      index < this.props.geographicalWeightData.length;
+      index++
+    ) {
+      if (index % 6 === 0) {
+        marksObject[index] = this.props.geographicalWeightData[index].month;
+      }
+    }
+    return marksObject;
   }
 
   render() {
@@ -20,19 +30,19 @@ export default class Timeline extends Component {
           geographicalWeightData={this.props.geographicalWeightData}
           onAssetChange={this.props.onAssetChange}
         />
-        <div className="columns" style={timelineStyle}>
-          <input
-            className="slider"
-            type="range"
-            min="0"
+        <div style={timelineStyle}>
+          <Slider
+            marks={this.renderDatalist()}
+            step={1}
+            min={0}
             max={this.props.length}
-            value={this.props.month}
+            defaultValue={this.props.month}
+            dotStyle={{ borderColor: "orange" }}
+            activeDotStyle={{ borderColor: "yellow" }}
             onChange={this.props.onChange}
-            style={{ outline: "none" }}
-            list="tickmarks"
           />
-          <datalist id="tickmarks">{this.renderDatalist()}</datalist>
         </div>
+        <br />
         <span className="field has-addons has-addons-centered">
           <a
             className="button left"
