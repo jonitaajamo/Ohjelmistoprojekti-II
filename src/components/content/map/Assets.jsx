@@ -26,7 +26,7 @@ export default class Assets extends Component {
         <tr key={key}>
           <td>{key + 1}</td>
           <td>{item.secName}</td>
-          <td>{item.totalMarketValue + "€"}</td>
+          <td>{item.totalMarketValue}</td>
           <td>{item.weightInClass * 100 + "%"}</td>
         </tr>
       );
@@ -69,47 +69,50 @@ export default class Assets extends Component {
     };
 
     return (
-      <article className="tile has-accent is-child notification">
-        <p className="title">Assets</p>
-        <p className="subtitle">
-          {!this.props.clickedGeographyName
-            ? "World"
-            : this.props.clickedGeographyName}
+      <div className="tile is-vertical">
+        <article className="box tile is-child notification has-accent notification">
+          <p className="title">Assets</p>
+          <p className="subtitle">
+            {!this.props.clickedGeographyName
+              ? "World"
+              : this.props.clickedGeographyName}
 
-          {!this.props.clickedGeographyName
-            ? ""
-            : " (" + this.props.currency + ")"}
+            {!this.props.clickedGeographyName
+              ? ""
+              : " (" + this.props.currency + ")"}
 
-          <br />
-          {!this.props.geographicalWeightData.length
-            ? this.Loading("Month")
-            : this.props.geographicalWeightData[this.props.month].month}
-        </p>
-        <div className="centered-table" style={assetTableStyle}>
+            <br />
+            {!this.props.geographicalWeightData.length
+              ? this.Loading("Month")
+              : this.props.geographicalWeightData[this.props.month].month}
+          </p>
+          <div className="centered-table" style={assetTableStyle}>
+            <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
+              <thead>
+                <tr>
+                  <th>Asset name</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>{assetTableData}</tbody>
+            </table>
+          </div>
+        </article>
+        <article className="box tile is-child notification has-accent notification">
+          <p className="title">Top 10 Instruments</p>
           <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
             <thead>
               <tr>
-                <th>Asset name</th>
+                <th />
+                <th>Instrument name</th>
                 <th>Value</th>
+                <th>Weight</th>
               </tr>
             </thead>
-            <tbody>{assetTableData}</tbody>
+            <tbody>{this.renderTopInstruments()}</tbody>
           </table>
-        </div>
-
-        <p className="title">Top 10 Instruments</p>
-        <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
-          <thead>
-            <tr>
-              <th />
-              <th>Instrument name</th>
-              <th>Value</th>
-              <th>Weight in class</th>
-            </tr>
-          </thead>
-          <tbody>{this.renderTopInstruments()}</tbody>
-        </table>
-      </article>
+        </article>
+      </div>
     );
   }
 }

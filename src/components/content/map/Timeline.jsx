@@ -44,11 +44,6 @@ export default class Timeline extends Component {
             </span>
             <span className="left">Previous month</span>
           </a>
-          <a className="button left">
-            <span className="icon left">
-              <i className="fas fa-play left" />
-            </span>
-          </a>
           <a
             className="button right"
             id="next"
