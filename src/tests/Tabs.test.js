@@ -70,19 +70,19 @@ describe("Tabs", () => {
   ];
 
   it("renders correctly", () => {
-    const wrapper = shallow(
+    const tabs = shallow(
       <Tabs geographicalWeightData={geographicalWeightData} />
     );
-    expect(wrapper).toMatchSnapshot();
-    expect(wrapper.find("Button").length).toBe(7);
+    expect(tabs).toMatchSnapshot();
+    expect(tabs.find("Button").length).toBe(7);
   });
 
   it("initially sets 'All' as active tab", () => {
-    const wrapper = shallow(
+    const tabs = shallow(
       <Tabs geographicalWeightData={geographicalWeightData} />
     );
     expect(
-      wrapper
+      tabs
         .find("Button")
         .at(0)
         .props().isActive

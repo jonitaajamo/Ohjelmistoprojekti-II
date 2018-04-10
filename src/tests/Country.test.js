@@ -3,17 +3,17 @@ import Country from "../components/content/map/Country";
 
 describe("Country", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<Country />);
-    expect(wrapper).toMatchSnapshot();
+    const country = shallow(<Country />);
+    expect(country).toMatchSnapshot();
   });
 
   it("displays default text when no country is selected", () => {
-    const wrapper = shallow(<Country />);
-    expect(wrapper.find("span").text()).toEqual("Select a country");
+    const country = shallow(<Country />);
+    expect(country.find("span").text()).toEqual("Select a country");
   });
 
   it("displays country name", () => {
-    const wrapper = shallow(<Country country="Finland" />);
-    expect(wrapper.find("span").text()).toEqual("Finland");
+    const country = shallow(<Country country="Finland" />);
+    expect(country.find("span").text()).toEqual("Finland");
   });
 });

@@ -22,7 +22,7 @@ describe("Map", () => {
     topInstruments: [
       {
         secId: 1236452364,
-        secName: "Woahtek Oyj",
+        secName: "Woahtek",
         weightInClass: 0.4,
         marketValueInClass: 8000000,
         classWeightInPortfolio: 0.08,
@@ -35,57 +35,57 @@ describe("Map", () => {
   };
 
   it("renders without crashing", () => {
-    const wrapper = shallow(<Map geographicalWeightData={[]} />);
-    expect(wrapper).toMatchSnapshot();
+    const map = shallow(<Map geographicalWeightData={[]} />);
+    expect(map).toMatchSnapshot();
   });
 
   it("initially renders Loading component", () => {
-    const wrapper = shallow(<Map geographicalWeightData={[]} />);
-    expect(wrapper.find("Loading").length).toEqual(1);
+    const map = shallow(<Map geographicalWeightData={[]} />);
+    expect(map.find("Loading").length).toEqual(1);
   });
 
   it("renders map when data is loaded", () => {
-    const wrapper = shallow(<Map {...props} />);
-    expect(wrapper.find("ComposableMap").length).toEqual(1);
+    const map = shallow(<Map {...props} />);
+    expect(map.find("ComposableMap").length).toEqual(1);
   });
 
   it("renders children", () => {
-    const wrapper = shallow(<Map {...props} />);
-    expect(wrapper.find("Country").length).toBe(1);
-    expect(wrapper.find("Timeline").length).toBe(1);
-    expect(wrapper.find("Assets").length).toBe(1);
+    const map = shallow(<Map {...props} />);
+    expect(map.find("Country").length).toBe(1);
+    expect(map.find("Timeline").length).toBe(1);
+    expect(map.find("Assets").length).toBe(1);
   });
 
   it("fires event handler when geography is clicked", () => {
-    const wrapper = mount(<Map {...props} />);
-    wrapper.instance().onGeographyClick = jest.fn();
-    wrapper
+    const map = mount(<Map {...props} />);
+    map.instance().onGeographyClick = jest.fn();
+    map
       .find("Geography")
       .at(0)
       .simulate("click");
-    expect(wrapper.instance().onGeographyClick).toHaveBeenCalledTimes(1);
+    expect(map.instance().onGeographyClick).toHaveBeenCalledTimes(1);
   });
 
   it("zooms in when geography is clicked", () => {
     const mock = jest.fn();
-    const wrapper = mount(<Map {...props} fetchGeographyIdFromMap={mock} />);
-    wrapper
+    const map = mount(<Map {...props} fetchGeographyIdFromMap={mock} />);
+    map
       .find("Geography")
       .at(0)
       .simulate("click");
-    expect(wrapper.state().mapZoomValue).toBe(3);
+    expect(map.state().mapZoomValue).toBe(3);
   });
 
   it("zooms out when button is clicked", () => {
-    const wrapper = shallow(<Map {...props} />);
-    wrapper.setState({ mapZoomValue: 3 });
-    wrapper.find("button").simulate("click");
-    expect(wrapper.state().mapZoomValue).toBe(1);
+    const map = shallow(<Map {...props} />);
+    map.setState({ mapZoomValue: 3 });
+    map.find("button").simulate("click");
+    expect(map.state().mapZoomValue).toBe(1);
   });
 
   it("sets weight values when map is rendered", () => {
     const spy = jest.spyOn(Map.prototype, "setWeightValuesForHeatmap");
-    const wrapper = mount(<Map {...props} />);
+    const map = mount(<Map {...props} />);
     expect(spy).toHaveBeenCalledTimes(1);
   });
 });

@@ -25,37 +25,38 @@ describe("Timeline", () => {
   };
 
   it("renders correctly", () => {
-    const wrapper = shallow(<Timeline {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    const timeline = shallow(<Timeline {...props} />);
+    expect(timeline).toMatchSnapshot();
   });
 
   it("renders child", () => {
-    const wrapper = shallow(<Timeline {...props} />);
-    expect(wrapper.find("Tabs").length).toEqual(1);
+    const timeline = shallow(<Timeline {...props} />);
+    expect(timeline.find("Tabs").length).toEqual(1);
   });
 
   it("sets props correctly", () => {
-    const wrapper = shallow(<Timeline {...props} />);
-    const input = wrapper.find("input");
+    const timeline = shallow(<Timeline {...props} />);
+    const input = timeline.find("input");
     expect(input.props().max).toBe(76);
     expect(input.props().value).toBe(10);
   });
 
   it("calls onChange when changed", () => {
     const onChange = jest.fn();
-    const wrapper = shallow(<Timeline {...props} onChange={onChange} />);
-    wrapper.find("input").simulate("change");
+    const timeline = shallow(<Timeline {...props} onChange={onChange} />);
+    timeline.find("input").simulate("change");
     expect(onChange).toHaveBeenCalledTimes(1);
   });
 
   it("fires click handler when buttons are clicked", () => {
     const onClick = jest.fn();
-    const wrapper = shallow(
+    const content = shallow(<Content />);
+    const timeline = shallow(
       <Timeline {...props} onMonthButtonClick={onClick} />
     );
-    expect(wrapper.find("a.button").length).toBe(3);
-    wrapper.find("#previous").simulate("click");
-    wrapper.find("#next").simulate("click");
+    expect(timeline.find("a.button").length).toBe(3);
+    timeline.find("#previous").simulate("click");
+    timeline.find("#next").simulate("click");
     expect(onClick).toHaveBeenCalledTimes(2);
   });
 });

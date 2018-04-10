@@ -3,14 +3,14 @@ import Content from "../components/Content";
 
 describe("Content", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<Content />);
-    expect(wrapper).toMatchSnapshot();
-    expect(wrapper.find("Map").length).toBe(1);
+    const content = shallow(<Content />);
+    expect(content).toMatchSnapshot();
+    expect(content.find("Map").length).toBe(1);
   });
 
   it("fetches data when mounted", () => {
     const spy = jest.spyOn(Content.prototype, "fetchDataForMap");
-    const wrapper = shallow(<Content />);
+    const content = shallow(<Content />);
     expect(spy).toHaveBeenCalledTimes(1);
   });
 });

@@ -22,7 +22,7 @@ describe("Assets", () => {
     topInstruments: [
       {
         secId: 1236452364,
-        secName: "Woahtek Oyj",
+        secName: "Woahtek",
         weightInClass: 0.4,
         marketValueInClass: 8000000,
         classWeightInPortfolio: 0.08,
@@ -34,16 +34,16 @@ describe("Assets", () => {
   };
 
   it("renders correctly", () => {
-    const wrapper = shallow(<Assets {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    const assets = shallow(<Assets {...props} />);
+    expect(assets).toMatchSnapshot();
   });
 
   it("displays loading text", () => {
-    const wrapper = shallow(
+    const assets = shallow(
       <Assets geographicalWeightData={[]} topInstruments={[]} />
     );
     expect(
-      wrapper
+      assets
         .find("tr")
         .at(0)
         .text()
@@ -51,28 +51,28 @@ describe("Assets", () => {
   });
 
   it("displays month", () => {
-    const wrapper = shallow(<Assets {...props} />);
-    const subtitle = wrapper.find("p.subtitle");
+    const assets = shallow(<Assets {...props} />);
+    const subtitle = assets.find("p.subtitle");
     expect(subtitle.text()).toContain("2012-01");
   });
 
   it("renders top instruments by calling method", () => {
     const spy = jest.spyOn(Assets.prototype, "renderTopInstruments");
-    const wrapper = shallow(<Assets {...props} />);
+    const assets = shallow(<Assets {...props} />);
     expect(spy).toHaveBeenCalledTimes(1);
     expect(
-      wrapper
+      assets
         .find("td")
         .at(1)
         .text()
-    ).toEqual("Woahtek Oyj");
+    ).toEqual("Woahtek");
   });
 
   it("displays selected country name and currency", () => {
-    const wrapper = shallow(
+    const assets = shallow(
       <Assets {...props} clickedGeographyName="Finland" />
     );
-    const subtitle = wrapper.find("p.subtitle");
+    const subtitle = assets.find("p.subtitle");
     expect(subtitle.text()).toContain("Finland (EUR)");
   });
 });

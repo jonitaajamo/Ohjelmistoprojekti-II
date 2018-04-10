@@ -47,7 +47,7 @@ ShallowWrapper {
               "classWeightInPortfolio": 0.08,
               "marketValueInClass": 8000000,
               "secId": 1236452364,
-              "secName": "Woahtek Oyj",
+              "secName": "Woahtek",
               "totalMarketValue": 8000000,
               "weightInClass": 0.4,
             },
@@ -134,7 +134,7 @@ ShallowWrapper {
                                         1
                               </td>
                               <td>
-                                        Woahtek Oyj
+                                        Woahtek
                               </td>
                               <td>
                                         8000000€
@@ -370,7 +370,7 @@ ShallowWrapper {
                                           1
                             </td>
                             <td>
-                                          Woahtek Oyj
+                                          Woahtek
                             </td>
                             <td>
                                           8000000€
@@ -482,7 +482,7 @@ ShallowWrapper {
                                     1
                   </td>
                   <td>
-                                    Woahtek Oyj
+                                    Woahtek
                   </td>
                   <td>
                                     8000000€
@@ -505,7 +505,7 @@ ShallowWrapper {
                       1
 </td>,
                     <td>
-                      Woahtek Oyj
+                      Woahtek
 </td>,
                     <td>
                       8000000€
@@ -533,10 +533,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Woahtek Oyj",
+                      "children": "Woahtek",
                     },
                     "ref": null,
-                    "rendered": "Woahtek Oyj",
+                    "rendered": "Woahtek",
                     "type": "td",
                   },
                   Object {
@@ -647,7 +647,7 @@ ShallowWrapper {
                                                 1
                                     </td>
                                     <td>
-                                                Woahtek Oyj
+                                                Woahtek
                                     </td>
                                     <td>
                                                 8000000€
@@ -883,7 +883,7 @@ ShallowWrapper {
                                                 1
                                 </td>
                                 <td>
-                                                Woahtek Oyj
+                                                Woahtek
                                 </td>
                                 <td>
                                                 8000000€
@@ -995,7 +995,7 @@ ShallowWrapper {
                                         1
                     </td>
                     <td>
-                                        Woahtek Oyj
+                                        Woahtek
                     </td>
                     <td>
                                         8000000€
@@ -1018,7 +1018,7 @@ ShallowWrapper {
                         1
 </td>,
                       <td>
-                        Woahtek Oyj
+                        Woahtek
 </td>,
                       <td>
                         8000000€
@@ -1046,10 +1046,10 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "Woahtek Oyj",
+                        "children": "Woahtek",
                       },
                       "ref": null,
-                      "rendered": "Woahtek Oyj",
+                      "rendered": "Woahtek",
                       "type": "td",
                     },
                     Object {
