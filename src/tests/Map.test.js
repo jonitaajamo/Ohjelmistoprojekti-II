@@ -31,7 +31,8 @@ describe("Map", () => {
     ],
     geographyBorders: [1, 2],
     geographyNames: ["Finland", "Sweden"],
-    selectedMonth: 0
+    selectedMonth: 0,
+    selectedAsset: 0
   };
 
   it("renders without crashing", () => {

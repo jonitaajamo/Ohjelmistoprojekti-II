@@ -41,6 +41,7 @@ ShallowWrapper {
           ]
     }
     month={0}
+    selectedAsset={0}
     topInstruments={
         Array [
             Object {

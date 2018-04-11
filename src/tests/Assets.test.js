@@ -30,7 +30,8 @@ describe("Assets", () => {
       }
     ],
     month: 0,
-    currency: "EUR"
+    currency: "EUR",
+    selectedAsset: 0
   };
 
   it("renders correctly", () => {
@@ -68,11 +69,11 @@ describe("Assets", () => {
     ).toEqual("Woahtek");
   });
 
-  it("displays selected country name and currency", () => {
+  it("displays selected country name", () => {
     const assets = shallow(
       <Assets {...props} clickedGeographyName="Finland" />
     );
     const subtitle = assets.find("p.subtitle");
-    expect(subtitle.text()).toContain("Finland (EUR)");
+    expect(subtitle.text()).toContain("Finland");
   });
 });

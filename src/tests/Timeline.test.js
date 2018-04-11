@@ -36,21 +36,14 @@ describe("Timeline", () => {
 
   it("sets props correctly", () => {
     const timeline = shallow(<Timeline {...props} />);
-    const input = timeline.find("input");
-    expect(input.props().max).toBe(76);
-    expect(input.props().value).toBe(10);
-  });
-
-  it("calls onChange when changed", () => {
-    const onChange = jest.fn();
-    const timeline = shallow(<Timeline {...props} onChange={onChange} />);
-    timeline.find("input").simulate("change");
-    expect(onChange).toHaveBeenCalledTimes(1);
+    const slider = timeline.find("ComponentEnhancer").dive();
+    const handle = slider.find("Handle");
+    expect(handle.props().value).toBe(10);
+    expect(handle.props().max).toBe(76);
   });
 
   it("fires click handler when buttons are clicked", () => {
     const onClick = jest.fn();
-    const content = shallow(<Content />);
     const timeline = shallow(
       <Timeline {...props} onMonthButtonClick={onClick} />
     );

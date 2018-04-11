@@ -93,7 +93,6 @@ ShallowWrapper {
           onAssetChange={undefined}
 />,
         <div
-          className="columns"
           style={
                     Object {
                               "alignItems": "center",
@@ -101,29 +100,50 @@ ShallowWrapper {
                             }
           }
 >
-          <input
-                    className="slider"
-                    list="tickmarks"
-                    max={76}
-                    min="0"
-                    onChange={undefined}
-                    style={
+          <ComponentEnhancer(undefined)
+                    activeDotStyle={
                               Object {
-                                        "outline": "none",
+                                        "borderColor": "yellow",
                                       }
                     }
-                    type="range"
-                    value={10}
+                    className=""
+                    defaultValue={10}
+                    disabled={false}
+                    dotStyle={
+                              Object {
+                                        "borderColor": "orange",
+                                      }
+                    }
+                    dots={false}
+                    handle={[Function]}
+                    handleStyle={
+                              Array [
+                                        Object {},
+                                      ]
+                    }
+                    included={true}
+                    marks={
+                              Object {
+                                        "0": "2012-01",
+                                      }
+                    }
+                    max={76}
+                    min={0}
+                    onAfterChange={[Function]}
+                    onBeforeChange={[Function]}
+                    onChange={[Function]}
+                    prefixCls="rc-slider"
+                    railStyle={Object {}}
+                    step={1}
+                    trackStyle={
+                              Array [
+                                        Object {},
+                                      ]
+                    }
+                    vertical={false}
           />
-          <datalist
-                    id="tickmarks"
-          >
-                    <option
-                              label="2012-01"
-                              value={0}
-                    />
-          </datalist>
 </div>,
+        <br />,
         <span
           className="field has-addons has-addons-centered"
 >
@@ -217,90 +237,104 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <input
-              className="slider"
-              list="tickmarks"
-              max={76}
-              min="0"
-              onChange={undefined}
-              style={
-                            Object {
-                                          "outline": "none",
-                                        }
-              }
-              type="range"
-              value={10}
+          "children": <ComponentEnhancer(undefined)
+            activeDotStyle={
+                        Object {
+                                    "borderColor": "yellow",
+                                  }
+            }
+            className=""
+            defaultValue={10}
+            disabled={false}
+            dotStyle={
+                        Object {
+                                    "borderColor": "orange",
+                                  }
+            }
+            dots={false}
+            handle={[Function]}
+            handleStyle={
+                        Array [
+                                    Object {},
+                                  ]
+            }
+            included={true}
+            marks={
+                        Object {
+                                    "0": "2012-01",
+                                  }
+            }
+            max={76}
+            min={0}
+            onAfterChange={[Function]}
+            onBeforeChange={[Function]}
+            onChange={[Function]}
+            prefixCls="rc-slider"
+            railStyle={Object {}}
+            step={1}
+            trackStyle={
+                        Array [
+                                    Object {},
+                                  ]
+            }
+            vertical={false}
 />,
-            <datalist
-              id="tickmarks"
->
-              <option
-                            label="2012-01"
-                            value={0}
-              />
-</datalist>,
-          ],
-          "className": "columns",
           "style": Object {
             "alignItems": "center",
             "justifyContent": "center",
           },
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "slider",
-              "list": "tickmarks",
-              "max": 76,
-              "min": "0",
-              "onChange": undefined,
-              "style": Object {
-                "outline": "none",
-              },
-              "type": "range",
-              "value": 10,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "activeDotStyle": Object {
+              "borderColor": "yellow",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <option
-                  label="2012-01"
-                  value={0}
-/>,
-              ],
-              "id": "tickmarks",
+            "className": "",
+            "defaultValue": 10,
+            "disabled": false,
+            "dotStyle": Object {
+              "borderColor": "orange",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "0",
-                "nodeType": "host",
-                "props": Object {
-                  "label": "2012-01",
-                  "value": 0,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "option",
-              },
+            "dots": false,
+            "handle": [Function],
+            "handleStyle": Array [
+              Object {},
             ],
-            "type": "datalist",
+            "included": true,
+            "marks": Object {
+              "0": "2012-01",
+            },
+            "max": 76,
+            "min": 0,
+            "onAfterChange": [Function],
+            "onBeforeChange": [Function],
+            "onChange": [Function],
+            "prefixCls": "rc-slider",
+            "railStyle": Object {},
+            "step": 1,
+            "trackStyle": Array [
+              Object {},
+            ],
+            "vertical": false,
           },
-        ],
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
       },
       Object {
         "instance": null,
@@ -528,7 +562,6 @@ ShallowWrapper {
             onAssetChange={undefined}
 />,
           <div
-            className="columns"
             style={
                         Object {
                                     "alignItems": "center",
@@ -536,29 +569,50 @@ ShallowWrapper {
                                   }
             }
 >
-            <input
-                        className="slider"
-                        list="tickmarks"
-                        max={76}
-                        min="0"
-                        onChange={undefined}
-                        style={
+            <ComponentEnhancer(undefined)
+                        activeDotStyle={
                                     Object {
-                                                "outline": "none",
+                                                "borderColor": "yellow",
                                               }
                         }
-                        type="range"
-                        value={10}
+                        className=""
+                        defaultValue={10}
+                        disabled={false}
+                        dotStyle={
+                                    Object {
+                                                "borderColor": "orange",
+                                              }
+                        }
+                        dots={false}
+                        handle={[Function]}
+                        handleStyle={
+                                    Array [
+                                                Object {},
+                                              ]
+                        }
+                        included={true}
+                        marks={
+                                    Object {
+                                                "0": "2012-01",
+                                              }
+                        }
+                        max={76}
+                        min={0}
+                        onAfterChange={[Function]}
+                        onBeforeChange={[Function]}
+                        onChange={[Function]}
+                        prefixCls="rc-slider"
+                        railStyle={Object {}}
+                        step={1}
+                        trackStyle={
+                                    Array [
+                                                Object {},
+                                              ]
+                        }
+                        vertical={false}
             />
-            <datalist
-                        id="tickmarks"
-            >
-                        <option
-                                    label="2012-01"
-                                    value={0}
-                        />
-            </datalist>
 </div>,
+          <br />,
           <span
             className="field has-addons has-addons-centered"
 >
@@ -652,90 +706,104 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <input
-                className="slider"
-                list="tickmarks"
-                max={76}
-                min="0"
-                onChange={undefined}
-                style={
-                                Object {
-                                                "outline": "none",
-                                              }
-                }
-                type="range"
-                value={10}
+            "children": <ComponentEnhancer(undefined)
+              activeDotStyle={
+                            Object {
+                                          "borderColor": "yellow",
+                                        }
+              }
+              className=""
+              defaultValue={10}
+              disabled={false}
+              dotStyle={
+                            Object {
+                                          "borderColor": "orange",
+                                        }
+              }
+              dots={false}
+              handle={[Function]}
+              handleStyle={
+                            Array [
+                                          Object {},
+                                        ]
+              }
+              included={true}
+              marks={
+                            Object {
+                                          "0": "2012-01",
+                                        }
+              }
+              max={76}
+              min={0}
+              onAfterChange={[Function]}
+              onBeforeChange={[Function]}
+              onChange={[Function]}
+              prefixCls="rc-slider"
+              railStyle={Object {}}
+              step={1}
+              trackStyle={
+                            Array [
+                                          Object {},
+                                        ]
+              }
+              vertical={false}
 />,
-              <datalist
-                id="tickmarks"
->
-                <option
-                                label="2012-01"
-                                value={0}
-                />
-</datalist>,
-            ],
-            "className": "columns",
             "style": Object {
               "alignItems": "center",
               "justifyContent": "center",
             },
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "slider",
-                "list": "tickmarks",
-                "max": 76,
-                "min": "0",
-                "onChange": undefined,
-                "style": Object {
-                  "outline": "none",
-                },
-                "type": "range",
-                "value": 10,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "activeDotStyle": Object {
+                "borderColor": "yellow",
               },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <option
-                    label="2012-01"
-                    value={0}
-/>,
-                ],
-                "id": "tickmarks",
+              "className": "",
+              "defaultValue": 10,
+              "disabled": false,
+              "dotStyle": Object {
+                "borderColor": "orange",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "0",
-                  "nodeType": "host",
-                  "props": Object {
-                    "label": "2012-01",
-                    "value": 0,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "option",
-                },
+              "dots": false,
+              "handle": [Function],
+              "handleStyle": Array [
+                Object {},
               ],
-              "type": "datalist",
+              "included": true,
+              "marks": Object {
+                "0": "2012-01",
+              },
+              "max": 76,
+              "min": 0,
+              "onAfterChange": [Function],
+              "onBeforeChange": [Function],
+              "onChange": [Function],
+              "prefixCls": "rc-slider",
+              "railStyle": Object {},
+              "step": 1,
+              "trackStyle": Array [
+                Object {},
+              ],
+              "vertical": false,
             },
-          ],
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
         },
         Object {
           "instance": null,
