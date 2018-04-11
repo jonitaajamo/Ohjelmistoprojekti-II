@@ -219,7 +219,7 @@ ShallowWrapper {
           onClickHandler={[Function]}
 />,
       ],
-      "className": "tabs is-toggle is-toggle-rounded is-centered is-fullwidth",
+      "className": "tabs is-toggle is-centered is-fullwidth",
     },
     "ref": null,
     "rendered": Array [
@@ -360,7 +360,7 @@ ShallowWrapper {
             onClickHandler={[Function]}
 />,
         ],
-        "className": "tabs is-toggle is-toggle-rounded is-centered is-fullwidth",
+        "className": "tabs is-toggle is-centered is-fullwidth",
       },
       "ref": null,
       "rendered": Array [

@@ -36,10 +36,7 @@ ShallowWrapper {
         topInstruments={Array []}
 />,
       "style": Object {
-        "margin": "auto",
-        "marginBottom": "10px",
-        "marginTop": "10px",
-        "width": "99%",
+        "margin": "10px",
       },
     },
     "ref": null,
@@ -96,10 +93,7 @@ ShallowWrapper {
           topInstruments={Array []}
 />,
         "style": Object {
-          "margin": "auto",
-          "marginBottom": "10px",
-          "marginTop": "10px",
-          "width": "99%",
+          "margin": "10px",
         },
       },
       "ref": null,
