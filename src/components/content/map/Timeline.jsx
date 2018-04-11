@@ -4,7 +4,7 @@ import "rc-slider/assets/index.css";
 import Tabs from "./timeline/Tabs";
 
 export default class Timeline extends Component {
-  renderDatalist() {
+  populateMarksForSlider() {
     const marksObject = {};
     for (
       let index = 0;
@@ -32,7 +32,7 @@ export default class Timeline extends Component {
         />
         <div style={timelineStyle}>
           <Slider
-            marks={this.renderDatalist()}
+            marks={this.populateMarksForSlider()}
             step={1}
             min={0}
             max={this.props.length}

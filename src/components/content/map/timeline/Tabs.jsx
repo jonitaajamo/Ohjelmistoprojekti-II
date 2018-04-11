@@ -31,9 +31,7 @@ export default class Tabs extends Component {
       : [];
 
     return (
-      <div className="tabs is-toggle is-toggle-rounded is-centered is-fullwidth ">
-        {buttons}
-      </div>
+      <div className="tabs is-toggle is-centered is-fullwidth">{buttons}</div>
     );
   }
 }
