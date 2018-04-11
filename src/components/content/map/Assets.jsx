@@ -46,8 +46,6 @@ export default class Assets extends Component {
       ? " (" + this.props.currency + ")"
       : " ";
 
-    console.log(currency);
-
     return currency;
   }
 
