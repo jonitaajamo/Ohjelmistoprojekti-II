@@ -10,13 +10,9 @@ export default class Button extends Component {
   }
 
   render() {
-    const linkStyle = {
-      textDecoration: "none"
-    };
-
     return (
       <li className={this.props.isActive}>
-        <a style={linkStyle} onClick={() => this.clickHandler()}>
+        <a className="tab-button" onClick={() => this.clickHandler()}>
           <span>{this.capitalize(this.props.asset)}</span>
         </a>
       </li>
