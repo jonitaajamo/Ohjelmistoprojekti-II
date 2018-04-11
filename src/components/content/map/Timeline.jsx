@@ -36,7 +36,7 @@ export default class Timeline extends Component {
             step={1}
             min={0}
             max={this.props.length}
-            defaultValue={this.props.month}
+            value={this.props.month}
             dotStyle={{ borderColor: "orange" }}
             activeDotStyle={{ borderColor: "yellow" }}
             onChange={this.props.onChange}

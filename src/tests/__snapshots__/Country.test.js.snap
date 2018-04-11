@@ -22,14 +22,7 @@ ShallowWrapper {
 >
         Select a country
 </span>,
-      "className": "content",
-      "style": Object {
-        "left": "0px",
-        "margin": "10px",
-        "opacity": 0.9,
-        "position": "absolute",
-        "top": "0px",
-      },
+      "className": "content country-name-tag",
     },
     "ref": null,
     "rendered": Object {
@@ -57,14 +50,7 @@ ShallowWrapper {
 >
           Select a country
 </span>,
-        "className": "content",
-        "style": Object {
-          "left": "0px",
-          "margin": "10px",
-          "opacity": 0.9,
-          "position": "absolute",
-          "top": "0px",
-        },
+        "className": "content country-name-tag",
       },
       "ref": null,
       "rendered": Object {
