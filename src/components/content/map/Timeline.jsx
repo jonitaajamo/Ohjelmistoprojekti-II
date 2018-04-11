@@ -37,7 +37,7 @@ export default class Timeline extends Component {
             step={1}
             min={0}
             max={this.props.length}
-            defaultValue={this.props.month}
+            value={this.props.month}
             onChange={this.props.onChange}
           />
         </div>
