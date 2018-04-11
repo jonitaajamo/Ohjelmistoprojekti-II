@@ -164,7 +164,7 @@ class Map extends Component {
                     this.state.isGeographyClicked &&
                     this.state.clickedGeographyName ===
                       this.props.geographyNames[i].name
-                      ? "steelblue"
+                      ? "rgb(50, 115, 220)"
                       : "black",
                   strokeWidth:
                     this.state.isGeographyClicked &&
@@ -180,7 +180,7 @@ class Map extends Component {
                     this.state.isGeographyClicked &&
                     this.state.clickedGeographyName ===
                       this.props.geographyNames[i].name
-                      ? "steelblue"
+                      ? "rgb(50, 115, 220)"
                       : "black",
                   strokeWidth:
                     this.state.isGeographyClicked &&
@@ -191,12 +191,12 @@ class Map extends Component {
                   outline: "none"
                 },
                 pressed: {
-                  fill: "steelblue",
+                  fill: "rgb(50, 115, 220)",
                   stroke:
                     this.state.isGeographyClicked &&
                     this.state.clickedGeographyName ===
                       this.props.geographyNames[i].name
-                      ? "steelblue"
+                      ? "rgb(50, 115, 220)"
                       : "black",
                   strokeWidth:
                     this.state.isGeographyClicked &&
