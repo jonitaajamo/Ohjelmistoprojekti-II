@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "rc-slider";
-import "rc-slider/assets/index.css";
+import "./timeline.css";
 import Tabs from "./timeline/Tabs";
 
 export default class Timeline extends Component {
@@ -20,6 +20,7 @@ export default class Timeline extends Component {
 
   render() {
     const timelineStyle = {
+      margin: "10px",
       alignItems: "center",
       justifyContent: "center"
     };
@@ -37,8 +38,6 @@ export default class Timeline extends Component {
             min={0}
             max={this.props.length}
             value={this.props.month}
-            dotStyle={{ borderColor: "orange" }}
-            activeDotStyle={{ borderColor: "yellow" }}
             onChange={this.props.onChange}
           />
         </div>

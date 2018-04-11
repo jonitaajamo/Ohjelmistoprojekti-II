@@ -49,42 +49,70 @@ export default class Assets extends Component {
     return currency;
   }
 
-  render() {
-    const assetTableData =
-      this.props.geographicalWeightData.length === 0
-        ? this.Loading("Assets")
-        : this.props.geographicalWeightData.map((item, key) => {
-            if (key === this.props.month) {
-              const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
-                const innerInnerLoop = innerItem.weights.map(
-                  (innerInnerItem, innerInnerKey) => {
-                    if (
-                      innerInnerItem.countryId ===
-                      Number(this.props.geographyId)
-                    ) {
-                      return (
-                        <tr key={innerKey}>
-                          <td>{this.capitalize(innerItem.class)}</td>
-                          <td>{innerInnerItem.marketValue + "€"}</td>
-                        </tr>
-                      );
-                    } else {
-                      return null;
-                    }
+  assetTableData() {
+    return this.props.geographicalWeightData.length === 0
+      ? this.Loading("Assets")
+      : this.props.geographicalWeightData.map((item, key) => {
+          if (key === this.props.month) {
+            const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
+              const innerInnerLoop = innerItem.weights.map(
+                (innerInnerItem, innerInnerKey) => {
+                  if (
+                    innerInnerItem.countryId === Number(this.props.geographyId)
+                  ) {
+                    return (
+                      <tr key={innerKey}>
+                        <td>{this.capitalize(innerItem.class)}</td>
+                        <td>{innerInnerItem.marketValue}</td>
+                      </tr>
+                    );
+                  } else {
+                    return null;
                   }
-                );
-                return innerInnerLoop;
-              });
-              return innerLoop;
-            } else {
-              return null;
-            }
-          });
+                }
+              );
+              return innerInnerLoop;
+            });
+            return innerLoop;
+          } else {
+            return null;
+          }
+        });
+  }
+
+  assetTableHeadings() {
+    const data = this.assetTableData();
+
+    const hasNull = data.filter(item => item !== null);
+
+    if (data[this.props.month][0][1] === null) {
+      return (
+        <tr>
+          <th>Selected country has no assets</th>
+        </tr>
+      );
+    } else {
+      return (
+        <tr>
+          <th>Asset name</th>
+          <th>Value</th>
+        </tr>
+      );
+    }
+  }
+
+  render() {
     const assetTableStyle = {
       display: !this.props.clickedGeographyName ? "none" : "block"
     };
 
     const currency = this.checkCurrency();
+    const assetTable = this.props.clickedGeographyName
+      ? this.assetTableData()
+      : null;
+    const assetTableHead = this.props.clickedGeographyName
+      ? this.assetTableHeadings()
+      : null;
 
     return (
       <div className="tile is-vertical">
@@ -104,13 +132,8 @@ export default class Assets extends Component {
           </p>
           <div className="centered-table" style={assetTableStyle}>
             <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">
-              <thead>
-                <tr>
-                  <th>Asset name</th>
-                  <th>Value</th>
-                </tr>
-              </thead>
-              <tbody>{assetTableData}</tbody>
+              <thead>{assetTableHead}</thead>
+              <tbody>{assetTable}</tbody>
             </table>
           </div>
         </article>
