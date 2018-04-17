@@ -83,8 +83,6 @@ export default class Assets extends Component {
   assetTableHeadings() {
     const data = this.assetTableData();
 
-    const hasNull = data.filter(item => item !== null);
-
     if (data[this.props.month][0][1] === null) {
       return (
         <tr>

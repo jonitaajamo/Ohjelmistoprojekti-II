@@ -97,22 +97,15 @@ ShallowWrapper {
                     Object {
                               "alignItems": "center",
                               "justifyContent": "center",
+                              "margin": "10px",
                             }
           }
 >
           <ComponentEnhancer(undefined)
-                    activeDotStyle={
-                              Object {
-                                        "borderColor": "yellow",
-                                      }
-                    }
+                    activeDotStyle={Object {}}
                     className=""
                     disabled={false}
-                    dotStyle={
-                              Object {
-                                        "borderColor": "orange",
-                                      }
-                    }
+                    dotStyle={Object {}}
                     dots={false}
                     handle={[Function]}
                     handleStyle={
@@ -238,18 +231,10 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <ComponentEnhancer(undefined)
-            activeDotStyle={
-                        Object {
-                                    "borderColor": "yellow",
-                                  }
-            }
+            activeDotStyle={Object {}}
             className=""
             disabled={false}
-            dotStyle={
-                        Object {
-                                    "borderColor": "orange",
-                                  }
-            }
+            dotStyle={Object {}}
             dots={false}
             handle={[Function]}
             handleStyle={
@@ -282,6 +267,7 @@ ShallowWrapper {
           "style": Object {
             "alignItems": "center",
             "justifyContent": "center",
+            "margin": "10px",
           },
         },
         "ref": null,
@@ -290,14 +276,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "activeDotStyle": Object {
-              "borderColor": "yellow",
-            },
+            "activeDotStyle": Object {},
             "className": "",
             "disabled": false,
-            "dotStyle": Object {
-              "borderColor": "orange",
-            },
+            "dotStyle": Object {},
             "dots": false,
             "handle": [Function],
             "handleStyle": Array [
@@ -566,22 +548,15 @@ ShallowWrapper {
                         Object {
                                     "alignItems": "center",
                                     "justifyContent": "center",
+                                    "margin": "10px",
                                   }
             }
 >
             <ComponentEnhancer(undefined)
-                        activeDotStyle={
-                                    Object {
-                                                "borderColor": "yellow",
-                                              }
-                        }
+                        activeDotStyle={Object {}}
                         className=""
                         disabled={false}
-                        dotStyle={
-                                    Object {
-                                                "borderColor": "orange",
-                                              }
-                        }
+                        dotStyle={Object {}}
                         dots={false}
                         handle={[Function]}
                         handleStyle={
@@ -707,18 +682,10 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <ComponentEnhancer(undefined)
-              activeDotStyle={
-                            Object {
-                                          "borderColor": "yellow",
-                                        }
-              }
+              activeDotStyle={Object {}}
               className=""
               disabled={false}
-              dotStyle={
-                            Object {
-                                          "borderColor": "orange",
-                                        }
-              }
+              dotStyle={Object {}}
               dots={false}
               handle={[Function]}
               handleStyle={
@@ -751,6 +718,7 @@ ShallowWrapper {
             "style": Object {
               "alignItems": "center",
               "justifyContent": "center",
+              "margin": "10px",
             },
           },
           "ref": null,
@@ -759,14 +727,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "activeDotStyle": Object {
-                "borderColor": "yellow",
-              },
+              "activeDotStyle": Object {},
               "className": "",
               "disabled": false,
-              "dotStyle": Object {
-                "borderColor": "orange",
-              },
+              "dotStyle": Object {},
               "dots": false,
               "handle": [Function],
               "handleStyle": Array [

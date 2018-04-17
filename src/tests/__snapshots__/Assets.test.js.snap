@@ -95,19 +95,8 @@ ShallowWrapper {
                     <table
                               className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
                     >
-                              <thead>
-                                        <tr>
-                                                  <th>
-                                                            Asset name
-                                                  </th>
-                                                  <th>
-                                                            Value
-                                                  </th>
-                                        </tr>
-                              </thead>
-                              <tbody>
-                                        
-                              </tbody>
+                              <thead />
+                              <tbody />
                     </table>
           </div>
 </article>,
@@ -189,19 +178,8 @@ ShallowWrapper {
               <table
                             className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
               >
-                            <thead>
-                                          <tr>
-                                                        <th>
-                                                                      Asset name
-                                                        </th>
-                                                        <th>
-                                                                      Value
-                                                        </th>
-                                          </tr>
-                            </thead>
-                            <tbody>
-                                          
-                            </tbody>
+                            <thead />
+                            <tbody />
               </table>
 </div>,
           ],
@@ -259,19 +237,8 @@ ShallowWrapper {
               "children": <table
                 className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
 >
-                <thead>
-                                <tr>
-                                                <th>
-                                                                Asset name
-                                                </th>
-                                                <th>
-                                                                Value
-                                                </th>
-                                </tr>
-                </thead>
-                <tbody>
-                                
-                </tbody>
+                <thead />
+                <tbody />
 </table>,
               "className": "centered-table",
               "style": Object {
@@ -285,19 +252,8 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <thead>
-                    <tr>
-                                        <th>
-                                                            Asset name
-                                        </th>
-                                        <th>
-                                                            Value
-                                        </th>
-                    </tr>
-</thead>,
-                  <tbody>
-                    
-</tbody>,
+                  <thead />,
+                  <tbody />,
                 ],
                 "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
               },
@@ -308,57 +264,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <tr>
-                      <th>
-                                            Asset name
-                      </th>
-                      <th>
-                                            Value
-                      </th>
-</tr>,
+                    "children": null,
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <th>
-                          Asset name
-</th>,
-                        <th>
-                          Value
-</th>,
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Asset name",
-                        },
-                        "ref": null,
-                        "rendered": "Asset name",
-                        "type": "th",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Value",
-                        },
-                        "ref": null,
-                        "rendered": "Value",
-                        "type": "th",
-                      },
-                    ],
-                    "type": "tr",
-                  },
+                  "rendered": null,
                   "type": "thead",
                 },
                 Object {
@@ -366,24 +275,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      Array [
-                        Array [
-                          null,
-                          null,
-                          null,
-                          null,
-                        ],
-                      ],
-                    ],
+                    "children": null,
                   },
                   "ref": null,
-                  "rendered": Array [
-                    null,
-                    null,
-                    null,
-                    null,
-                  ],
+                  "rendered": null,
                   "type": "tbody",
                 },
               ],
@@ -722,19 +617,8 @@ ShallowWrapper {
                         <table
                                     className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
                         >
-                                    <thead>
-                                                <tr>
-                                                            <th>
-                                                                        Asset name
-                                                            </th>
-                                                            <th>
-                                                                        Value
-                                                            </th>
-                                                </tr>
-                                    </thead>
-                                    <tbody>
-                                                
-                                    </tbody>
+                                    <thead />
+                                    <tbody />
                         </table>
             </div>
 </article>,
@@ -816,19 +700,8 @@ ShallowWrapper {
                 <table
                                 className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
                 >
-                                <thead>
-                                                <tr>
-                                                                <th>
-                                                                                Asset name
-                                                                </th>
-                                                                <th>
-                                                                                Value
-                                                                </th>
-                                                </tr>
-                                </thead>
-                                <tbody>
-                                                
-                                </tbody>
+                                <thead />
+                                <tbody />
                 </table>
 </div>,
             ],
@@ -886,19 +759,8 @@ ShallowWrapper {
                 "children": <table
                   className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow"
 >
-                  <thead>
-                                    <tr>
-                                                      <th>
-                                                                        Asset name
-                                                      </th>
-                                                      <th>
-                                                                        Value
-                                                      </th>
-                                    </tr>
-                  </thead>
-                  <tbody>
-                                    
-                  </tbody>
+                  <thead />
+                  <tbody />
 </table>,
                 "className": "centered-table",
                 "style": Object {
@@ -912,19 +774,8 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <thead>
-                      <tr>
-                                            <th>
-                                                                  Asset name
-                                            </th>
-                                            <th>
-                                                                  Value
-                                            </th>
-                      </tr>
-</thead>,
-                    <tbody>
-                      
-</tbody>,
+                    <thead />,
+                    <tbody />,
                   ],
                   "className": "table is-fullwidth is-hoverable is-bordered is-striped is-narrow",
                 },
@@ -935,57 +786,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <tr>
-                        <th>
-                                                Asset name
-                        </th>
-                        <th>
-                                                Value
-                        </th>
-</tr>,
+                      "children": null,
                     },
                     "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          <th>
-                            Asset name
-</th>,
-                          <th>
-                            Value
-</th>,
-                        ],
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "Asset name",
-                          },
-                          "ref": null,
-                          "rendered": "Asset name",
-                          "type": "th",
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "Value",
-                          },
-                          "ref": null,
-                          "rendered": "Value",
-                          "type": "th",
-                        },
-                      ],
-                      "type": "tr",
-                    },
+                    "rendered": null,
                     "type": "thead",
                   },
                   Object {
@@ -993,24 +797,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        Array [
-                          Array [
-                            null,
-                            null,
-                            null,
-                            null,
-                          ],
-                        ],
-                      ],
+                      "children": null,
                     },
                     "ref": null,
-                    "rendered": Array [
-                      null,
-                      null,
-                      null,
-                      null,
-                    ],
+                    "rendered": null,
                     "type": "tbody",
                   },
                 ],
