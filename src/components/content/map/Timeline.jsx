@@ -39,6 +39,7 @@ export default class Timeline extends Component {
             max={this.props.length}
             value={this.props.month}
             onChange={this.props.onChange}
+            onAfterChange={this.props.onAfterChange}
           />
         </div>
         <br />

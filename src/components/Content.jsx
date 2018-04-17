@@ -76,10 +76,10 @@ export default class Content extends Component {
     this.fetchDataForMap();
   }
 
-  changeMonth(event) {
+  disableOptimization() {
+    console.log("blur");
     this.setState(
       {
-        selectedMonth: event,
         disableOptimization: true
       },
       () => {
@@ -88,6 +88,12 @@ export default class Content extends Component {
         });
       }
     );
+  }
+
+  changeMonth(event) {
+    this.setState({
+      selectedMonth: event
+    });
   }
 
   changeAsset(item) {
@@ -174,6 +180,7 @@ export default class Content extends Component {
           fetchGeographyIdFromMap={this.fetchGeographyIdFromMap.bind(this)}
           geographyId={this.state.geographyId}
           isGeographyClicked={this.state.isGeographyClicked}
+          onAfterChange={this.disableOptimization.bind(this)}
         />
       </div>
     );

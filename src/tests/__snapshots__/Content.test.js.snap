@@ -28,6 +28,7 @@ ShallowWrapper {
         isGeographyClicked={false}
         length={-1}
         month={0}
+        onAfterChange={[Function]}
         onAssetChange={[Function]}
         onChange={[Function]}
         onMonthButtonClick={[Function]}
@@ -55,6 +56,7 @@ ShallowWrapper {
         "isGeographyClicked": false,
         "length": -1,
         "month": 0,
+        "onAfterChange": [Function],
         "onAssetChange": [Function],
         "onChange": [Function],
         "onMonthButtonClick": [Function],
@@ -85,6 +87,7 @@ ShallowWrapper {
           isGeographyClicked={false}
           length={-1}
           month={0}
+          onAfterChange={[Function]}
           onAssetChange={[Function]}
           onChange={[Function]}
           onMonthButtonClick={[Function]}
@@ -112,6 +115,7 @@ ShallowWrapper {
           "isGeographyClicked": false,
           "length": -1,
           "month": 0,
+          "onAfterChange": [Function],
           "onAssetChange": [Function],
           "onChange": [Function],
           "onMonthButtonClick": [Function],
