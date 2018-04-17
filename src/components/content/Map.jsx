@@ -266,6 +266,7 @@ class Map extends Component {
                 onAssetChange={this.props.onAssetChange}
                 month={this.props.month}
                 onMonthButtonClick={this.props.onMonthButtonClick}
+                onAfterChange={this.props.onAfterChange}
               />
             </article>
           </div>
