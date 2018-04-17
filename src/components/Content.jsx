@@ -77,7 +77,6 @@ export default class Content extends Component {
   }
 
   disableOptimization() {
-    console.log("blur");
     this.setState(
       {
         disableOptimization: true
