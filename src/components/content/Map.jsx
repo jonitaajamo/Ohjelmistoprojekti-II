@@ -244,6 +244,7 @@ class Map extends Component {
                   <ZoomableGroup
                     center={this.state.mapCenter}
                     zoom={this.state.mapZoomValue}
+                    disablePanning="true"
                   >
                     {mapGeographies}
                   </ZoomableGroup>
@@ -254,7 +255,7 @@ class Map extends Component {
                     className="button"
                     onClick={() => this.zoomOutOfGeography()}
                   >
-                    Zoom out
+                    Reset
                   </button>
                 </div>
               </div>
