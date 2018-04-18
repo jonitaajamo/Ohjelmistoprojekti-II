@@ -11,27 +11,23 @@ export default class Timeline extends Component {
       index < this.props.geographicalWeightData.length;
       index++
     ) {
-      if (index % 6 === 0) {
-        marksObject[index] = this.props.geographicalWeightData[index].month;
+      if (index % 12 === 0) {
+        marksObject[index] = this.props.geographicalWeightData[
+          index
+        ].month.substr(0, 4);
       }
     }
     return marksObject;
   }
 
   render() {
-    const timelineStyle = {
-      margin: "10px",
-      alignItems: "center",
-      justifyContent: "center"
-    };
-
     return (
       <article className="tile is-child notification">
         <Tabs
           geographicalWeightData={this.props.geographicalWeightData}
           onAssetChange={this.props.onAssetChange}
         />
-        <div style={timelineStyle}>
+        <div className="timeline">
           <Slider
             marks={this.populateMarksForSlider()}
             step={1}
