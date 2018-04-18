@@ -82,8 +82,9 @@ export default class Assets extends Component {
 
   assetTableHeadings() {
     const data = this.assetTableData();
+    const hasData = data[this.props.month][0].some(item => item !== null);
 
-    if (data[this.props.month][0][1] === null) {
+    if (!hasData) {
       return (
         <tr>
           <th>Selected country has no assets</th>
