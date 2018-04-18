@@ -298,7 +298,16 @@ class Map extends Component {
   }
 
   render() {
-    if (!this.props.geographicalWeightData.length) {
+    const {
+      geographicalWeightData,
+      geographyBorders,
+      geographyNames
+    } = this.props;
+    if (
+      (!geographicalWeightData.length,
+      !geographyBorders.length,
+      !geographyNames.length)
+    ) {
       return this.renderLoading();
     } else {
       return this.renderMap();

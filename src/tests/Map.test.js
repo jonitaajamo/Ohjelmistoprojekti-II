@@ -36,12 +36,16 @@ describe("Map", () => {
   };
 
   it("renders without crashing", () => {
-    const map = shallow(<Map geographicalWeightData={[]} />);
+    const map = shallow(
+      <Map geographicalWeightData={[]} geographyNames={[]} geographyBorders={[]} />
+    );
     expect(map).toMatchSnapshot();
   });
 
   it("initially renders Loading component", () => {
-    const map = shallow(<Map geographicalWeightData={[]} />);
+    const map = shallow(
+      <Map geographicalWeightData={[]} geographyNames={[]} geographyBorders={[]} />
+    );
     expect(map.find("Loading").length).toEqual(1);
   });
 

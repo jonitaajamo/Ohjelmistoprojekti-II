@@ -34,6 +34,19 @@ export default class Content extends Component {
       .catch(err => console.error(err));
 
     fetch(
+      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json"
+    )
+      .then(response => response.json())
+      .then(names =>
+        this.setState({
+          geographyNames: names.countries.sort((a, b) => {
+            return a.id - b.id;
+          })
+        })
+      )
+      .catch(err => console.error(err));
+
+    fetch(
       "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/getTopInstruments-mock.json"
     )
       .then(response => response.json())
@@ -52,19 +65,6 @@ export default class Content extends Component {
             worldData,
             worldData.objects.countries
           ).features.sort((a, b) => {
-            return a.id - b.id;
-          })
-        })
-      )
-      .catch(err => console.error(err));
-
-    fetch(
-      "https://raw.githubusercontent.com/tarmeli/Ohjelmistoprojekti-II/master/src/data/countryNames.json"
-    )
-      .then(response => response.json())
-      .then(names =>
-        this.setState({
-          geographyNames: names.countries.sort((a, b) => {
             return a.id - b.id;
           })
         })
