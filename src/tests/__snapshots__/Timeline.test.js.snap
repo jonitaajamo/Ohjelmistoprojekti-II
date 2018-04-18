@@ -93,13 +93,7 @@ ShallowWrapper {
           onAssetChange={undefined}
 />,
         <div
-          style={
-                    Object {
-                              "alignItems": "center",
-                              "justifyContent": "center",
-                              "margin": "10px",
-                            }
-          }
+          className="timeline"
 >
           <ComponentEnhancer(undefined)
                     activeDotStyle={Object {}}
@@ -116,7 +110,7 @@ ShallowWrapper {
                     included={true}
                     marks={
                               Object {
-                                        "0": "2012-01",
+                                        "0": "2012",
                                       }
                     }
                     max={76}
@@ -245,7 +239,7 @@ ShallowWrapper {
             included={true}
             marks={
                         Object {
-                                    "0": "2012-01",
+                                    "0": "2012",
                                   }
             }
             max={76}
@@ -264,11 +258,7 @@ ShallowWrapper {
             value={10}
             vertical={false}
 />,
-          "style": Object {
-            "alignItems": "center",
-            "justifyContent": "center",
-            "margin": "10px",
-          },
+          "className": "timeline",
         },
         "ref": null,
         "rendered": Object {
@@ -287,7 +277,7 @@ ShallowWrapper {
             ],
             "included": true,
             "marks": Object {
-              "0": "2012-01",
+              "0": "2012",
             },
             "max": 76,
             "min": 0,
@@ -544,13 +534,7 @@ ShallowWrapper {
             onAssetChange={undefined}
 />,
           <div
-            style={
-                        Object {
-                                    "alignItems": "center",
-                                    "justifyContent": "center",
-                                    "margin": "10px",
-                                  }
-            }
+            className="timeline"
 >
             <ComponentEnhancer(undefined)
                         activeDotStyle={Object {}}
@@ -567,7 +551,7 @@ ShallowWrapper {
                         included={true}
                         marks={
                                     Object {
-                                                "0": "2012-01",
+                                                "0": "2012",
                                               }
                         }
                         max={76}
@@ -696,7 +680,7 @@ ShallowWrapper {
               included={true}
               marks={
                             Object {
-                                          "0": "2012-01",
+                                          "0": "2012",
                                         }
               }
               max={76}
@@ -715,11 +699,7 @@ ShallowWrapper {
               value={10}
               vertical={false}
 />,
-            "style": Object {
-              "alignItems": "center",
-              "justifyContent": "center",
-              "margin": "10px",
-            },
+            "className": "timeline",
           },
           "ref": null,
           "rendered": Object {
@@ -738,7 +718,7 @@ ShallowWrapper {
               ],
               "included": true,
               "marks": Object {
-                "0": "2012-01",
+                "0": "2012",
               },
               "max": 76,
               "min": 0,

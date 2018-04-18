@@ -6,6 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Map
     geographicalWeightData={Array []}
+    geographyBorders={Array []}
+    geographyNames={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
