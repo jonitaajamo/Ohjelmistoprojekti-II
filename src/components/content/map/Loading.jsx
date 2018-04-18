@@ -1,5 +1,4 @@
 import React from "react";
-import "./loading.css";
 
 const Loading = ({ item }) => (
   <span className="box has-text-centered has-accent notification">
