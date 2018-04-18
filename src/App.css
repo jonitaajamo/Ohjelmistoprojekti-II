@@ -182,8 +182,5 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .content {
-  width: 99%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10p;
+  margin: 10px auto;
 }
