@@ -20,7 +20,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Loading
-        color="tomato"
+        item="map"
 />,
       "className": "is-child notification is-paddingless",
     },
@@ -30,7 +30,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "color": "tomato",
+        "item": "map",
       },
       "ref": null,
       "rendered": null,
@@ -45,7 +45,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Loading
-          color="tomato"
+          item="map"
 />,
         "className": "is-child notification is-paddingless",
       },
@@ -55,7 +55,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "color": "tomato",
+          "item": "map",
         },
         "ref": null,
         "rendered": null,

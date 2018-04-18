@@ -45,10 +45,9 @@ describe("Assets", () => {
     );
     expect(
       assets
-        .find("span")
-        .at(0)
-        .text()
-    ).toEqual("Loading Month...");
+        .find("Loading")
+        .props().item
+    ).toEqual("Month")
   });
 
   it("displays month", () => {
