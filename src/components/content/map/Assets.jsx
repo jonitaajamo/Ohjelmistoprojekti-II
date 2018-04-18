@@ -152,7 +152,7 @@ export default class Assets extends Component {
                 <th>Weight</th>
               </tr>
             </thead>
-            <tbody>{this.renderTopInstruments()} </tbody>
+            <tbody>{this.renderTopInstruments()}</tbody>
           </table>
         </article>
       </div>
