@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Loading from "../map/Loading";
 
 export default class Assets extends Component {
   constructor() {
@@ -13,7 +14,7 @@ export default class Assets extends Component {
   }
 
   Loading(what) {
-    return <span>Loading {what}...</span>;
+    return <Loading item={what} />
   }
   currencyValue() {
     return this.props.currency === "EUR" ? "€" : " ";

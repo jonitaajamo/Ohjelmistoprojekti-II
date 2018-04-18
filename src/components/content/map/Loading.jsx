@@ -1,8 +1,5 @@
 import React from "react";
-import ReactLoading from "react-loading";
 
-const Loading = ({ color }) => (
-  <ReactLoading type={"bubbles"} color={color} height={"600"} />
-);
+const Loading = ({ item }) => <span>Loading {item}...</span>;
 
 export default Loading;

@@ -135,6 +135,7 @@ ShallowWrapper {
                                         </td>
                                         <td>
                                                   8000000
+                                                  €
                                         </td>
                                         <td>
                                                   40%
@@ -327,6 +328,7 @@ ShallowWrapper {
                                           </td>
                                           <td>
                                                         8000000
+                                                        €
                                           </td>
                                           <td>
                                                         40%
@@ -381,6 +383,7 @@ ShallowWrapper {
                                     </td>
                                     <td>
                                                       8000000
+                                                      €
                                     </td>
                                     <td>
                                                       40%
@@ -493,6 +496,7 @@ ShallowWrapper {
                       </td>
                       <td>
                                             8000000
+                                            €
                       </td>
                       <td>
                                             40%
@@ -516,6 +520,7 @@ ShallowWrapper {
 </td>,
                         <td>
                           8000000
+                          €
 </td>,
                         <td>
                           40%
@@ -551,10 +556,16 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": 8000000,
+                          "children": Array [
+                            8000000,
+                            "€",
+                          ],
                         },
                         "ref": null,
-                        "rendered": 8000000,
+                        "rendered": Array [
+                          8000000,
+                          "€",
+                        ],
                         "type": "td",
                       },
                       Object {
@@ -657,6 +668,7 @@ ShallowWrapper {
                                                 </td>
                                                 <td>
                                                             8000000
+                                                            €
                                                 </td>
                                                 <td>
                                                             40%
@@ -849,6 +861,7 @@ ShallowWrapper {
                                                 </td>
                                                 <td>
                                                                 8000000
+                                                                €
                                                 </td>
                                                 <td>
                                                                 40%
@@ -903,6 +916,7 @@ ShallowWrapper {
                                         </td>
                                         <td>
                                                             8000000
+                                                            €
                                         </td>
                                         <td>
                                                             40%
@@ -1015,6 +1029,7 @@ ShallowWrapper {
                         </td>
                         <td>
                                                 8000000
+                                                €
                         </td>
                         <td>
                                                 40%
@@ -1038,6 +1053,7 @@ ShallowWrapper {
 </td>,
                           <td>
                             8000000
+                            €
 </td>,
                           <td>
                             40%
@@ -1073,10 +1089,16 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": 8000000,
+                            "children": Array [
+                              8000000,
+                              "€",
+                            ],
                           },
                           "ref": null,
-                          "rendered": 8000000,
+                          "rendered": Array [
+                            8000000,
+                            "€",
+                          ],
                           "type": "td",
                         },
                         Object {

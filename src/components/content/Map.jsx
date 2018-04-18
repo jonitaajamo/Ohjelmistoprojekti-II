@@ -291,7 +291,7 @@ class Map extends Component {
   renderLoading() {
     return (
       <article className="is-child notification is-paddingless">
-        <Loading color="tomato" />
+        <Loading item="map" />
       </article>
     );
   }
