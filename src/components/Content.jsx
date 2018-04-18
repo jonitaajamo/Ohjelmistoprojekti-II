@@ -79,7 +79,7 @@ export default class Content extends Component {
       this.setState({
         isLoaded: true
       });
-    }, 200);
+    }, 1000);
   }
 
   disableOptimization() {
