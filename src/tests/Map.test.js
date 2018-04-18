@@ -31,7 +31,7 @@ describe("Map", () => {
     ],
     geographyBorders: [1, 2],
     geographyNames: ["Finland", "Sweden"],
-    selectedMonth: 0,
+    month: 0,
     selectedAsset: 0,
     isLoaded: true
   };

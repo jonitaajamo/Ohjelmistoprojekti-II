@@ -34,7 +34,6 @@ ShallowWrapper {
         onChange={[Function]}
         onMonthButtonClick={[Function]}
         selectedAsset={0}
-        selectedMonth={0}
         topInstruments={Array []}
 />,
       "style": Object {
@@ -63,7 +62,6 @@ ShallowWrapper {
         "onChange": [Function],
         "onMonthButtonClick": [Function],
         "selectedAsset": 0,
-        "selectedMonth": 0,
         "topInstruments": Array [],
       },
       "ref": null,
@@ -95,7 +93,6 @@ ShallowWrapper {
           onChange={[Function]}
           onMonthButtonClick={[Function]}
           selectedAsset={0}
-          selectedMonth={0}
           topInstruments={Array []}
 />,
         "style": Object {
@@ -124,7 +121,6 @@ ShallowWrapper {
           "onChange": [Function],
           "onMonthButtonClick": [Function],
           "selectedAsset": 0,
-          "selectedMonth": 0,
           "topInstruments": Array [],
         },
         "ref": null,
