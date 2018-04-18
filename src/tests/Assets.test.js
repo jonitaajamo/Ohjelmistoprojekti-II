@@ -45,7 +45,7 @@ describe("Assets", () => {
     );
     expect(
       assets
-        .find("tr")
+        .find("span")
         .at(0)
         .text()
     ).toEqual("Loading Month...");

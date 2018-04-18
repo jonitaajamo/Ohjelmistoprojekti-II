@@ -15,7 +15,8 @@ export default class Content extends Component {
       selectedAsset: 0,
       disableOptimization: false,
       geographyId: "",
-      isGeographyClicked: false
+      isGeographyClicked: false,
+      isLoaded: false
     };
   }
 
@@ -74,6 +75,11 @@ export default class Content extends Component {
 
   componentDidMount() {
     this.fetchDataForMap();
+    setTimeout(() => {
+      this.setState({
+        isLoaded: true
+      });
+    }, 200);
   }
 
   disableOptimization() {
@@ -180,6 +186,7 @@ export default class Content extends Component {
           geographyId={this.state.geographyId}
           isGeographyClicked={this.state.isGeographyClicked}
           onAfterChange={this.disableOptimization.bind(this)}
+          isLoaded={this.state.isLoaded}
         />
       </div>
     );

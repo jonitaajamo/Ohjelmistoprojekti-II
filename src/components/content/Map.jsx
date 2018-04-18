@@ -258,7 +258,6 @@ class Map extends Component {
                   </button>
                 </div>
               </div>
-
               <Timeline
                 length={this.props.length}
                 geographicalWeightData={this.props.geographicalWeightData}
@@ -298,16 +297,7 @@ class Map extends Component {
   }
 
   render() {
-    const {
-      geographicalWeightData,
-      geographyBorders,
-      geographyNames
-    } = this.props;
-    if (
-      (!geographicalWeightData.length,
-      !geographyBorders.length,
-      !geographyNames.length)
-    ) {
+    if (!this.props.isLoaded) {
       return this.renderLoading();
     } else {
       return this.renderMap();

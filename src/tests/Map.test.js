@@ -32,19 +32,20 @@ describe("Map", () => {
     geographyBorders: [1, 2],
     geographyNames: ["Finland", "Sweden"],
     selectedMonth: 0,
-    selectedAsset: 0
+    selectedAsset: 0,
+    isLoaded: true
   };
 
   it("renders without crashing", () => {
     const map = shallow(
-      <Map geographicalWeightData={[]} geographyNames={[]} geographyBorders={[]} />
+      <Map isLoaded={false} />
     );
     expect(map).toMatchSnapshot();
   });
 
   it("initially renders Loading component", () => {
     const map = shallow(
-      <Map geographicalWeightData={[]} geographyNames={[]} geographyBorders={[]} />
+      <Map isLoaded={false} />
     );
     expect(map.find("Loading").length).toEqual(1);
   });

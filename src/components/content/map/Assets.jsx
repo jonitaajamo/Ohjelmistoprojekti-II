@@ -13,11 +13,7 @@ export default class Assets extends Component {
   }
 
   Loading(what) {
-    return (
-      <tr>
-        <td>Loading {what}...</td>
-      </tr>
-    );
+    return <span>Loading {what}...</span>;
   }
   currencyValue() {
     return this.props.currency === "EUR" ? "€" : " ";
