@@ -2,20 +2,10 @@ import React, { Component } from "react";
 import Loading from "../map/Loading";
 
 export default class Assets extends Component {
-  constructor() {
-    super();
-    this.state = {
-      currentMonth: ""
-    };
-  }
-
   capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-  Loading(what) {
-    return <Loading item={what} />
-  }
   currencyValue() {
     return this.props.currency === "EUR" ? "€" : " ";
   }
@@ -53,37 +43,39 @@ export default class Assets extends Component {
   }
 
   assetTableData() {
-    return this.props.geographicalWeightData.length === 0
-      ? this.Loading("Assets")
-      : this.props.geographicalWeightData.map((item, key) => {
-          if (key === this.props.month) {
-            const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
-              const innerInnerLoop = innerItem.weights.map(
-                (innerInnerItem, innerInnerKey) => {
-                  if (
-                    innerInnerItem.countryId === Number(this.props.geographyId)
-                  ) {
-                    return (
-                      <tr key={innerKey}>
-                        <td>{this.capitalize(innerItem.class)}</td>
-                        <td>
-                          {innerInnerItem.marketValue}
-                          {this.currencyValue()}
-                        </td>
-                      </tr>
-                    );
-                  } else {
-                    return null;
-                  }
+    return this.props.geographicalWeightData.length === 0 ? (
+      <Loading item="Assets" />
+    ) : (
+      this.props.geographicalWeightData.map((item, key) => {
+        if (key === this.props.month) {
+          const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
+            const innerInnerLoop = innerItem.weights.map(
+              (innerInnerItem, innerInnerKey) => {
+                if (
+                  innerInnerItem.countryId === Number(this.props.geographyId)
+                ) {
+                  return (
+                    <tr key={innerKey}>
+                      <td>{this.capitalize(innerItem.class)}</td>
+                      <td>
+                        {innerInnerItem.marketValue}
+                        {this.currencyValue()}
+                      </td>
+                    </tr>
+                  );
+                } else {
+                  return null;
                 }
-              );
-              return innerInnerLoop;
-            });
-            return innerLoop;
-          } else {
-            return null;
-          }
-        });
+              }
+            );
+            return innerInnerLoop;
+          });
+          return innerLoop;
+        } else {
+          return null;
+        }
+      })
+    );
   }
 
   assetTableHeadings() {
@@ -131,9 +123,11 @@ export default class Assets extends Component {
             {!this.props.clickedGeographyName ? "" : currency}
 
             <br />
-            {!this.props.geographicalWeightData.length
-              ? this.Loading("Month")
-              : this.props.geographicalWeightData[this.props.month].month}
+            {!this.props.geographicalWeightData.length ? (
+              <Loading item="Month" />
+            ) : (
+              this.props.geographicalWeightData[this.props.month].month
+            )}
           </p>
           <div className="centered-table" style={assetTableStyle}>
             <table className="table is-fullwidth is-hoverable is-bordered is-striped is-narrow">

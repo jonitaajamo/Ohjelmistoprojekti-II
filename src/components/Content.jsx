@@ -174,7 +174,6 @@ export default class Content extends Component {
           geographicalWeightData={this.state.geographicalWeightData}
           geographyNames={this.state.geographyNames}
           geographyBorders={this.state.geographyBorders}
-          selectedMonth={this.state.selectedMonth}
           selectedAsset={this.state.selectedAsset}
           disableOptimization={this.state.disableOptimization}
           length={weightDataLength}

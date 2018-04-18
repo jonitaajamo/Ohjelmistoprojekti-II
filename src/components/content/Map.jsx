@@ -90,7 +90,7 @@ class Map extends Component {
 
   setWeightValuesForHeatmap() {
     const weightDataForMap = [];
-    const month = this.props.selectedMonth;
+    const month = this.props.month;
     const asset =
       this.props.selectedAsset === undefined ? 0 : this.props.selectedAsset;
     const assetClasses = this.props.geographicalWeightData.length
@@ -255,7 +255,7 @@ class Map extends Component {
             <Assets
               geographyId={this.props.geographyId}
               geographicalWeightData={this.props.geographicalWeightData}
-              month={this.props.selectedMonth}
+              month={this.props.month}
               isGeographyClicked={this.props.isGeographyClicked}
               clickedGeographyName={this.state.clickedGeographyName}
               currency={this.props.currency}
