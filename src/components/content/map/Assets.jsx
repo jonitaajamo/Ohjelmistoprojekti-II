@@ -19,6 +19,9 @@ export default class Assets extends Component {
       </tr>
     );
   }
+  currencyValue() {
+    return this.props.currency === "EUR" ? "€" : " ";
+  }
 
   renderTopInstruments() {
     return this.props.topInstruments.map((item, key) => {
@@ -26,7 +29,10 @@ export default class Assets extends Component {
         <tr key={key}>
           <td>{key + 1}</td>
           <td>{item.secName}</td>
-          <td>{item.totalMarketValue}</td>
+          <td>
+            {item.totalMarketValue}
+            {this.currencyValue()}
+          </td>
           <td>{item.weightInClass * 100 + "%"}</td>
         </tr>
       );
@@ -43,7 +49,7 @@ export default class Assets extends Component {
     const currency = geographyIdArray.some(
       item => JSON.stringify(item.countryId) === this.props.geographyId
     )
-      ? " (" + this.props.currency + ")"
+      ? " (" + this.props.currency + ") "
       : " ";
 
     return currency;
@@ -63,7 +69,10 @@ export default class Assets extends Component {
                     return (
                       <tr key={innerKey}>
                         <td>{this.capitalize(innerItem.class)}</td>
-                        <td>{innerInnerItem.marketValue}</td>
+                        <td>
+                          {innerInnerItem.marketValue}
+                          {this.currencyValue()}
+                        </td>
                       </tr>
                     );
                   } else {
@@ -146,7 +155,7 @@ export default class Assets extends Component {
                 <th>Weight</th>
               </tr>
             </thead>
-            <tbody>{this.renderTopInstruments()}</tbody>
+            <tbody>{this.renderTopInstruments()} </tbody>
           </table>
         </article>
       </div>
