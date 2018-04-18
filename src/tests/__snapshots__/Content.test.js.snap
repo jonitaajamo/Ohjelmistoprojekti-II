@@ -26,6 +26,7 @@ ShallowWrapper {
         geographyId=""
         geographyNames={Array []}
         isGeographyClicked={false}
+        isLoaded={false}
         length={-1}
         month={0}
         onAfterChange={[Function]}
@@ -54,6 +55,7 @@ ShallowWrapper {
         "geographyId": "",
         "geographyNames": Array [],
         "isGeographyClicked": false,
+        "isLoaded": false,
         "length": -1,
         "month": 0,
         "onAfterChange": [Function],
@@ -85,6 +87,7 @@ ShallowWrapper {
           geographyId=""
           geographyNames={Array []}
           isGeographyClicked={false}
+          isLoaded={false}
           length={-1}
           month={0}
           onAfterChange={[Function]}
@@ -113,6 +116,7 @@ ShallowWrapper {
           "geographyId": "",
           "geographyNames": Array [],
           "isGeographyClicked": false,
+          "isLoaded": false,
           "length": -1,
           "month": 0,
           "onAfterChange": [Function],
