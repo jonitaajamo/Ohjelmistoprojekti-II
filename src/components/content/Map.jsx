@@ -22,8 +22,7 @@ class Map extends Component {
       clickedGeographyName: "",
       mapZoomValue: 1,
       mapCenter: [0, 20],
-      disableOptimization: false,
-      touchError: false
+      disableOptimization: false
     };
   }
 
@@ -129,19 +128,6 @@ class Map extends Component {
     );
   }
 
-  touchWarning(event) {
-    if (event.touches.length === 1) {
-      this.setState({
-        touchError: true
-      });
-      setTimeout(() => {
-        this.setState({
-          touchError: false
-        });
-      }, 2000);
-    }
-  }
-
   renderMap() {
     const weightData = this.setWeightValuesForHeatmap();
     const optimization =
@@ -220,19 +206,12 @@ class Map extends Component {
       </Geographies>
     );
 
-    const errorStyle = {
-      display: !this.state.touchError ? "none" : "flex"
-    };
-
     return (
       <div className="tile is-ancestor">
         <div className="tile is-vertical is-8">
           <div className="tile is-parent">
             <article className="box tile has-accent is-child notification is-paddingless">
-              <div onTouchMove={this.touchWarning.bind(this)}>
-                <div className="is-error-overlay" style={errorStyle}>
-                  <div>The map must be dragged with two fingers</div>
-                </div>
+              <div>
                 <ComposableMap
                   width={800}
                   height={450}
