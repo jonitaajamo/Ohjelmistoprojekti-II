@@ -34,85 +34,6 @@ body {
   align-self: center;
 }
 
-input[type="range"] {
-  -webkit-appearance: none;
-  margin: 18px 0;
-  width: 100%;
-}
-input[type="range"]:focus {
-  outline: none;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: #777777;
-  border-radius: 1.3px;
-  border: 0.2px solid #dbdbdb;
-}
-input[type="range"]::-webkit-slider-thumb {
-  border: 1px solid #dbdbdb;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #3273dc;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -14px;
-}
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #777777;
-}
-input[type="range"]::-moz-range-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: #777777;
-  border-radius: 1.3px;
-  border: 0.2px solid #dbdbdb;
-}
-input[type="range"]::-moz-range-thumb {
-  border: 1px solid #dbdbdb;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #3273dc;
-  cursor: pointer;
-}
-input[type="range"]::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-}
-input[type="range"]::-ms-fill-lower {
-  background: #777777;
-  border: 0.2px solid #dbdbdb;
-  border-radius: 2.6px;
-}
-input[type="range"]::-ms-fill-upper {
-  background: #777777;
-  border: 0.2px solid #dbdbdb;
-  border-radius: 2.6px;
-}
-input[type="range"]::-ms-thumb {
-  border: 1px solid #3273dc;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type="range"]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-input[type="range"]:focus::-ms-fill-upper {
-  background: #367ebd;
-}
-
 .slider {
   width: 100%;
   background-color: #ffffff00;
@@ -122,32 +43,6 @@ input[type="range"]:focus::-ms-fill-upper {
   .is-larger {
     font-size: 1.25rem !important;
   }
-}
-
-.tickmarks {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.tickmarks li {
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-  display: table-cell;
-  width: 8%;
-}
-
-.tickmarks li::before {
-  position: absolute;
-  top: -13px;
-  left: -7.6px;
-  content: "";
-  margin: 0 auto;
-  width: 9px;
-  height: 9px;
-  background: #b2b2b2;
-  border-radius: 50%;
 }
 
 .timeline-container {
