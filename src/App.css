@@ -153,13 +153,6 @@ input[type="range"]:focus::-ms-fill-upper {
   border-radius: 50%;
 }
 
-.zoom-button {
-  margin: 10px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
 .timeline-container {
   align-items: center;
   justify-content: center;
@@ -183,4 +176,18 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .content {
   margin: 10px auto;
+}
+
+.button-group {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.button-row {
+  display: flex;
 }

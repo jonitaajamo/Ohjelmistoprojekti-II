@@ -3,6 +3,7 @@ import Country from "./map/Country";
 import Loading from "./map/Loading";
 import Timeline from "./map/Timeline";
 import Assets from "./map/Assets";
+import ButtonGroup from "./map/ButtonGroup";
 import { geoPath } from "d3-geo";
 import { geoTimes } from "d3-geo-projection";
 import {
@@ -111,21 +112,56 @@ class Map extends Component {
     return weightDataForMap;
   }
 
-  zoomOutOfGeography() {
-    this.setState(
-      {
-        isGeographyClicked: false,
-        mapZoomValue: 1,
-        mapCenter: [0, 20],
-        clickedGeographyName: "",
-        disableOptimization: true
-      },
-      () => {
-        this.setState({
-          disableOptimization: false
-        });
-      }
-    );
+  zoomHandler(e) {
+    switch (e.target.value) {
+      case "reset":
+        this.setState(
+          {
+            isGeographyClicked: false,
+            mapZoomValue: 1,
+            mapCenter: [0, 20],
+            clickedGeographyName: "",
+            disableOptimization: true
+          },
+          () => {
+            this.setState({
+              disableOptimization: false
+            });
+          }
+        );
+        break;
+      case "zoom-out":
+        this.setState(
+          {
+            mapZoomValue:
+              this.state.mapZoomValue === 1
+                ? this.state.mapZoomValue
+                : this.state.mapZoomValue - 1,
+            disableOptimization: true
+          },
+          () => {
+            this.setState({
+              disableOptimization: false
+            });
+          }
+        );
+        break;
+      case "zoom-in":
+        this.setState(
+          {
+            mapZoomValue: this.state.mapZoomValue + 1,
+            disableOptimization: true
+          },
+          () => {
+            this.setState({
+              disableOptimization: false
+            });
+          }
+        );
+        break;
+      default:
+        break;
+    }
   }
 
   renderMap() {
@@ -229,14 +265,14 @@ class Map extends Component {
                   </ZoomableGroup>
                 </ComposableMap>
                 <Country country={this.checkGeographyName()} />
-                <div className="zoom-button">
-                  <button
-                    className="button"
-                    onClick={() => this.zoomOutOfGeography()}
-                  >
-                    Reset
-                  </button>
-                </div>
+                <ButtonGroup
+                  isGeographyClicked={this.state.isGeographyClicked}
+                  clickedGeographyName={this.state.clickedGeographyName}
+                  mapZoomValue={this.state.mapZoomValue}
+                  mapCenter={this.state.mapCenter}
+                  disableOptimization={this.state.disableOptimization}
+                  zoomHandler={this.zoomHandler.bind(this)}
+                />
               </div>
               <Timeline
                 length={this.props.length}
