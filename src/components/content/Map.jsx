@@ -13,7 +13,7 @@ import {
   Geography
 } from "react-simple-maps";
 
-class Map extends Component {
+export default class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -341,5 +341,3 @@ class Map extends Component {
     }
   }
 }
-
-export default Map;

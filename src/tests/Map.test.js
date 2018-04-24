@@ -82,13 +82,6 @@ describe("Map", () => {
     expect(map.state().mapZoomValue).toBe(3);
   });
 
-  it("zooms out when button is clicked", () => {
-    const map = shallow(<Map {...props} />);
-    map.setState({ mapZoomValue: 3 });
-    map.find("button").simulate("click");
-    expect(map.state().mapZoomValue).toBe(1);
-  });
-
   it("sets weight values when map is rendered", () => {
     const spy = jest.spyOn(Map.prototype, "setWeightValuesForHeatmap");
     const map = mount(<Map {...props} />);
