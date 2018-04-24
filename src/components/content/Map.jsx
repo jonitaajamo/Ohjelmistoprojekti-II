@@ -264,19 +264,15 @@ export default class Map extends Component {
         <div className="tile is-vertical is-8">
           <div className="tile is-parent">
             <article className="box tile has-accent is-child notification is-paddingless">
-              <div onTouchMove={this.touchWarning.bind(this)}>
-                <div className="is-error-overlay" style={errorStyle}>
-                  <div>The map must be dragged with two fingers</div>
-                </div>
-                <div>
-                  <ComposableMap
-                    width={800}
-                    height={450}
-                    style={{
-                      width: "100%",
-                      height: "auto"
-                    }}
-                  >
+              <div>
+                <div
+                  className="map-container"
+                  onTouchMove={this.touchWarning.bind(this)}
+                >
+                  <div className="is-error-overlay" style={errorStyle}>
+                    The map must be dragged with two fingers
+                  </div>
+                  <ComposableMap width={800} height={450}>
                     <ZoomableGroup
                       center={this.state.mapCenter}
                       zoom={this.state.mapZoomValue}
