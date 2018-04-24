@@ -48,29 +48,25 @@ export default class Assets extends Component {
     ) : (
       this.props.geographicalWeightData.map((item, key) => {
         if (key === this.props.month) {
-          const innerLoop = item.assetClasses.map((innerItem, innerKey) => {
-            const innerInnerLoop = innerItem.weights.map(
-              (innerInnerItem, innerInnerKey) => {
-                if (
-                  innerInnerItem.countryId === Number(this.props.geographyId)
-                ) {
-                  return (
-                    <tr key={innerKey}>
-                      <td>{this.capitalize(innerItem.class)}</td>
-                      <td>
-                        {innerInnerItem.marketValue}
-                        {this.currencyValue()}
-                      </td>
-                    </tr>
-                  );
-                } else {
-                  return null;
-                }
+          const assetClass = item.assetClasses.map((asset, innerKey) => {
+            const weights = asset.weights.map((weight, innerInnerKey) => {
+              if (weight.countryId === Number(this.props.geographyId)) {
+                return (
+                  <tr key={innerKey}>
+                    <td>{this.capitalize(asset.class)}</td>
+                    <td>
+                      {weight.marketValue}
+                      {this.currencyValue()}
+                    </td>
+                  </tr>
+                );
+              } else {
+                return null;
               }
-            );
-            return innerInnerLoop;
+            });
+            return weights;
           });
-          return innerLoop;
+          return assetClass;
         } else {
           return null;
         }
