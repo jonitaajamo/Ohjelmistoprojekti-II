@@ -23,6 +23,7 @@ class Map extends Component {
       clickedGeographyName: "",
       mapZoomValue: 1,
       mapCenter: [0, 20],
+      touchError: false,
       disableOptimization: false
     };
   }
@@ -164,10 +165,26 @@ class Map extends Component {
     }
   }
 
+  touchWarning(event) {
+    if (event.touches.length === 1) {
+      this.setState({
+        touchError: true
+      });
+      setTimeout(() => {
+        this.setState({
+          touchError: false
+        });
+      }, 2000);
+    }
+  }
+
   renderMap() {
     const weightData = this.setWeightValuesForHeatmap();
     const optimization =
       this.state.disableOptimization || this.props.disableOptimization;
+    const errorStyle = {
+      display: !this.state.touchError ? "none" : "flex"
+    };
     const mapGeographies = (
       <Geographies
         disableOptimization={optimization}
@@ -247,32 +264,36 @@ class Map extends Component {
         <div className="tile is-vertical is-8">
           <div className="tile is-parent">
             <article className="box tile has-accent is-child notification is-paddingless">
-              <div>
-                <ComposableMap
-                  width={800}
-                  height={450}
-                  style={{
-                    width: "100%",
-                    height: "auto"
-                  }}
-                >
-                  <ZoomableGroup
-                    center={this.state.mapCenter}
-                    zoom={this.state.mapZoomValue}
-                    disablePanning="true"
+              <div onTouchMove={this.touchWarning.bind(this)}>
+                <div className="is-error-overlay" style={errorStyle}>
+                  <div>The map must be dragged with two fingers</div>
+                </div>
+                <div>
+                  <ComposableMap
+                    width={800}
+                    height={450}
+                    style={{
+                      width: "100%",
+                      height: "auto"
+                    }}
                   >
-                    {mapGeographies}
-                  </ZoomableGroup>
-                </ComposableMap>
-                <Country country={this.checkGeographyName()} />
-                <ButtonGroup
-                  isGeographyClicked={this.state.isGeographyClicked}
-                  clickedGeographyName={this.state.clickedGeographyName}
-                  mapZoomValue={this.state.mapZoomValue}
-                  mapCenter={this.state.mapCenter}
-                  disableOptimization={this.state.disableOptimization}
-                  zoomHandler={this.zoomHandler.bind(this)}
-                />
+                    <ZoomableGroup
+                      center={this.state.mapCenter}
+                      zoom={this.state.mapZoomValue}
+                    >
+                      {mapGeographies}
+                    </ZoomableGroup>
+                  </ComposableMap>
+                  <Country country={this.checkGeographyName()} />
+                  <ButtonGroup
+                    isGeographyClicked={this.state.isGeographyClicked}
+                    clickedGeographyName={this.state.clickedGeographyName}
+                    mapZoomValue={this.state.mapZoomValue}
+                    mapCenter={this.state.mapCenter}
+                    disableOptimization={this.state.disableOptimization}
+                    zoomHandler={this.zoomHandler.bind(this)}
+                  />
+                </div>
               </div>
               <Timeline
                 length={this.props.length}
