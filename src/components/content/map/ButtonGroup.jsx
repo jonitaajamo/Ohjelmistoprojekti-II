@@ -10,7 +10,7 @@ const ButtonGroup = ({
 }) => (
   <div className="button-group">
     <div className="button-row">
-      <button className="button" onClick={zoomHandler} value="reset">
+      <button className="button reset" onClick={zoomHandler} value="reset">
         Reset
       </button>
     </div>
