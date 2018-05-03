@@ -14,14 +14,18 @@ const ButtonGroup = ({
         Reset
       </button>
     </div>
-    <div className="button-row">
-      <button className="button" onClick={zoomHandler} value="zoom-in">
-        +
-      </button>
-      <button className="button" onClick={zoomHandler} value="zoom-out">
-        -
-      </button>
-    </div>
+    <span className="button-row">
+      <a className="button zoom-in" onClick={zoomHandler} value="zoom-in">
+        <span className="icon zoom-in">
+          <i className="fas fa-plus zoom-in" />
+        </span>
+      </a>
+      <a className="button zoom-out" onClick={zoomHandler} value="zoom-out">
+        <span className="icon zoom-out">
+          <i className="fas fa-minus zoom-out" />
+        </span>
+      </a>
+    </span>
   </div>
 );
 
