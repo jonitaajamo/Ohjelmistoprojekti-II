@@ -92,3 +92,7 @@ svg {
 .map-container {
   height: 100%;
 }
+
+.reset {
+  justify-content: center;
+}
