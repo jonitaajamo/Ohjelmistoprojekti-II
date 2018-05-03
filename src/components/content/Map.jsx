@@ -49,7 +49,7 @@ export default class Map extends Component {
       {
         isGeographyClicked: true,
         clickedGeographyName: this.props.geographyNames[i].name,
-        mapZoomValue: 3,
+        mapZoomValue: this.state.mapZoomValue > 3 ? this.state.mapZoomValue : 3,
         mapCenter: centroid,
         disableOptimization: true
       },
@@ -114,8 +114,8 @@ export default class Map extends Component {
   }
 
   zoomHandler(e) {
-    switch (e.target.value) {
-      case "reset":
+    switch (true) {
+      case e.target.classList.contains("reset"):
         this.setState(
           {
             isGeographyClicked: false,
@@ -131,7 +131,7 @@ export default class Map extends Component {
           }
         );
         break;
-      case "zoom-out":
+      case e.target.classList.contains("zoom-out"):
         this.setState(
           {
             mapZoomValue:
@@ -147,10 +147,13 @@ export default class Map extends Component {
           }
         );
         break;
-      case "zoom-in":
+      case e.target.classList.contains("zoom-in"):
         this.setState(
           {
-            mapZoomValue: this.state.mapZoomValue + 1,
+            mapZoomValue:
+              this.state.mapZoomValue === 6
+                ? this.state.mapZoomValue
+                : this.state.mapZoomValue + 1,
             disableOptimization: true
           },
           () => {
